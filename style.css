@@ -1,0 +1,59 @@
+html {
+	background-color: rgba(0, 6, 29, 0.97);
+}
+
+.title {
+	color: rgba(36, 146, 124, 0.8);
+	float: inherit;
+	margin: 111px;
+	margin-bottom: 200px;
+	font-size: 89px;
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+	font-family: Helvetica;
+
+}
+
+.first {
+	font-family: "Futura";
+	font-size: 21px;
+	color: rgba(255, 255, 255, 0.76);
+	margin-left: 130px;
+	line-height: 29px;
+	margin-top: 820px;
+
+
+}
+
+.second {
+	font-family: "Futura", serif;
+	font-size: 21px;
+	margin: 200px;
+	color: rgba(255, 255, 255, 0.76);
+	margin-left: 130px;
+	line-height: 29px;
+}
+
+
+.third {
+	font-family: "Futura", serif;
+	color: rgba(255, 255, 255, 0.76);
+	font-size: 21px;
+	margin: 200px;
+	margin-top: 349px;
+	margin-left: 669px;
+	line-height: 29px;
+	margin-bottom: -348px;
+}
+
+.light {
+	font-family: "Futura", serif;
+	color: rgba(255, 255, 255, 0.76);
+	font-size: 21px;
+	margin: 200px;
+	margin-top: 349px;
+	margin-left: 814px;
+	line-height: 29px;
+}
