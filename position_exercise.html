@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Position Exercise</title>
+
+    <style type="text/css">
+    #outer_div, #inner_div{
+      width: 50%;
+      box-sizing: border-box;
+    }
+    #inner_div {
+    background-color: #a5dff9;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    }
+    #outer_div{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    margin-bottom: 200px;
+    background-color: #ef5285;
+      }
+    #second_square {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    margin-bottom: 200px;
+    background-color: #ff7761;
+    margin-bottom: 200px;
+    }
+    #second_squareone {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0px;
+      background-color: #fdc23e;
+      top: 200px
+    }
+    #second_squaretwo {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      margin: 0px;
+      background-color:#f9a11b;
+      bottom: 200px;
+      left: 200px;
+    }
+    #second_square, #second_squareone, #second_squaretwo{
+      box-sizing: border-box;
+    }
+    #third_square {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #282c37;
+      margin-bottom: 200px;
+    }
+    #third_squareone {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #9baec8;
+      margin: 100px;
+      top: 100px;
+    }
+    #third_square, #third_squareone {
+      box-sizing: border-box;
+    }
+    #fourth_square, #fourth_squareone, #fourth_squaretwo, #fourth_squarethree {
+      box-sizing: border-box;
+    }
+    #fourth_square {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #EE7785;
+      margin-bottom: 200px;
+    }
+    #fourth_squareone {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0px;
+      background-color: #67D5B5;
+    }
+    #fourth_squaretwo {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0px;
+      background-color: #C89EC4;
+      display: inline-block;
+    }
+    #fourth_squarethree {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0px;
+      background-color: #84B1ED;
+      left: 50%;
+    bottom: 51%;
+    }
+    #fifth_square, #fifth_squareone, #fifth_squaretwo, #fifth_squarethree {
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    #fifth_square {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #dddfe6;
+      margin-bottom: 200px;
+    }
+    #fifth_squareone {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      margin: 0;
+      background-color: #f4f5f9;
+    }
+    #fifth_squaretwo {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      margin: 0;
+      background-color: #252c41;
+      left: 50%;
+      bottom: 25%;
+    }
+    #fifth_squarethree{
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background-color: #f1404b;
+      margin: 0;
+      left: 25%;
+    }
+    div{
+      display: block;
+    }
+    #sixth_square {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #AAABD3;
+    }
+    #sixth_squareone, #sixth_squaretwo {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    #sixth_squareone{
+    width: 25%;
+    height: 25%;
+    margin-top: 50%;
+    background-color: #353866;
+    }
+    #sixth_squaretwo{
+    width: 50%;
+    height: 50%;
+    background-color: #CBA6C3;
+    }
+    #seventh_square {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #eb9f9f;
+      margin-bottom: 200px;
+    }
+    #seventh_square, #seventh_squareright, #seventh_squareright2, #seventh_squareleft, #seventh_squareleft2
+    #seventh_squarecircle {
+      display: inline-block;
+      vertical-align: bottom;
+      box-sizing: border-box;
+    }
+    #seventh_squareright{
+      position: relative;
+      height: 200px;
+      width: 100px;
+      background-color: #f1bbba;
+      margin: 0;
+      left: 75%;
+    }
+    #seventh_squareright2 {
+      position: relative;
+      height: 200px;
+      width: 100px;
+      background-color: #f8ecc9;
+      margin: 0;
+      left: 24%;
+    }
+    #seventh_squareleft {
+      height: 100px;
+      width: 200px;
+      background-color: #f1bbba;
+      margin: 0;
+    }
+    #seventh_squareleft2 {
+      height: 100px;
+      width: 200px;
+      background-color: #f8ecc9;
+      margin: 0;
+      top: 50%;
+    }
+    #seventh_squarecircle {
+      height: 200px;
+      width: 200px;
+      background-color: white;
+      margin: 10px;
+      border-radius: 100px;
+      position: absolute;
+    top: 91px;
+    left: 100px;
+    overflow-y: hidden;
+    }
+
+    #seventh_squarecirclehalf {
+    height: 200px;
+    width: 200px;
+    background-color: #a79c8e;
+    margin: 0;
+    margin-top: 99px;
+    margin-left: 90px;
+    }
+    #square8inner, #square8inner1, #square8inner2 {
+      box-sizing: border-box;
+      display: inline-block;
+    }
+    #square8inner {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #008c9e;
+    }
+    #square8inner1 {
+    width: 100px;
+    height: 400px;
+    position: relative;
+    margin: 0px;
+    background-color: #00dffc;
+    top: 200px;
+    margin-top: 10px;
+    margin-bottom: 400px;
+    right: 314px;
+    }
+    #square8inner2 {
+      background-color: #005f6b;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0px;
+      margin-bottom: 200px;
+      right: 314px;
+      bottom: 200px;
+    }
+    #ninth_square {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #cbe86b;
+    }
+    #ninth_squaremedium {
+position: relative;
+width: 200px;
+height: 400px;
+margin: 0;
+background-color: #f2e9e1;
+left: 50%;
+    }
+    #ninth_squaresmall1 {
+      position: relative;
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    float: right;
+    right: 100px;
+    background-color: black;
+    }
+    #ninth_squaresmall2 {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    float: right;
+    top: 200px;
+    background-color: black;
+    }
+    #ninth_squaresmall3 {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    float: left;
+    background-color: black;
+    bottom: 100px;
+    left: 100px;
+    }
+    #ninth_squaresmall4 {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    float: left;
+    background-color: black;
+    bottom: 300px;
+    }
+
+    #ninth_square, #ninth_squaremedium, #ninth_squaresmall1, #ninth_squaresmall2, #ninth_squaresmall3, #ninth_squaresmall4 {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: bottom;
+    }
+
+    #tenth_square, #innercircle, #innersquare, #outercircle {
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    #tenth_square {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      margin-bottom: 200px;
+      background-color: #090707;
+    }
+    #outercircle {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-radius: 200px;
+      background-color: #E53A40;
+    }
+    #innersquare {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    background-color: #090707;
+    margin: 60px;
+    bottom: 400px;
+    }
+    #innercircle {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    border-radius: 200px;
+    background-color: #E53A40;
+    bottom: 740px;
+    left: 60px;
+    }
+    </style>
+</head>
+<body>
+
+  <div id="outer_div">
+    <div id="inner_div"></div>
+      </div>
+
+<div id="second_square">
+    <div id="second_squareone"></div>
+    <div id="second_squaretwo"></div>
+  </div>
+
+<div id="third_square">
+    <div id="third_squareone"></div>
+</div>
+
+<div id="fourth_square">
+    <div id="fourth_squareone"></div>
+    <div id="fourth_squaretwo"></div>
+    <div id="fourth_squarethree"></div>
+</div>
+
+<div id="fifth_square">
+  <div id="fifth_squareone"></div>
+  <div id="fifth_squaretwo"></div>
+  <div id="fifth_squarethree"></div>
+</div>
+
+<div id="sixth_square">
+  <div id="sixth_squareone"></div
+  ><div id="sixth_squaretwo"></div
+  ><div id="sixth_squareone"></div>
+</div>
+
+<div id="seventh_square">
+  <div id="seventh_squareright"></div>
+  <div id="seventh_squareright2"></div>
+  <div id="seventh_squareleft"></div>
+  <div id="seventh_squareleft2"></div>
+  <div id="seventh_squarecircle"><div id="seventh_squarecirclehalf"></div></div>
+</div>
+
+<div id="square8">
+  <div id="square8inner"></div>
+  <div id="square8inner1"></div
+  ><div id="square8inner2"></div>
+  <div id="square8inner3"></div>
+</div>
+
+<div id="ninth_square">
+  <div id="ninth_squaremedium"></div>
+  <div id="ninth_squaresmall1"></div>
+  <div id="ninth_squaresmall2"></div>
+  <div id="ninth_squaresmall3"></div>
+  <div id="ninth_squaresmall4"></div>
+</div>
+
+
+<div id="tenth_square"><div id="outercircle"></div>
+<div id="innersquare"></div><div id="innercircle"></div>
+</div>
+
+
+
+
+
+</html>

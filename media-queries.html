@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries</title>
+    <meta charset="utf-utf-8"
+
+    <meta name="viewport" content="
+    width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/xolonium" type="text/css"/>
+
+    <style type="text/css">
+
+      html{
+        background-color: red;
+      }
+
+      @font-face {
+        font-family: 'Xolonium-Bold';
+        src: url('Xolonium-Bold.otf');
+        font-weight: bold;
+      }
+
+      p{
+        letter-spacing: 1px;
+      }
+
+      .paragraph{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        vertical-align: top;
+        z-index: 100;
+        position: absolute;
+        font-style: italic;
+        font-weight: bold;
+
+        top: 50px;
+      }
+
+      @media screen and (max-width: 1700px){
+        html {
+            background-color: red;
+        }
+        p {
+          font-size: 10em;
+          font-family: 'Xolonium-Bold', xolonium, sans-serif;
+          color: black;
+          text-align: -webkit-center;
+
+        }
+        .img1 {
+          width: 50%;
+          display: block;
+        }
+        .img2{
+          display: none;
+        }
+        .img3{
+          display: none;
+        }
+        .img4{
+          width: 49.5%;
+          box-sizing: border-box;
+          vertical-align: bottom;
+          position: absolute;
+          margin-left: 50%;
+          top: 7px;
+        }
+        .img5{
+          display: none;
+        }
+        .img6{
+          display:none;
+        }
+      }
+
+      @media screen and (max-width: 1000px){
+        html {
+            background-color: blue;
+          }
+          p {
+            font-size: 8em;
+            font-family: helvetica, sans-serif;
+            font-style: italic;
+            color: white;
+            transform: rotate(-90deg);
+            margin-top: 400px;
+            right: 40%;
+          }
+          .img1 {
+            display: none;
+          }
+          .img2 {
+            width: 100%;
+            display: block;
+          }
+          .img3{
+            display: none;
+          }
+          .img4{
+            display:none;
+          }
+          .img5{
+            box-sizing: border-box;
+            vertical-align: bottom;
+            position: absolute;
+            display:block;
+            width:98.2%;
+            margin-top: 100px;
+          }
+        }
+
+        @media(max-width: 700px){
+          html {
+              background-color: YellowGreen;
+            }
+            p {
+              font-size: 6em;
+              color: white;
+              font-family: Times New Roman, serif;
+              text-align: -webkit-center;
+              transform: none;
+              margin: 0;
+              right: inherit;
+            }
+            .img1{
+              display: none;
+            }
+            .img2{
+              display: none;
+            }
+            .img3{
+              width: 100%;
+              display: block;
+            }
+            .img4{
+              display:none;
+            }
+            .img5{
+              display:none;
+            }
+            .img6{
+              box-sizing: border-box;
+              vertical-align: bottom;
+              position: absolute;
+              display:block;
+              width:97.5%;
+              margin-top: 100px;
+            }
+          }
+
+
+
+      </style>
+<p class="paragraph">ARCA</p>
+<img src="arca1.jpg" class="img1" alt="Arca">
+<img src="arca2.jpg" class="img2" alt="Arca2">
+<img src="arca3.jpg" class="img3" alt="Arca3">
+<img src="arca4.jpg" class="img4" alt="Arca4">
+<img src="arca5.jpg" class="img5" alt="Arca 5">
+<img src="arca6.jpg" class="img6" alt="Arca 6">
