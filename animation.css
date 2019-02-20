@@ -1,10 +1,10 @@
 html {
-  background-color: pink;
-}
 
+
+}
 @keyframes moving{
   0% {
-    transform: translate(-300px, 0);
+    transform: translate(-100px, 0);
   }
 
   100%{
@@ -14,32 +14,60 @@ html {
 
 @keyframes legone {
   0%{
-    transform: rotate(-5deg);
+    transform: rotate(-8deg);
   }
 
   50%{
-    transform: rotate(5deg);
+    transform: rotate(8deg);
   }
 
   100%{
-    transform: rotate(-5deg);
+    transform: rotate(-8deg);
   }
 }
 @keyframes legtwo {
   0%{
-    transform: rotate(5deg);
+    transform: rotate(10deg);
   }
 
   50%{
-    transform: rotate(-5deg);
+    transform: rotate(-10deg);
   }
 
   100%{
-    transform: rotate(5deg);
+    transform: rotate(10deg);
   }
 }
+.image1, .image2{
+  animation-name: slideshow
+}
 
-@keyframes timeOfDay{
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  55.55% { opacity: 0}
+  66.66% { opacity: 0}
+  100% { opacity: 0; }
+}
+
+.fadein img {
+    opacity:0;
+    animation-name: fade;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    position:absolute;
+    left:0;
+    right:0;
+}
+.fadein { position:absolute; height:332px; width:500px; opacity: 1; z-index: -100;}
+.fadein img { position:absolute; top:-228px; bottom: 0; left:78%; right:0; margin: auto; opacity:0; animation-name: fade; animation-duration: 9s; animation-iteration-count: infinite; width: 100%; }
+.milk img {height: 332px; width: 500px;}
+.fadein img:nth-child(1) { animation-delay: 0s;  }
+.fadein img:nth-child(2) { animation-delay: 3s;  }
+.fadein img:nth-child(3) { animation-delay: 6s;  }
+/*@keyframes timeOfDay{
   0%{
     background-color: #00102b;
   }
@@ -76,11 +104,15 @@ html {
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
+*/
 
 #ground {
-  width: 100vw;
-  height: 258px;
-  background-color: #154714;
+  width: 200%;
+    height: 100%;
+    background-color: green;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
 }
 
 #wrapper{
@@ -93,91 +125,79 @@ html {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-top: 20%;
+  z-index: 100;
 }
 
 #head{
-  width: 100px;
-    height: 123px;
-    background-color: wheat;
-    border-radius: 50px;
-    margin-left: 170px;
-    top: -54px;
+  width: 112px;
+height: 123px;
+border-radius: 50px;
+margin-left: 182px;
+top: 126px;
+position: absolute;
+z-index: 200;
+transform: rotate;
+transform: rotate(-10deg);
+}
+#tail{
+  width: 40%;
     position: absolute;
+    margin-top: 102%;
+    /* margin-right: 87%; */
+    left: 2px;
 }
-
-.ear1 {
-  width: 40px;
-    height: 20px;
-    border-radius: 70px;
-    background-color: wheat;
-  position: absolute;
-  transform: skewX(56deg);
-}
-
-.ear2{
-  width: 40px;
-    height: 20px;
-    border-radius: 70px;
-    background-color: wheat;
-    margin-left: 61px;
-    transform: skewX(-56deg);
-}
-
-.lefteye{
-  width: 10px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: black;
-    margin-top: 14px;
-    margin-left: 30px;
-    position: absolute;
-}
-
-.righteye{
-  margin-top: 14px;
-    background-color: black;
-    width: 10px;
-    height: 30px;
-    border-radius: 50px;
-    float: right;
-    margin-right: 33px;
-}
-
 
 #body {
   width: 223px;
-    height: 129px;
-    background-color: white;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    position: absolute;
+    bottom: -114px;
+    z-index: 100;
 }
 
 .legs{
   position: relative;
-    width: 20px;
-    height: 150px;
-    background-color: #42f498;
+    width: 42px;
+    height: 100px;
     display: inline-block;
+    bottom: -51px;
 }
-
+.leg2{
+  position: relative;
+    width: 29px;
+    height: 150px;
+    display: inline-block;
+    bottom: -71px;
+    x: ;
+    left: 126px;
+}
 #legone{
   animation-name: legone;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  margin-left: 34px;
-  background-color: black;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    margin-left: -15px;
+    width: 28%;
+    margin-top: 150%;
 }
 
 #legtwo{
-  background-color: black;
   animation-name: legtwo;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  float: right;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    float: right;
+    width: 20%;
+    margin-top: 156%;
 }
-
+h1{
+  font-size: 10vw;
+    color: black;
+    font-family: helvetica;
+    position: relative;
+    z-index: 200;
+    margin: 0;
+    top: 1;
+    text-align: center;
+    /* text-align-last: center; */
+    margin-top: -34%;
 .foot{
   position: absolute;
   left: 0;
