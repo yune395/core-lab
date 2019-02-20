@@ -1,0 +1,190 @@
+html {
+  background-color: pink;
+}
+
+@keyframes moving{
+  0% {
+    transform: translate(-300px, 0);
+  }
+
+  100%{
+    transform: translate(200vw, 0);
+  }
+}
+
+@keyframes legone {
+  0%{
+    transform: rotate(-5deg);
+  }
+
+  50%{
+    transform: rotate(5deg);
+  }
+
+  100%{
+    transform: rotate(-5deg);
+  }
+}
+@keyframes legtwo {
+  0%{
+    transform: rotate(5deg);
+  }
+
+  50%{
+    transform: rotate(-5deg);
+  }
+
+  100%{
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes timeOfDay{
+  0%{
+    background-color: #00102b;
+  }
+  10%{
+    background-color: #031f4c;
+  }
+  20%{
+    background-color: #002463;
+  }
+  30%{
+    background-color: #214d99;
+  }
+  40%{
+    background-color: #3c62a3;
+  }
+  50%{
+    background-color: #bc6058;
+  }
+  80%{
+    background-color: #7b4293;
+  }
+  90%{
+  background-color: #441a56;
+  }
+  100%{
+  background-color: #1e1342;
+}
+}
+
+html {
+  background-color: lightblue;
+  animation-name: timeOfDay;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+#ground {
+  width: 100vw;
+  height: 258px;
+  background-color: #154714;
+}
+
+#wrapper{
+  position: relative;
+  height: 200px;
+  width: 196px;
+  animation-name: moving;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 20%;
+}
+
+#head{
+  width: 100px;
+    height: 123px;
+    background-color: wheat;
+    border-radius: 50px;
+    margin-left: 170px;
+    top: -54px;
+    position: absolute;
+}
+
+.ear1 {
+  width: 40px;
+    height: 20px;
+    border-radius: 70px;
+    background-color: wheat;
+  position: absolute;
+  transform: skewX(56deg);
+}
+
+.ear2{
+  width: 40px;
+    height: 20px;
+    border-radius: 70px;
+    background-color: wheat;
+    margin-left: 61px;
+    transform: skewX(-56deg);
+}
+
+.lefteye{
+  width: 10px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: black;
+    margin-top: 14px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.righteye{
+  margin-top: 14px;
+    background-color: black;
+    width: 10px;
+    height: 30px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 33px;
+}
+
+
+#body {
+  width: 223px;
+    height: 129px;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.legs{
+  position: relative;
+    width: 20px;
+    height: 150px;
+    background-color: #42f498;
+    display: inline-block;
+}
+
+#legone{
+  animation-name: legone;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  margin-left: 34px;
+  background-color: black;
+}
+
+#legtwo{
+  background-color: black;
+  animation-name: legtwo;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  float: right;
+}
+
+.foot{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  width: 50px;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
