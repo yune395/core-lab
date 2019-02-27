@@ -1,0 +1,136 @@
+html{
+  background-color:#EFEBE8;
+}
+img{
+  width: 50%;
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 25%;
+}
+
+#radius {
+  height: 316px;
+    width: 316px;
+    background-color: #D794AF;
+    border-radius: 201%;
+    position: absolute;
+    margin-left: 31%;
+    top: 52%;
+}
+
+#radius2{
+  height: 250px;
+width: 250px;
+background-color: #E0BAC9;
+border-radius: 112%;
+margin-left: 35%;
+margin-top: 3%;
+position: absolute;
+}
+.radius2 #text{
+  width:200px;
+  background-color: black;
+  font-size: 20px;
+}
+#text{
+  text-align: center;
+    margin-top: 45%;
+    font-style: normal;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.radius3 #text2{
+  width:200px;
+  background-color: black;
+  font-size: 20px;
+}
+#text2{
+  text-align: center;
+    margin-top: 45%;
+    font-style: normal;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 2vw;
+    background-color: black;
+}
+#triangle {
+  width: 0;
+    height: 0;
+    border-right: 162px solid transparent;
+    border-left: 153px solid transparent;
+    border-bottom: 556px solid #E0D0DC;
+    position: absolute;
+    margin-left: 69%;
+    bottom: 16%;
+}
+
+#triangle2 {
+  width: 0;
+    height: 0;
+    border-right: 200px solid transparent;
+    border-left: 200px solid transparent;
+    border-bottom: 475px solid #C5A7E0;
+    position: absolute;
+    margin-top: 17%;
+    margin-top: 40%;
+    z-index: -100;
+    margin-left: -1%;
+}
+#radius3{
+  height: 316px;
+    width: 316px;
+    background-color: #875DAF;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 40%;
+    top: 103%;
+}
+
+#halfCircleLeft{
+  height: 444px;
+    width: 234px;
+    border-radius: 236px 0 0 212px;
+    background: #633C94;
+    position: relative;
+    float: right;
+    margin-top: 38%;
+    margin-right: 2%;
+}
+#halfCircleRight{
+  height: 492px;
+width: 279px;
+border-radius: 0 244px 238px 0;
+background: #D794AF;
+position: absolute;
+margin-top: 0%;
+margin-left: 2%;
+}
+#square1{
+  width: 207%;
+    height: 20%;
+    background-color: #875DAF;
+    margin-left: -36%;
+    margin-top: 37%;
+    position: absolute;
+    z-index: 100;
+
+}
+#square2{
+  width: 2%;
+    height: 43%;
+    background-color: #C5A7E0;
+    position: absolute;
+    margin-left: 65%;
+    margin-left: 62%;
+    margin-top: 7%;
+}
+#square3{
+  width: 2%;
+    height: 62%;
+    background-color: #875DAF;
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 17%;
+    z-index: 200;
+}
