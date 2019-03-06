@@ -1,0 +1,113 @@
+html{
+  background-color: blue;
+}
+#radius {
+  width:10%;
+  margin-left: 2%;
+  position: absolute;
+}
+
+#radius2{
+  margin-left: 30%;
+  margin-top: 14%;
+  position: absolute;
+}
+
+#triangle {
+  position: absolute;
+    margin-left: 63%;
+    top: 57%;
+    width: 34%;
+}
+
+#triangle2 {
+  position: absolute;
+    margin-top: 17%;
+    margin-top: 41%;
+    z-index: -100;
+    margin-left: 7%;
+    width: 35%;
+}
+#radius3{
+  margin-left: 37%;
+  position: absolute;
+  width: 35%;
+}
+
+#halfCircleLeft{
+  position: absolute;
+  margin-top: 39%;
+  left: 67%;
+  width: 32%;
+}
+#halfCircleRight{
+  position: absolute;
+margin-top: 38%;
+margin-left: 31%;
+width: 33%;
+left: 2%;
+}
+#square1{
+  margin-top: 21%;
+position: absolute;
+z-index: 100;
+width: 36%;
+
+}
+#square2{
+  position: absolute;
+  margin-left: 62%;
+  margin-top: 8%;
+  width: 35%;
+}
+#square3{
+  position: absolute;
+    margin-left: 34%;
+    margin-top: 28%;
+    z-index: 200;
+}
+#la{
+  position: absolute;
+      margin-left: 45%;
+      margin-left: 75%;
+      margin-top: 1%;
+      z-index: 200;
+}
+#square5{
+  position: absolute;
+    margin-left: 18%;
+    margin-top: 1%;
+    z-index: 200;
+    width: 29%;
+}
+#square6{
+  position: absolute;
+  margin-left: 42%;
+  margin-top: 19%;
+  z-index: 200;
+  wdith: 40%;
+  width: 29%;
+}
+#square7{
+  position: absolute;
+    margin-top: 34%;
+    width: 35%;
+    left: 2%;
+}
+#square8{
+  position: absolute;
+margin-left: 40%;
+margin-left: 47%;
+margin-top: 42%;
+z-index: 200;
+wdith: 40%;
+width: 36%;
+}
+#square9{
+  position: absolute;
+    margin-left: 74%;
+    margin-top: 19%;
+    z-index: 200;
+    wdith: 40%;
+    width: 29%;
+}
