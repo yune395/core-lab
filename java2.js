@@ -7,7 +7,6 @@ var text = document.getElementById("halfCircleLeft");
 var text2 = document.getElementById("halfCircleRight");
 var la = document.getElementById("la");
 var square5 = document.getElementById("square5");
-
 var i = 0;
 
 function displayImage() {
@@ -49,7 +48,7 @@ i++;
   }else if(i == 18){
     square9.style.display = "block";
   }else{
-    i = 0;
+    i = 1;
   }
 }
 

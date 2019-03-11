@@ -1,0 +1,23 @@
+h1 {
+  font-size: 2vw;
+}
+
+img {
+  width: 20%;
+}
+
+li{
+  font-family: arial;
+  font-style: italic;
+}
+
+ol{
+  margin-left: 20px;
+}
+ul > li{
+  font-family: arial;
+}
+
+ol> li{
+  font-family: courier;
+}

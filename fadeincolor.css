@@ -1,0 +1,288 @@
+html{
+  background-color: black;
+}
+*{
+  box-sizing: border-box;
+}
+
+
+/*#layer1{
+  width:50%;
+  opacity:0.7;
+  position: relative;
+}
+#layer2{
+  width:50%;
+  opacity:0.7;
+  position: relative;
+}*/
+#vol1{
+  position: relative;
+    width: 46%;
+    box-sizing: border-box;
+    top: 158%;
+    left: -20%;
+    filter: grayscale;
+    -webkit-filter: grayscale(100) contrast(116%);
+    margin-top: -330%;
+vertical-align: baseline;
+}
+
+.switch{
+
+}
+.pause{
+  animation-play-state: paused;
+}
+
+
+#header{
+  color: white;
+    font-family: helvetica;
+    font-weight: bold;
+    position: relative;
+    font-size: 7vw;
+    text-align: -webkit-center;
+    margin-top: -405%;
+    text-align: -webkit-center;
+}
+
+h1:hover{
+  font-style:italic;
+  font-family: helvetica;
+  font-weight: bold;
+  cursor: pointer;
+}
+h2{
+  color: white;
+font-family: helvetica;
+font-weight: bold;
+position: relative;
+font-size: 7vw;
+text-align: -webkit-center;
+margin: 0;
+margin-left: 30%;
+top: 0;
+}
+.sub{
+  width: 100%;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+}
+#cyano{
+  filter: gray;
+    -webkit-filter: grayscale(100%) contrast(300%) blur(1px);
+    -webkit-transition: all 2s ease-in-out;
+    width: 65%;
+    opacity: 0.8;
+    position: relative;
+    /* top: 170%; */
+    margin-left: 20%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 78%;
+}
+
+#cyano2{
+  filter: gray;
+    -webkit-filter: grayscale(100%) contrast(300%);
+    -webkit-transition: all 3s ease-in-out;
+    width: 35%;
+    opacity: 0.6;
+    position: relative;
+    margin-top: 0%;
+    left: 5%;
+    height: auto;
+    float: left;
+}
+#cyano3{
+  filter: gray;
+    -webkit-filter: grayscale(100%) contrast(300%);
+    width: 30%;
+    opacity: 0.7;
+    position: relative;
+    margin-top: 139%;
+    float: right;
+    width: 44%;
+    left: -61%;
+}
+#cyano4{
+  filter: gray;
+-webkit-filter: grayscale(100%) contrast(300%);
+-webkit-transition: all 3s ease-in-out;
+width: 40%;
+opacity: 0.7;
+position: relative;
+margin-top: -79%;
+float: right;
+margin-left: 65%;
+}
+#cyano5{
+  filter: gray;
+    -webkit-filter: grayscale(100%) contrast(300%);
+    -webkit-transition: all 3s ease-in-out;
+    width: 30%;
+    opacity: 0.7;
+    position: relative;
+    margin-top: -98%;
+    margin-left: -2%;
+    float: left;
+    margin-right: 0%;
+}
+#cyano6{
+  filter: gray;
+-webkit-filter: grayscale(100%) contrast(300%);
+-webkit-transition: all 3s ease-in-out;
+width: 35%;
+opacity: 0.7;
+position: relative;
+margin-top: -206%;
+float: right;
+left: -3%;
+}
+#cyano7{
+  filter: gray;
+    -webkit-filter: grayscale(100%) contrast(300%);
+    -webkit-transition: all 2s ease-in-out;
+    width: 35%;
+    opacity: 0.7;
+    position: relative;
+    margin-top: -130%;
+    float: right;
+    width: 50%;
+    left: -16%;
+}
+#cyano8{
+  filter: gray;
+    -webkit-filter: grayscale(100%) contrast(300%);
+    -webkit-transition: all 2s ease-in-out;
+    position: relative;
+    opacity: 0.7;
+    width: 47%;
+    top: 86%;
+    margin-top: 59px;
+    float: left;
+}
+#gif{
+  position: relative;
+    width: 56%;
+    margin-top: 16%;
+    z-index: -100;
+    left: -2%;
+}
+#anotherGif{
+  position: relative;
+width: 40%;
+margin-top: 25%;
+z-index: -100;
+left: 0%;
+cursor: pointer;
+/* transition: 2s; */
+float: right;
+}
+#anotherGifBlue{
+  position: relative;
+      width: 40%;
+      margin-top: 137.2%;
+      z-index: 100;
+      left: 59.7%;
+      %: ;
+      display: none;
+      opacity: 0;
+      transition: 2s;
+      cursor: pointer;
+      display: inline-block;
+      display: inline-block;
+}
+
+#cyano:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+}
+#cyano2:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+
+}
+#cyano3:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+
+}
+#cyano4:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+
+}
+#cyano5:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+}
+#cyano6:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+}
+#cyano7:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+}
+#cyano8:hover{
+  -webkit-filter:grayscale(0);
+  -webkit-transform: scale(1.01);
+  filter: none;
+  opacity:1;
+  cursor:pointer;
+}
+#cf2 {
+  position: relative;
+  height: 281px;
+  width: 450px;
+  margin: 0 auto;
+}
+#cf2 img {
+  position: absolute;
+    left: 25;
+    width: 84%;
+    top: 86%;
+    cursor:pointer;
+}
+#cf_onclick {
+  cursor: pointer;
+}
+
+#description{
+  color: white;
+    position: absolute;
+    font-size: 3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    display: none;
+    /* -webkit-transition: all .3s ease-in-out; */
+    width: 26%;
+    left: -26vw;
+    text-align: -webkit-auto;
+    margin-top: 27%;
+}

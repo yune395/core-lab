@@ -10,17 +10,16 @@
   height: 200px;
 }
 .body{
-font-family: 'Caveat', cursive;
-line-height: 10px;
-position: absolute;
-z-index: -100;
-font-size: 5vw;
-color: #616161;
-padding: 32px;
-width: 56%;
-margin-top: 145%;
-transform: skewX(19deg);
-margin-left: 41%;
+      line-height: 49px;
+      position: absolute;
+      z-index: -100;
+      font-size: 5vw;
+      color: #616161;
+      padding: 32px;
+      width: 53%;
+      margin-top: 0%;
+      transform: skewX(0);
+      margin-left: 41%;
 }
 
 .fade{
