@@ -1,35 +1,42 @@
-$('#header').click(function(e){
-        $('#description').fadeIn('slow');
-});
+var images = ["nypl.digitalcollections–Chordaria-flagelliformis-large_resized.jpg",
+"AnnaAtkins_Ptilotasericea_0002_1000px_900x.jpg",
+"AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x.jpg",
+"tumblr_n32kbbgihm1sagx63o7_1280.jpg"];
+//a variable counter that we can change later
+var counter = 0;
 
+//Whenever we click our image do these things:
+$('.cf2').click(function(){
+//add to our counter
+counter++;
 
+//set a variable that we can use for our src in html
+// we make the var = the name of our array[counter]
+var url = images[counter];
 
-
-
-
-$(document).ready(function() {
-
-  var n = -1
-  , imgs = $("#cf2 img")
-  , fx = function(i, el) {
-      return (el || imgs.eq(i)).fadeToggle(1000);
-    };
-
-  $("#cf_onclick, #cf2 img").click(function() {
-
-    if (n === (-imgs.length)) {
-      fx(n);
-      n = -1;
-      fx(null, imgs);
-    } else {
-      fx(n);
-      --n
-    };
-
+//fade out our current image, you can change the "slow"
+$( ".cf2" ).fadeOut("slow", function() {
+//set the src of the img in html to the array src
+  $(this).attr("src", url);
+  //Now make the image fade back in
+  $(this).fadeIn();
   });
 
+//reset our counter when we run out of items in our array
+if(counter > images.length - 1){
+  counter = 0;
+}
+})
+
+$('.question').click(function(e){
+        $('#description').fadeIn('slow');
+
 });
-console.log("hello world!");
+$(".question").click(function(){
+        $("#description").toggle();
+    });
+
+
 
 var myElement = document.getElementById("header");
 var mySecondElement = document.getElementById('description')
