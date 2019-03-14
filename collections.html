@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>My Collection</title>
+		<meta charset="utf-utf-8">
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="fadeincolor.css">
+<meta name="viewport" content="
+width=device-width, initial-scale=1">
+<script type="text/javascript">
+	//An array with all of the src's of our images
+var images = ["nypl.digitalcollections–Chordaria-flagelliformis-large_resized.jpg",
+"AnnaAtkins_Ptilotasericea_0002_1000px_900x.jpg",
+"AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x.jpg",
+"tumblr_n32kbbgihm1sagx63o7_1280.jpg"];
+	//a variable counter that we can change later
+var counter = 0;
+
+//Whenever we click our image do these things:
+$('.cf2').click(function(){
+	//add to our counter
+	counter++;
+
+	//set a variable that we can use for our src in html
+	// we make the var = the name of our array[counter]
+	var url = images[counter];
+
+	//fade out our current image, you can change the "slow"
+	$( ".cf2" ).fadeOut("slow", function() {
+	//set the src of the img in html to the array src
+    $(this).attr("src", url);
+    //Now make the image fade back in
+    $(this).fadeIn();
+  	});
+
+	//reset our counter when we run out of items in our array
+	if(counter > images.length - 1){
+		counter = 0;
+	}
+})
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bilbo|Open+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+<a href="#"><img src="H1118-L108085115.png" id="scroll" style="display: none;"><span></span></a></img>
+<div class="question">?</div>
+<div id="header">CYANOTYPE</div>
+<img class="sub" src="Untitled-3.svg"</img>
+
+<h2 id="description">Anna Atkins worked with a team of assistants from 1843 to 1853 to produce a beautiful monograph, Photographs of British Algae, using the cyanotype method invented by John Herschel in 1842. (You might know it as the technology that creates blueprints.) Atkins arranged pieces of seaweed and algae, using specimens she collected herself or received from other amateur scientists, on 10″-by-8″ paper that had been soaked in chemicals, then exposed them to light in order to create dark-blue images with white leaf-shaped reliefs. </h2>
+<img src="atkins-dictyojta.jpg" class="cf2"</img>
+<img src="1-1.jpg" id="vol1"></img>
+
+<img src="nypl.digitalcollections–Chordaria-flagelliformis-large_resized.jpg" id="cyano"</img>
+<img src="AnnaAtkins_Ptilotasericea_0002_1000px_900x.png" id="cyano2"</img>
+<img src="AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x (1).png" id="cyano6"</img>
+
+
+<img src="1489429990_blackflower.gif2.gif" id="Gif"></img>
+<img src="gifblue.gif" id="gifBlue"></img>
+
+<img src="atkins-dictyojta.jpg" id="cyano7"></img>
+<img src="Atkins-A-plumosa.jpg" id="cyano5"</img>
+<img src="karlblossfeldt04-1080x1412.png" id="Karlflower"</img>
+
+<img src="AnnaAtkins_Ceyloan_0002_1000px.png" id="cyano3"</img>
+<img src="Anna-Atkins-Cyanotype-impression-Conserva-Linum-1843-1853.jpg" id="cyano4"</img>
+<img src="Anna_Atkins_dPhotographs_of_British_Algae__Cyanotype_Impressions_1843_1853_RP-F-2016-133-00_-_uitsnede(5)[1].jpg" id="cyano8"></img>
+<img src="1_cvtfshXOMgTVQMa_QIPwQw.jpeg" id="cyano9"</img>
+<img src="atkins-ulva copy.jpg" id="cyano10"</img>
+
+
+<div class="moretext">"Some of the great mysteries of the natural world are things from the sea, and algae are accessible, beautiful, and various."
+<br></br>
+-Atkins</div>
+<img src="tumblr_na7iiuAfm61t3hbhyo1_500.gif" id="anotherGif"
+><img src="ezgif.com-gif-maker.gif" id="anotherGifBlue"></img>
+</img>
+<div class="blossfelttext">"Nature educates us into beauty and inwardness and is a source of the most noble pleasure."</div>
+<img src="atkins-papaver.jpg" id="cyano12"</img>
+<img src="rs-12712_1024x1024.jpg" id="cyano13"</img>
+
+<div id="blossfelttext2">"There are reasons why natural things are beautiful. The forms of nature, developed out of necessity are functional. And we find them beautiful precisely because... they are functional."</div>
+<img src="ceylon-anna-atkins-and-anne-dixon.jpg" id="cyano14"</img>
+
+	<br></br>
+	<br></br>
+	<br></br>
+</div>
+
+
+
+<h2 id="body2"></h2>
+
+<script type="text/javascript" src="fadeincolor.js"></script>
+
+
+
+</body>
+</html>
