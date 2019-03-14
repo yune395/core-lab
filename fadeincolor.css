@@ -91,10 +91,11 @@ background: radial-gradient(circle, #003BBA, #002B87);
     color: white;
     float: left;
     z-index: -100;
-    margin-top: -175%;
-    width: 36%;
-    left: 19%;
-    font-family: times;
+    margin-top: -251%;
+    width: 61%;
+    left: 24%;
+    font-family: 'Noto Serif SC', serif;
+    z-index: -100;
 }
 .blossfelttext{
   position: relative;
@@ -102,23 +103,23 @@ background: radial-gradient(circle, #003BBA, #002B87);
     color: white;
     float: left;
     z-index: -100;
-    margin-top: -114%;
-    width: 29%;
-    left: 16%;
-    font-family: times;
+    margin-top: -130%;
+    width: 31%;
+    left: 14%;
+    font-family: 'Noto Serif SC', serif;
 }
 #blossfelttext2{
   position: relative;
-    font-size: 5vw;
+    font-size: 3vw;
     color: white;
     float: left;
     /* z-index: 100; */
-    margin-top: 83%;
-    width: 68%;
-    left: 18%;
+    margin-top: 70%;
+    width: 62%;
+    left: 21%;
     filter: blur(3px);
     cursor: pointer;
-    font-family: times;
+    font-family: 'Noto Serif SC', serif;
     opacity: 1;
     transition: all 2s ease-in-out;
     }
@@ -211,7 +212,7 @@ position: relative;
 margin-left: 20%;
 max-width: 100%;
 height: auto;
-margin-top: 50%;
+margin-top: 20%;
 right: 9%;
 }
 
@@ -257,7 +258,7 @@ left: 8%;
 -webkit-filter: grayscale(100%) contrast(900%);
 -webkit-transition: all 4s ease-in-out;
 width: 65%;
-opacity: 0.6;
+opacity: 0.4;
 position: relative;
 margin-top: 35%;
 float: left;
@@ -355,31 +356,31 @@ right: 12%;
 
 #cyano12{
   filter: gray;
--webkit-filter: grayscale(100%) contrast(600%);
--webkit-transition: all 2s ease-in-out;
-position: relative;
-opacity: 0.4;
-width: 60%;
-top: 89%;
-margin-top: 46%;
-margin-top: 50%;
-left: 35.2%;
-float: left;
-z-index: 100;
+      -webkit-filter: grayscale(100%) contrast(600%);
+      -webkit-transition: all 2s ease-in-out;
+      position: relative;
+      opacity: 0.3;
+      width: 65%;
+      top: 89%;
+      margin-top: 46%;
+      margin-top: 50%;
+      left: 20%;
+      float: left;
+      z-index: 100;
 }
 
 #cyano13{
   filter: gray;
-      -webkit-filter: grayscale(100%) contrast(300%);
-      /* -webkit-transition: all 2s ease-in-out; */
-      position: relative;
-      opacity: 0.2;
-      width: 100%;
-      top: 89%;
-      margin-top: -89%;
-      left: 4%;
-      float: left;
-      width: 70%;
+    -webkit-filter: grayscale(100%) contrast(300%);
+    /* -webkit-transition: all 2s ease-in-out; */
+    position: relative;
+    opacity: 0.2;
+    width: 100%;
+    top: 89%;
+    margin-top: -108%;
+    left: 0%;
+    float: left;
+    width: 100%;
 }
 #cyano14{
   filter: gray;
@@ -389,10 +390,11 @@ z-index: 100;
     opacity: 0.2;
     width: 100%;
     top: 89%;
-    margin-top: -88%;
+    margin-top: -63%;
     float: left;
     width: 80%;
     z-index: -200;
+    left: 14%;
 }
 #gif{
   position: relative;
@@ -419,9 +421,9 @@ z-index: 100;
 #anotherGif{
   position: relative;
     width: 40%;
-    margin-top: 49%;
+    margin-top: -53%;
     z-index: -100;
-    left: 10.9%;
+    left: 8.9%;
     cursor: pointer;
     transition: 2s;
     /* float: right; */
@@ -431,10 +433,10 @@ z-index: 100;
 #anotherGifBlue{
   position: relative;
     width: 40%;
-    margin-top: -29.87%;
+    margin-top: -52.87%;
     index: 100;
-    left: -9.1%;
-    display: none;
+    left: -51.1%;
+    display: block;
     opacity: 0;
     transition: 2s;
     cursor: pointer;
