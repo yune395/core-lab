@@ -305,16 +305,16 @@ object-fit: cover;
 }
 #cyano8{
   -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01);
-    -webkit-transition: all 2s ease-in-out;
-    filter: none;
-    position: relative;
-    opacity: 1;
-    width: 40%;
-    top: 86%;
-    margin-top: 50%;
-    float: left;
-    left: 9%;
+-webkit-transform: scale(1.01);
+-webkit-transition: all 2s ease-in-out;
+filter: none;
+position: relative;
+opacity: 0.9;
+width: 40%;
+top: 86%;
+margin-top: 50%;
+float: left;
+left: 9%;
 }
 #cyano9{
   filter: gray;
