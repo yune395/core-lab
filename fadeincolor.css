@@ -16,12 +16,12 @@ html.highlighted {
 }
 
 #scroll {
-    position:fixed;
-    right:10px;
-    bottom:10px;
-    cursor:pointer;
-    display:none;
-    width: 4%;
+  position: fixed;
+  right: 2px;
+  bottom: 10px;
+  cursor: pointer;
+  display: none;
+  width: 7%;
 }
 #scroll:hover{
   opacity:1;filter:"alpha(opacity=100)";
@@ -112,8 +112,8 @@ background: radial-gradient(circle, #003BBA, #002B87);
     font-size: 5vw;
     color: white;
     float: left;
-    z-index: 100;
-    margin-top: 41%;
+    /* z-index: 100; */
+    margin-top: 75%;
     width: 68%;
     left: 18%;
     filter: blur(10px);
@@ -383,16 +383,16 @@ z-index: 100;
 }
 #cyano14{
   filter: gray;
-    -webkit-filter: grayscale(100%) contrast(300%);
-    -webkit-transition: all 2s ease-in-out;
-    position: relative;
-    opacity: 0.2;
-    width: 100%;
-    top: 89%;
-    margin-top: -50%;
-    left: 3%;
-    float: left;
-    width: 80%;
+-webkit-filter: grayscale(100%) contrast(300%);
+-webkit-transition: all 2s ease-in-out;
+position: relative;
+opacity: 0.2;
+width: 100%;
+top: 89%;
+margin-top: -84%;
+float: left;
+width: 100%;
+    z-index: -200;
   }
 #gif{
   position: relative;
@@ -538,7 +538,7 @@ z-index: 100;
     cursor: pointer;
     vertical-align: bottom;
     margin-top: 10%;
-    -webkit-animation: blur 1s;
+    -webkit-animation: blur 1.2s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
