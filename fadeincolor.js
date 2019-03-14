@@ -67,8 +67,9 @@ $(window).on("load",function() {
 
 
 
-var images = ["AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x.jpg", "AnnaAtkins_Ptilotasericea_0002_1000px_900x.jpg",
-"tumblr_n32kbbgihm1sagx63o7_1280.jpg","AnnaAtkins_Ceyloan_0002_1000px.png"];
+var images = ["AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x.jpg", "AnnaAtkins_Ptilotasericea_0002_1000px_900x.png",
+"tumblr_n32kbbgihm1sagx63o7_1280.jpg","AnnaAtkins_Ceyloan_0002_1000px.png","ceylon-anna-atkins-and-anne-dixon.jpg","1_cvtfshXOMgTVQMa_QIPwQw.jpeg","rs-12712_1024x1024.jpg","atkins-papaver.jpg","atkins-ulva copy.jpg","Anna_Atkins_dPhotographs_of_British_Algae__Cyanotype_Impressions_1843_1853_RP-F-2016-133-00_-_uitsnede(5)[1].jpg",
+"Anna-Atkins-Cyanotype-impression-Conserva-Linum-1843-1853.jpg","Atkins-A-plumosa.jpg","atkins-dictyojta.jpg"];
 //a variable counter that we can change later
 var counter = 0;
 
@@ -88,12 +89,11 @@ $( ".cf2" ).fadeOut("slow", function() {
   //Now make the image fade back in
   $(this).fadeIn();
   });
-
 //reset our counter when we run out of items in our array
 if(counter > images.length - 1){
   counter = 0;
 }
-})
+});
 
 $('.question').click(function(e){
         $('#description').fadeIn('slow');

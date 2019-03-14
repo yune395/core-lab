@@ -263,7 +263,7 @@ position: relative;
 margin-top: 35%;
 float: left;
 transition-duration: infinite;
-left: 19%;
+left: 18%;
 object-fit: cover;
 transform: rotate(-90deg);
 }
@@ -314,7 +314,7 @@ width: 40%;
 top: 86%;
 margin-top: 50%;
 float: left;
-left: 9%;
+left: 8%;
 }
 #cyano9{
   filter: gray;
@@ -423,7 +423,7 @@ right: 12%;
     width: 40%;
     margin-top: -53%;
     z-index: -100;
-    left: 8.9%;
+    left: 7.9%;
     cursor: pointer;
     transition: 2s;
     /* float: right; */
@@ -432,17 +432,17 @@ right: 12%;
 
 #anotherGifBlue{
   position: relative;
-    width: 40%;
-    margin-top: -52.87%;
-    index: 100;
-    left: -51.1%;
-    display: block;
-    opacity: 0;
-    transition: 2s;
-    cursor: pointer;
-    display: inline-block;
-    display: inline-block;
-    float: right;
+width: 40%;
+margin-top: -52.99%;
+index: 100;
+left: -52.13%;
+display: block;
+opacity: 0;
+transition: 2s;
+cursor: pointer;
+display: inline-block;
+display: inline-block;
+float: right;
 }
 
 
