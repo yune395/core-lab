@@ -394,6 +394,7 @@ float: left;
 width: 80%;
     z-index:-200;
     left: -5%;
+    display: none;
   }
 #gif{
   position: relative;
