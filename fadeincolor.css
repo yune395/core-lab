@@ -66,16 +66,16 @@ background: radial-gradient(circle, #003BBA, #002B87);
 }
 #vol1{
   position: relative;
-width: 50%;
-box-sizing: border-box;
-left: 27%;
-filter: gray;
--webkit-filter: grayscale(100%) contrast(600%);
--webkit-transition: all 3s ease-in-out;
-margin-top: 170%;
-vertical-align: baseline;
-float: left;
-text-align: -webkit-center;
+      width: 50%;
+      box-sizing: border-box;
+      left: 25%;
+      filter: gray;
+      -webkit-filter: grayscale(100%) contrast(600%);
+      -webkit-transition: all 3s ease-in-out;
+      margin-top: 100%;
+      vertical-align: baseline;
+      float: left;
+      /* text-align: -webkit-center; */
   }
 
 
@@ -211,7 +211,7 @@ position: relative;
 margin-left: 20%;
 max-width: 100%;
 height: auto;
-margin-top: 77%;
+margin-top: 50%;
 right: 9%;
 }
 
@@ -551,20 +551,20 @@ z-index: 100;
 
 #description{
   color: white;
-    position: relative;
-    font-size: 2vw;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    display: none;
-    webkit-transition: all .2s ease-in-out;
-    width: 93%;
-    left: -24.2vw;
-    text-align: -webkit-auto;
-    margin-top: 6%;
-    -webkit-animation: blur 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+position: relative;
+font-size: 3vw;
+font-family: 'Open Sans', sans-serif;
+font-weight: 100;
+display: none;
+webkit-transition: all .2s ease-in-out;
+width: 88%;
+left: -24.2vw;
+text-align: -webkit-auto;
+margin-top: 20%;
+-webkit-animation: blur 1s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in;
     }
 
     @keyframes blur {

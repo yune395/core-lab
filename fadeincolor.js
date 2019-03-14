@@ -67,10 +67,8 @@ $(window).on("load",function() {
 
 
 
-var images = ["nypl.digitalcollections–Chordaria-flagelliformis-large_resized.jpg",
-"AnnaAtkins_Ptilotasericea_0002_1000px_900x.jpg",
-"AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x.jpg",
-"tumblr_n32kbbgihm1sagx63o7_1280.jpg"];
+var images = ["AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x.jpg", "AnnaAtkins_Ptilotasericea_0002_1000px_900x.jpg",
+"tumblr_n32kbbgihm1sagx63o7_1280.jpg","AnnaAtkins_Ceyloan_0002_1000px.png"];
 //a variable counter that we can change later
 var counter = 0;
 
@@ -160,7 +158,6 @@ function displaySecondGif(){
 var toggle = function(){
   document.body.classList.toggle("switch")
 }
-
 
 myElement.onclick = displayImage
 myGif.onclick = displaySecondImage;
