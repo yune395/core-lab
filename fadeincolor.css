@@ -112,8 +112,8 @@ background: radial-gradient(circle, #003BBA, #002B87);
     font-size: 5vw;
     color: white;
     float: left;
-    z-index: 200;
-    margin-top: 75%;
+    /* z-index: 100; */
+    margin-top: 90%;
     width: 68%;
     left: 18%;
     filter: blur(3px);
@@ -126,7 +126,7 @@ background: radial-gradient(circle, #003BBA, #002B87);
   #blossfelttext2:hover{
     filter:none;
     opacity: 1;
-    -webkit-transition: 2s all ease-in-out;
+    transition: 2s all ease-in-out;
   }
 .switch{
 background-color: blue;
@@ -383,18 +383,17 @@ z-index: 100;
 }
 #cyano14{
   filter: gray;
--webkit-filter: grayscale(100%) contrast(300%);
--webkit-transition: all 2s ease-in-out;
-position: relative;
-opacity: 0.2;
-width: 100%;
-top: 89%;
-margin-top: -84%;
-float: left;
-width: 80%;
-    z-index:-200;
-    left: -5%;
-    display: none;
+    -webkit-filter: grayscale(100%) contrast(300%);
+    -webkit-transition: all 2s ease-in-out;
+    position: relative;
+    opacity: 0.2;
+    width: 100%;
+    top: 89%;
+    margin-top: -97%;
+    float: left;
+    width: 100%;
+    z-index: -200;
+}
   }
 #gif{
   position: relative;
