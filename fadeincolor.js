@@ -1,3 +1,72 @@
+$(window).on("load",function() {
+    function fade() {
+        var animation_height = $(window).innerHeight() * 0.25;
+        var ratio = Math.round( (1 / animation_height) * 10000 ) / 10000;
+
+        $('#vol1, #cyano2, #cyano6,').each(function() {
+
+            var objectTop = $(this).offset().top;
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+            if ( objectTop < windowBottom ) {
+                if ( objectTop < windowBottom - animation_height ) {
+                    $(this).html( 'fully visible' );
+                    $(this).css( {
+                        transition: 'opacity 2s linear',
+                        opacity: 1
+                    } );
+
+                } else {
+                    $(this).html( 'fading in/out' );
+                    $(this).css( {
+                        transition: 'opacity 2s linear',
+                        opacity: (windowBottom - objectTop) * ratio
+                    } );
+                }
+            } else {
+                $(this).html( 'not visible' );
+                $(this).css( 'opacity', 0 );
+            }
+        });
+      }
+      $('.fade').css( 'opacity', 0 );
+      fade();
+      $(window).scroll(function() {fade();});
+  });
+
+
+
+
+  $(document).ready(function(){
+      $(window).scroll(function(){
+          if ($(this).scrollTop() > 100) {
+              $('#scroll').fadeIn('slow');
+          } else {
+              $('#scroll').fadeOut('slow');
+          }
+      });
+      $('#scroll').click(function(){
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+      });
+  });
+
+  $("#blossfelttext2").blur(function(){
+  //we add the css class blur to the elements that we would like to blur on focus
+      $("#blossfelttext2").addClass("blur");
+
+  }).blur(function(){
+  //we remove the blur class which will remove the blur from the elements specified when we are no longer focused on an input
+      $("#blossfelttext2").removeClass("blur");
+      $("#blossfelttext2").removeClass("blur");
+  });
+
+
+
+
+
+
+
 var images = ["nypl.digitalcollections–Chordaria-flagelliformis-large_resized.jpg",
 "AnnaAtkins_Ptilotasericea_0002_1000px_900x.jpg",
 "AnnaAtkins_ChylocladiaClavellosa_0002_1000px_900x.jpg",
@@ -30,12 +99,11 @@ if(counter > images.length - 1){
 
 $('.question').click(function(e){
         $('#description').fadeIn('slow');
-
 });
-$(".question").click(function(){
-        $("#description").toggle();
-    });
 
+$('#cyano14').click(function(e){
+$('#blossfelttext2').fadeIn('slow');
+});
 
 
 var myElement = document.getElementById("header");
@@ -43,7 +111,12 @@ var mySecondElement = document.getElementById('description')
 var myThirdElement = document.getElementById("cyano")
 var myGif = document.getElementById("anotherGif")
 var anotherGifBlue = document.getElementById("anotherGifBlue")
+var gifBlue = document.getElementById("gifBlue")
+var Gif = document.getElementById("Gif")
+var blossfelttext2 = document.getElementById("#blossfelttext2")
+var cyano14=document.getElementById("cyano14")
 console.log(myElement);
+
 
 var i = 0;
 function displayImage() {
@@ -59,7 +132,7 @@ var i=1;
 function displaySecondImage(){
   if (i == 1) {
     i--;
-    $('#anotherGifBlue').css('display',"block")
+    $('#anotherGifBlue').css('display',"block");
     $('#anotherGifBlue').fadeIn('slow');
     $('#anotherGifBlue').css('opacity',"1");
   }else{
@@ -69,20 +142,30 @@ function displaySecondImage(){
   }
 }
 
+var i=1;
+function displaySecondGif(){
+  if (i == 1) {
+    i--;
+    $('#gifBlue').css('display',"block");
+    $('#gifBlue').fadeIn('slow');
+    $('#gifBlue').css('opacity',"1");
+  }else{
+    i++;
+    $('#gifBlue').fadeIn('slow');
+    $('#gifBlue').css('opacity',"0");
+  }
+}
+
 
 var toggle = function(){
   document.body.classList.toggle("switch")
 }
 
-var Gif = document.getElementById("gif");
-var playGif = function(){
-  // Gif.classList.toggle("pause");
-  Gif.src="1489429990_blackflower.gif2.gif";
-  if(Gif.src == "1489429990_blackflower.gif2.gif"){
-    Gif.src="flower.png";
-  }
-}
+
 myElement.onclick = displayImage
 myGif.onclick = displaySecondImage;
-anotherGifBlue.onclick = displaySecondImage;
-Gif.onclick = playGif;
+anotherGifBlue.onclick = displaySecondImage
+
+Gif.onclick = displaySecondGif;
+gifBlue.onclick= displaySecondGif;
+cyano14.onclick= startAnimation;
