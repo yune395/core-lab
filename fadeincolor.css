@@ -116,7 +116,7 @@ background: radial-gradient(circle, #003BBA, #002B87);
     margin-top: 75%;
     width: 68%;
     left: 18%;
-    filter: blur(10px);
+    filter: blur(3px);
     cursor: pointer;
     font-family: times;
     opacity: 1;
