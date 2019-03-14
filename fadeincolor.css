@@ -113,7 +113,7 @@ background: radial-gradient(circle, #003BBA, #002B87);
     color: white;
     float: left;
     /* z-index: 100; */
-    margin-top: 90%;
+    margin-top: 83%;
     width: 68%;
     left: 18%;
     filter: blur(3px);
@@ -389,9 +389,9 @@ z-index: 100;
     opacity: 0.2;
     width: 100%;
     top: 89%;
-    margin-top: -97%;
+    margin-top: -88%;
     float: left;
-    width: 100%;
+    width: 80%;
     z-index: -200;
 }
   }
