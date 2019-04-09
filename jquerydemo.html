@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Jquery Demo</title>
+
+  <style type-"text/css">
+
+  #second_div{
+    transition: background-color: 1.5s;
+  }
+  .mysquare{
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+  </style>
+</head>
+
+
+<body>
+  <div class="myelements mydivs" id="second_div">hellojquery</div>
+
+  <div class"myelements mydivs" id="first_div">hello jquery</div>
+
+  <h1 class="myelements">this is jquery</h1>
+  <div class="mysquare"></div>
+  <div class="mysquare"></div>
+  <div class="mysquare"></div>
+  <div class="mysquare"></div>
+  <div class="mysquare"></div>
+  <div class="mysquare"></div>
+  <div class="mysquare"></div>
+  <div class="mysquare"></div>
+
+
+
+  <script type= "text/javascript" src= "jquery.min.js"></script>
+  <script type = "text/javascript">
+
+//first step: makes sure the window is  ready to be used
+//can use 'document' instead of 'window'
+    $(document).ready(function(){
+
+
+        //passing a string into jquery using ""
+        //can use ids, classes, call divs, h1s
+        var myFirstDiv= $("#first_div, h1");
+
+        var myContent = myFirstDiv.html();
+
+        var myCss = {"background-color" : "red",
+        "font-size" : "300px"};
+
+        myFirstDiv.css(myCss);
+
+
+        $("#second_div").css({"background-color" : "green"}).animate({
+          opacity : "0.5",
+          fontSize : "40px"
+        },
+        1500,
+        function(){
+
+        })
+        console.log($(".myelements"))
+        $(".myelements").css({"font-family" : "helvetica"})
+
+        var rotation = 0;
+
+        $(".mysquare").each(function(){
+
+          $(this).css({"transform": "rotate(" + rotation + "deg)"
+        })
+
+        $(this).html($(this).index())
+        rotation = rotation + 30;
+
+        })
+
+        $(".mysquare").click(function(){
+          $(this).css({"background-color" : "blue"})
+
+          $(this).animate({
+            width: "100px"
+          },1000)
+        })
+
+        $(window).scroll(function()){
+          console.log($(this).scrollTop(),
+                      $("html").outerHeight() - $(window).innerHeight())
+        }
+
+
+
+
+
+
+
+    })
+</script>
+<body>
+</html>

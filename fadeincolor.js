@@ -35,8 +35,6 @@ $(window).on("load",function() {
   });
 
 
-
-
   $(document).ready(function(){
       $(window).scroll(function(){
           if ($(this).scrollTop() > 100) {
