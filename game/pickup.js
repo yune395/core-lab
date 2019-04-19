@@ -26,7 +26,7 @@ $('.profile1').click(function(e){
         $('#div').fadeIn('slow');
 
 });
-/*$('#dislikebutton').click(function(e){
+$('#dislikebutton').click(function(e){
         $('.alex').hide('none');
         $('.alexbio').hide('none');
         $('#container').hide('none');
@@ -38,9 +38,9 @@ $('#dislikebutton').click(function(e){
   $('#container2').hide('none');
   $('#container3').fadeIn('slow');
 
-});*/
+});
 
-var dislike = document.getElementById("#dislikebutton");
+/*var dislike = document.getElementById("#dislikebutton");
 var container = document.getElementById("#container");
 var container1 = document.getElementById("#container1");
 var container2 = document.getElementById("#container2");
