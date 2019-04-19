@@ -1,0 +1,200 @@
+<html>
+	<head>
+		<title></title>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="pickup.css">
+<link rel="stylesheet" type="text/css">
+<style type="text/css">
+    body {
+      font-family: helvetica, arial, sans-serif;
+      background: #333;
+      background: linear-gradient(#333,#666);
+      color: #ccc;
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+    header, section, footer {
+      display: block;
+      padding: 0.5em 1em;
+    }
+    header, footer {
+      background: #000;
+      background: linear-gradient(#111,#000);
+    }
+    a {color: lime;}
+    h1, h2 {
+      color: #f8f8f8;
+      font-size: 24px;
+      font-weight: normal;
+    }
+    h2 {font-size: 20px;}
+    .floaty .cardcontainer {
+      float: left;
+    }
+    h2 {clear: both;}
+    footer, header, section {
+      display: block;
+    }
+    footer {
+      font-size: 10px;
+      text-align: right;
+      padding: 3em 0.5em 1em 0.5em;
+    }
+    .nobutton:hover .yes {
+      -webkit-animation: yay 0.7s ease-out;
+      animation: yay 0.7s ease-out;
+    }
+    .nobutton:hover .nope {
+      -webkit-animation: nope 0.7s ease-out;
+      animation: nope 0.7s ease-out;
+    }
+    .card {
+      background: powderblue;
+      color: #000;
+    }
+    .list ul.cardlist {
+      padding-bottom: 10px;
+    }
+    .card {
+  font-size: 14px;
+  line-height: 200px;
+  text-align:center;
+  width: 150px;
+  height: 200px;
+  display: block;
+  background: #666;
+  -webkit-transform-origin: 50% 99%;
+  transform-origin: 50% 99%;
+}
+.cardcontainer {
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+/* List functionality */
+.list .cardlist {
+  margin: 0;
+  padding: 0;
+}
+.tinderesque .list .card {
+  display: none;
+}
+.tinderesque .list .current {
+  display: block;
+}
+
+/* Button designs */
+
+.but-nope, .but-yay, .nopes, .yays {
+  display: none;
+}
+
+.tinderesque .but-nope, .tinderesque .but-yay,
+.tinderesque .nopes, .tinderesque .yays {
+  display: inline-block;
+}
+
+.cardcontainer button {
+  background: #0c0;
+  border: none;
+  color: #fff;
+  border-radius: 50% 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 .5em;
+  display: inline-block;
+}
+.cardcontainer button:focus {
+  outline: 0;
+  background: #0f0;
+}
+.cardcontainer .but-nope {
+  background: #c00;
+}
+.cardcontainer .but-nope:focus {
+  outline: 0;
+  background: #f00;
+}
+
+.tinderesque .cardcontainer.yes .card {
+  -webkit-animation: yay 0.7s ease-out;
+  animation: yay 0.7s ease-out;
+}
+.tinderesque .cardcontainer.nope .card {
+  -webkit-animation: nope 0.7s ease-out;
+  animation: nope 0.7s ease-out;
+}
+
+
+/*
+  Animations, isn't it 'fun' to repeat all of that, just for Safari? :)
+*/
+
+@keyframes yay {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes yay {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@keyframes nope {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(-40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes nope {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(-40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+  </style>
+</head>
+<body>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<div class="cardcontainer list">
+      <ul class="cardlist">
+        <li class="card current">#1</li>
+        <li class="card">#2</li>
+        <li class="card">#3</li>
+        <li class="card">#4</li>
+        <li class="card">#5</li>
+        <li class="card">#6</li>
+      </ul>
+      <span class="nopes">0</span>
+      <button class="but-nope">X</button>
+      <button class="but-yay">✔</button>
+      <span class="yays">0</span>
+    </div>
+<script type="text/javascript" src="tinderswipe.js"></script>
+  </body>
+  </html>
