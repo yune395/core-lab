@@ -340,7 +340,6 @@ display: none;
     margin-bottom: calc(-.25 * var(--gutter));
 }
 
-
 .scrolling-wrapper:before,
 .scrolling-wrapper:after {
   content: '';
