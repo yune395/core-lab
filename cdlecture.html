@@ -92,7 +92,7 @@
 
 #mouth{
   width: 26%;
-    -webkit-animation: mouthrotation ease-in 1s infinite;
+    -webkit-animation: mouthrotation 1s infinite;
     margin-top: 75%;
     margin-top: 20%;
     float: left;
@@ -103,8 +103,8 @@
     transform: rotate(-32deg);
     margin-left: 51%;
     margin-top: -16%;
-    /* -webkit-animation: move 2s infinite; */
     z-index: -100;
+
 }
 #mouth2{
   width: 24%;
@@ -112,15 +112,26 @@
     margin-top: -43%;
     z-index: -100;
 }
+
 @-webkit-keyframes mouthrotation {
 		0% {
 				-webkit-transform: rotate(0deg);
 		}
-		10% {
+    2% {
 				-webkit-transform: rotate(10deg);
+		}
+		10% {
+				-webkit-transform: rotate(20deg);
+		}
+    50% {
+				-webkit-transform: rotate(10deg);
+		}
+    100% {
+				-webkit-transform: rotate(0deg);
 		}
 
 }
+
 
 </style>
 
