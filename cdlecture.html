@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title></title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css">
+<style>
+
+.example1 {
+ height: 200px;
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ font-size: 2em;
+ color: black;
+ font-family: helvetica;
+ position: absolute;
+ width: 100%;
+ height: 9%;
+ margin: 1%;
+ line-height: 20px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ -moz-animation: example1 1s linear infinite;
+ -webkit-animation: example1 1s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   {
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);
+ }
+ 100% {
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%);
+ }
+}
+#title{
+  width: 100%;
+    margin-top: -53%;
+    z-index: 100;
+}
+#gif{
+  width: 50%;
+}
+#loading{
+  width: 43%;
+    margin-top: 21%;
+    /* float: right; */
+    z-index: -100;
+    margin-left: 4%;
+    margin-left: 1%;
+    margin-top: -33%;
+    margin-top: -45%;
+}
+#loading {
+		-webkit-animation: rotation 15s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+@-webkit-keyframes move {
+		from {
+				margin-top: -51%;
+		}
+		to {
+				margin-top: -52%;
+		}
+}
+
+#mouth{
+  width: 26%;
+    -webkit-animation: mouthrotation ease-in 1s infinite;
+    margin-top: 75%;
+    margin-top: 20%;
+    float: left;
+    margin-left: 9%;
+}
+#mouth1{
+  width: 30%;
+    transform: rotate(-32deg);
+    margin-left: 51%;
+    margin-top: -16%;
+    /* -webkit-animation: move 2s infinite; */
+    z-index: -100;
+}
+#mouth2{
+  width: 24%;
+    margin-left: 77%;
+    margin-top: -43%;
+    z-index: -100;
+}
+@-webkit-keyframes mouthrotation {
+		0% {
+				-webkit-transform: rotate(0deg);
+		}
+		10% {
+				-webkit-transform: rotate(10deg);
+		}
+
+}
+
+</style>
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<div class="example1">
+<h3>CD LECTURE 2019 </h3>
+</div>
+<img id="mouth" src="teeth-mouth-transparent-png-3.png"/img>
+<img src="tracymagif.gif" id="title"/img>
+<img id="mouth1"src="mouth_smile_PNG17.png"/img>
+<img id="mouth2"src="mouth_smile_PNG4.png"/img>
+<img id="loading" src="time.png"/img>
+
+
+
+
+
+
+
+<script type="text/javascript" src="cdlecture.js"></script>
+  </body>
+  </html>

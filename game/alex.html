@@ -1,0 +1,289 @@
+<html>
+	<head>
+		<title></title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="pickup.css">
+<link rel="stylesheet" type="text/css">
+<style>
+
+#body{
+  background-color: black;
+      position: relative;
+      width: 100%;
+    place-items: center;
+}
+#like{
+  width: 18%;
+    margin-left: 4%;
+    display: inline-block;
+    margin-top: 3%;
+}
+#dislikebutton{
+  width: 18%;
+    /* margin-left: 0%; */
+    display: inline-block;
+    float: right;
+    margin-right: 2%;
+    margin-top: 3%;
+}
+
+#container{
+height: 34%;
+width: 88%;
+background-color: white;
+position: relative;
+margin-left: 6%;
+margin-top: 8%;
+}
+.alex{
+  color: black;
+    font-family: 'Work Sans', sans-serif;
+    /* z-index: 100; */
+    padding: 4%;
+    font-size: 9vw;
+    margin: 0;
+    max-height:80%;
+}
+.alexbio{
+  color: black;
+    font-family: 'Work Sans', sans-serif;
+    /* z-index: 100; */
+    padding: 9%;
+    padding: 5%;
+    font-size: 5vw;
+    max-width:80%;
+    max-height:500px;
+    /* margin: 0; */
+}
+#container2{
+height: 34%;
+width: 88%;
+background-color: white;
+position: relative;
+margin-left: 6%;
+margin-top: 26%;
+display: none;
+}
+
+.bobbie{
+  color: black;
+    font-family: 'Work Sans', sans-serif;
+    /* z-index: 100; */
+    padding: 4%;
+    font-size: 9vw;
+    margin: 0;
+    display: none;
+
+}
+.bobbiebio{
+  color: black;
+    font-family: 'Work Sans', sans-serif;
+    /* z-index: 100; */
+    padding: 9%;
+    padding: 5%;
+    font-size: 5vw;
+    display: none;
+    /* margin: 0; */
+}
+#container3{
+  height: 34%;
+  width: 88%;
+  background-color: white;
+  position: relative;
+  margin-left: 6%;
+  margin-top: 26%;
+  display: none;
+}
+.ari{
+  color: black;
+    font-family: 'Work Sans', sans-serif;
+    /* z-index: 100; */
+    padding: 4%;
+    font-size: 9vw;
+    margin: 0;
+    display: none;
+
+}
+.aribio{
+  color: black;
+    font-family: 'Work Sans', sans-serif;
+    /* z-index: 100; */
+    padding: 9%;
+    padding: 5%;
+    font-size: 5vw;
+    display: none;
+  /* margin: 0; */}
+
+  /*#answer1 {
+    height: 14%;
+    width: 93%;
+    background-color: black;
+    outline-style: solid;
+    border: 2px solid white;
+    position: relative;
+    margin-top: 109%;
+    margin-left: 3%;
+    max-width: 250%;
+    box-sizing: border-box;
+  }*/
+
+  #answer1text {
+    color: white;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 5%;
+    text-align: -webkit-center;
+    text-decoration: none;
+    padding: 5%;
+    border: 3px solid white;
+    display: inline-block;
+    /* max-width: 20%; */
+    height: 13%;
+    padding: 21px;
+    box-sizing: border-box;
+    width: 93%;
+    margin-left: 3%;
+    overflow: hidden;
+  }
+  #answer1text:hover, #answer2:hover{
+    border: 3px solid pink;
+  }
+
+#answer2 {
+height: 8%;
+width: 93%;
+background-color: black;
+outline-style: solid;
+border: 2px solid white;
+position: relative;
+margin-top: 4%;
+margin-left: 3%;
+box-sizing: border-box;
+}
+
+  #answer2text {
+      color: white;
+      font-size: 5vw;
+      font-family: 'Work Sans', sans-serif;
+      margin-top: 5%;
+      text-align: -webkit-center;
+      text-decoration: none;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+
+  #answer3 {
+    height: 11%;
+      width: 93%;
+      background-color: black;
+      outline-style: solid;
+      border: 2px solid white;
+      position: relative;
+      margin-top: 4%;
+      margin-left: 3%;
+      box-sizing: border-box;
+  }
+
+  #answer3text {
+    color: white;
+      font-size: 5vw;
+      font-family: 'Work Sans', sans-serif;
+      margin-top: 5%;
+      text-align: -webkit-center;
+      box-sizing: border-box;
+      position: fixed;
+  }
+#answer1,
+#answer1text,
+#answer2,
+#answer2text,
+#answer3,
+#answer3text{
+color: pink;
+}
+
+#head{
+  color: white;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+#notification {
+  position: fixed;
+    top: 58px;
+    width: 95%;
+    z-index: 105;
+    text-align: center;
+    font-weight: normal;
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin-top: 37%;
+    height: 16%;
+    border: 2px solid white;
+    font-family: helvetica;
+    font-style: italic;
+    padding-top: 13%;
+}
+#notification span.dismiss {
+    border:2px solid #FFF;
+    padding:0 5px;
+    cursor:pointer;
+    float:right;
+    margin-right:10px;
+}
+#notification a {
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+</style>
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<body id="body">
+<div id="container"
+><h1 class="alex">Alex, 23
+</h1><p class="alexbio">Live. Love. Jesus.
+Looking for someone with the same passion for JC as I do!</p>
+</div>
+
+<div id="container2">
+><h1 class="bobbie">Bobbie, 26
+</h1><p class="bobbiebio" >Graphic Designer!
+I can code your website only if we get coffee sometime lol.
+</p>
+</div>
+<div id="container3"
+><h1 class="bobbie">Ari, 21
+</h1><p class="bobbiebio">If you’re not just as obsessed with Game of Thrones as I am, we can’t be friends..
+</p>
+</div>
+
+<div id="answer1"
+><a href="match.html" id="answer1text">Are you an angel because my world suddenly became brighter and lighter?</a>
+</div>
+<div id="answer2">
+<div id="answer2text">All I want for Channukah is you.</div>
+</div>
+<div id="answer3"
+><div id="answer3text">Even if there wasn't gravity on earth, I'd still fall for you.</div>
+</div>
+
+<div id="notification" style="display: none;">
+  <span class="dismiss"><a title="dismiss this notification">X</a></span>
+</div>
+
+
+
+<script type="text/javascript" src="pickup.js"></script>
+  </body>
+  </html>
