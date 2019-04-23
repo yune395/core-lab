@@ -47,12 +47,19 @@ $('#keepswiping').click(function(){
 });
 
 $('#answer2').click(function(){
-   window.location.href='match.html';
+   window.location.href='nomatch.html';
    $('#answer2').delay(5000);
 });
-$('#answer1text').click(function(){
-   window.location.href='match.html';
+
+$('#kaden2').click(function(){
+   window.location.href='nomatch.html';
+   $('#answer2').delay(5000);
 });
+
+
+/*$('#answer1text').click(function(){
+   window.location.href='match.html';
+});*/
 /*$('#like').click(function(e){
   $('#answer1,#answer1text, #answer2, #answer2text, #answer3, #answer3text').fadeIn('slow');
 });*/
@@ -65,11 +72,13 @@ $('#option1').click(function(e){
 $('#like2').click(function(e){
   $('#option1,#option1text, #option2, #option2text, #option3, #option3text').fadeIn('slow');
 });
+
 $('#option2').click(function(){
    window.location.href='match.html';
 });
+
 $('#option3').click(function(){
-   window.location.href='match.html';
+   window.location.href='nomatch.html';
 });
 
 //like page for alex//
@@ -80,9 +89,20 @@ $('#like1').click(function(){
    window.location.href='bobbie.html';
 });
 
-$("#notification").fadeIn("slow").append('Say something sweet!');
-$(".dismiss").click(function(){
-       $("#notification").fadeOut("slow");
+//alex match alert
+
+$("#answer1text").click(function(){
+  $("#notification").fadeIn("slow");
+});
+$("#notification").click(function(){
+$("#notification").fadeOut("slow");
+ window.location.href='gamepage1practice.html';
+});
+
+//kaden
+$("#kaden3text").click(function(){
+  $("#notificationkaden").fadeIn("slow");
+  $(".dismiss").fadeIn("slow");
 });
 
 
