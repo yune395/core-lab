@@ -16,13 +16,13 @@ ul {
 #title{
   color: white;
   font-family: 'Work Sans', sans-serif;
-  font-size: 20vw;
+  font-size: 15vw;
   width: 100%;
  -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
   text-align: -webkit-center;
-  margin-top: 55%;
+  margin-top: 10%;
 }
 
 #title101 {
@@ -37,13 +37,11 @@ ul {
 }
 
 #intropageclick{
-  display: block;
-  /* display: inline; */
   width: 40%;
     float: right;
     margin-top: 21%;
     margin-right: 29%;
-
+    display: none;
 }
 @-webkit-keyframes glow {
   from {
@@ -88,7 +86,7 @@ ul {
     font-size: 4vw;
     font-family: 'Work Sans', sans-serif;
     display:none;
-    margin-top: 37%;
+    margin-top: 10%;
     width: 80%;
     margin-left: 10%;
     position: absolute;
@@ -388,4 +386,21 @@ display: none;
   border-bottom: 60px solid transparent;
 
   border-left: 60px solid green;
+}
+#begin{
+  color: white;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 35%;
+    margin-top: 20%;
+    text-align: -webkit-center;
+    text-decoration: none;
+    border: 2px solid white;
+    width: 30%;
+    padding-bottom: 1%;
+
+}
+#begin:hover{
+  background-color: white;
+  color: black;
 }
