@@ -104,6 +104,7 @@
     margin-left: 51%;
     margin-top: -16%;
     z-index: -100;
+		animation-play-state: running;
 
 }
 #mouth2{
@@ -111,6 +112,8 @@
     margin-left: 77%;
     margin-top: -43%;
     z-index: -100;
+		-webkit-animation: infinite mouthrotation2 3s ease-in;
+
 }
 
 @-webkit-keyframes mouthrotation {
@@ -130,6 +133,20 @@
 				-webkit-transform: rotate(0deg);
 		}
 
+}
+@-webkit-keyframes mouthrotation2 {
+		0% {
+				-webkit-transform: rotate(0deg);
+		}
+    100% {
+				-webkit-transform: rotate(360deg);
+		}
+
+}
+@media only screen and (max-width: 450px) {
+	#tracymagif {
+		width: 200%;
+	}
 }
 
 

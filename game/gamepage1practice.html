@@ -3,6 +3,8 @@
 		<title></title>
 </head>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="pickup.css">
 <link rel="stylesheet" type="text/css">
 <style>
@@ -119,20 +121,23 @@ display: none;
     width: 93%;
     background-color: black;
     outline-style: solid;
-    border: 2px solid white;
     position: relative;
     margin-top: 10%;
     margin-left: 3%;
   }
 
   #answer1text {
+    height: 67%;
     color: white;
-        font-size: 5vw;
-        font-family: 'Work Sans', sans-serif;
-        margin-top: 5%;
-        text-align: -webkit-center;
-        text-decoration: none;
-        padding: 5%;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 5%;
+    text-align: -webkit-center;
+    text-decoration: none;
+    padding: 2%;
+    border: 2px solid white;
+    overflow: hidden;
+
   }
 
 #answer2 {
@@ -140,22 +145,29 @@ height: 8%;
 width: 93%;
 background-color: black;
 outline-style: solid;
-border: 2px solid white;
 position: relative;
 margin-top: 4%;
 margin-left: 3%;
 }
 
   #answer2text {
+
+    height: 8%;
+    width: auto;
       color: white;
       font-size: 5vw;
       font-family: 'Work Sans', sans-serif;
       margin-top: 5%;
       text-align: -webkit-center;
       text-decoration: none;
+      border: 2px solid white;
+      padding: 3%;
   }
-
-  #answer3 {
+  #answer1text:hover,#answer2text:hover,#answer3text:hover{
+    background-color: white;
+    color: black;
+  }
+  /* #answer3 {
     height: 11%;
       width: 93%;
       background-color: black;
@@ -164,14 +176,19 @@ margin-left: 3%;
       position: relative;
       margin-top: 4%;
       margin-left: 3%;
-  }
+  } */
 
   #answer3text {
     color: white;
+    height: 8%;
+    width: auto;
       font-size: 5vw;
       font-family: 'Work Sans', sans-serif;
       margin-top: 5%;
       text-align: -webkit-center;
+      border: 2px solid white;
+      padding: 3%;
+
   }
 
 #answers {
@@ -184,7 +201,7 @@ margin-left: 3%;
   }
   #container{
     width: 90%;
-    height:100%;
+    height: 56%;
   }
   #answer2 {
     width: 92%;
@@ -199,7 +216,7 @@ margin-left: 3%;
 @media only screen and (min-width: 450px) and (max-width: 961px) {
   #container{
     width:90%;
-    height:80%;
+    height:90%;
   }
   #answer1text {
     width: 90%;
@@ -215,14 +232,14 @@ margin-left: 3%;
   }
 }
 /* Mobile Styles */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 397px) {
   #answer1text {
     width: 92%;
     height: 22%;
   }
   #container{
     width: 90%;
-    height:50%;
+    height:40%;
   }
   #answer2 {
     width: 92%;
@@ -238,23 +255,64 @@ margin-left: 3%;
   vertical-align: bottom;
 }
 #notification {
-  position: fixed;
-    top: 0px;
-    width: 95%;
-    z-index: 105;
-    text-align: center;
-    font-weight: normal;
-    font-size: 5vw;
-    font-weight: bold;
-    color: white;
-    padding: 5px;
-    margin-top: 30%;
-    height: 60%;
-    font-family: helvetica;
-    font-style: italic;
-    padding-top: 13%;
-    z-index: 100;
+  position: relative;
+      width: 102%;
+      text-align: center;
+      font-weight: normal;
+      padding: 5px;
+      height: 35%;
+      font-family: helvetica;
+      font-style: italic;
+      margin-left: 0;
+      margin-top: -52%;
+      z-index: -100;
+    -webkit-animation: grow 3s ease-in infinite;
 }
+
+#match{
+color: white;
+font-size: 18vw;
+font-family: 'Lobster', cursive;
+text-align: -webkit-center;
+margin-top: 45%;
+margin-left: -10%;
+display: none;
+position: relative;
+width: 120%;
+margin-bottom: 0;
+}
+#heart{
+  width: 50%;
+  display: none;
+}
+#keepswiping{
+height: 7%;
+width: 56%;
+background-color: black;
+outline-style: solid;
+border: 2px solid white;
+position: relative;
+margin-top: 18%;
+margin-left: 20%;
+display: none;
+border-radius: 161px;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+#keepswipingtext{
+  color: white;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 5%;
+    text-align: -webkit-center;
+    text-decoration: none;
+    display: none;
+}
+#keepswiping:hover{
+  background-color: white;
+  color: black;
+}
+
 </style>
 
 
@@ -284,20 +342,17 @@ I can code your website only if we get coffee sometime lol.
 <img id="dislikebutton" src="images/cropped-tinder-nope1.png"/img>
 
 <div id="answers">
-  <div id="answer1"
-  ><div id="answer1text">Are you an angel because my world suddenly became brighter and lighter?</div>
-  </div>
-  <div id="answer2">
+<!-- <div id="answer1text">Are you an angel because my world suddenly became brighter and lighter?</div>
   <div id="answer2text">All I want for Channukah is you.</div>
-  </div>
-  <div id="answer3"
-  ><div id="answer3text">Even if there wasn't gravity on earth, I'd still fall for you.</div>
-  </div> 
+  ><div id="answer3text">Even if there wasn't gravity on earth, I'd still fall for you.</div> -->
 </div>
-<span class="dismiss" style="display: none;"><a title="dismiss this notification">It's a match!</a></span>
+<img src="images/itsamatch.gif" id="match" style="display: none;"/img>
+
+<img src="images/itsamatch.gif" id="match" style="display: none;"/img>
 <img src="images/heart-png-15.png" id="notification" style="display: none;"/img>
-<div id="keepswiping">
-<div id="keepswipingtext">Keep Swiping</div>
+<div id="keepswiping"
+><div id="keepswipingtext">Keep Swiping</div>
+</div>
 
 
 <script type="text/javascript" src="pickup.js"></script>

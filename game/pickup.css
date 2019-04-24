@@ -38,10 +38,9 @@ ul {
 
 #intropageclick{
   width: 40%;
-    float: right;
     margin-top: 21%;
     margin-right: 29%;
-    display: none;
+    display: block;
 }
 @-webkit-keyframes glow {
   from {
@@ -85,22 +84,22 @@ ul {
     color: white;
     font-size: 4vw;
     font-family: 'Work Sans', sans-serif;
-    display:none;
+    display: none;
     margin-top: 10%;
     width: 80%;
     margin-left: 10%;
-    position: absolute;
+    position: relative;
   }
 
 #heartclick {
-    display: block;
-    /* display: inline; */
-    width: 10%;
-    float: right;
-    margin-top: 143%;
-    margin-left: 84%;
-    position: absolute;
-    display: none;
+  width: 10%;
+  float: right;
+  margin-top: 49%;
+  margin-left: 84%;
+  position: relative;
+  display: block;
+  margin: auto;
+  display: none;
 }
 
 #start{
@@ -403,4 +402,7 @@ display: none;
 #begin:hover{
   background-color: white;
   color: black;
+}
+.animation-link{
+  margin: 0;
 }
