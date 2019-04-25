@@ -386,8 +386,8 @@ var answers = $("#answers").find(".answerclass"),
 
 
 
-$("#answer1text").click(function(){
-$('#notification').fadeIn('slow');
+// $("#answer1text").click(function(){
+// $('#notification').fadeIn('slow');
   // HEART ANIMATION = CORRECT
 // //
 // })
