@@ -119,8 +119,8 @@ display: none;
   #answer1 {
     height: 14%;
     width: 93%;
-    background-color: black;
-    outline-style: solid;
+    /* background-color: black;
+    outline-style: solid; */
     position: relative;
     margin-top: 10%;
     margin-left: 3%;
@@ -152,12 +152,12 @@ margin-left: 3%;
 
   #answer2text {
 
-    height: 8%;
+    height: 70%;;
     width: auto;
       color: white;
       font-size: 5vw;
       font-family: 'Work Sans', sans-serif;
-      margin-top: 5%;
+    margin-top: auto;
       text-align: -webkit-center;
       text-decoration: none;
       border: 2px solid white;
@@ -179,15 +179,17 @@ margin-left: 3%;
   } */
 
   #answer3text {
-    color: white;
-    height: 8%;
-    width: auto;
-      font-size: 5vw;
-      font-family: 'Work Sans', sans-serif;
-      margin-top: 5%;
-      text-align: -webkit-center;
-      border: 2px solid white;
-      padding: 3%;
+color: white;
+height: 54%;
+width: auto;
+font-size: 5vw;
+font-family: 'Work Sans', sans-serif;
+margin-top: -2%;
+text-align: -webkit-center;
+border: 2px solid white;
+padding: 3%;
+width: auto;
+margin-left: 3%;
 
   }
 
@@ -197,15 +199,15 @@ margin-left: 3%;
 @media only screen and (min-width: 961px) {
   #answer1text {
     width: 90%;
-    height: 50%;
+    height: 173%;
   }
   #container{
     width: 90%;
     height: 56%;
   }
-  #answer2 {
+  #answer2text {
     width: 92%;
-    height: 20%;
+    height: 100%;
   }
   #answer3 {
     width: 92%;
@@ -213,7 +215,7 @@ margin-left: 3%;
   }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 961px) {
+ @media only screen and (min-width: 450px) and (max-width: 961px) {
   #container{
     width:90%;
     height:90%;
@@ -230,12 +232,12 @@ margin-left: 3%;
     width: 92%;
     height: 25%;
   }
-}
+} */
 /* Mobile Styles */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   #answer1text {
     width: 92%;
-    height: 22%;
+    height: 60%;
   }
   #container{
     width: 90%;
@@ -245,11 +247,13 @@ margin-left: 3%;
     width: 92%;
     height: 10%;
   }
-  #answer3 {
+  #answer3text {
     width: 92%;
-    height: 15%;
+    height: 3%;
+    margin-top: 10%;
+
   }
-}
+} */
 
 #answers{
   vertical-align: bottom;
@@ -312,6 +316,79 @@ box-sizing: border-box;
   background-color: white;
   color: black;
 }
+@media screen and (max-width: 1700px){
+  #container{
+    width:90%;
+    height:110%;
+    margin-top: -5%;
+  }
+  #answer1text {
+    width: 92%;
+    height: 70%;
+    font-size: 3vw;
+  }
+  #answer2text {
+    width: 92%;
+    height: 50%;
+    margin-top: 5%;
+    font-size: 3vw;
+  }
+  #answer3text {
+    width: 92%;
+    height: 30%;
+    font-size: 3vw;
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width: 1000px){
+  #container{
+    width:90%;
+    height:70%;
+  }
+  #answer1text {
+    width: 92%;
+    height: 70%;
+    font-size: 3vw;
+  }
+  #answer2text {
+    width: 92%;
+    height: 50%;
+    margin-top: -10%;
+    font-size: 3vw;
+  }
+  #answer3text {
+    width: 92%;
+    height: 30%;
+    font-size: 3vw;
+    margin-top: 6%;
+  }
+}
+@media(max-width: 700px){
+  #container{
+    width:90%;
+    height:50%;
+  }
+  #answer1text {
+    width: 92%;
+    height: 60%;
+    font-size: 4vw;
+  }
+  #answer2text {
+    width: 92%;
+    height: 40%;
+    margin-top: -15%;
+    font-size: 4vw;
+  }
+  #answer3text {
+    width: 92%;
+    height: 30%;
+    font-size: 4vw;
+    margin-top: 3%;
+  }
+}
+
+
+
 
 </style>
 
