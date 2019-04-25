@@ -6,14 +6,13 @@
 <link rel="stylesheet" type="text/css">
 <style>
 
-
 .example1 {
  height: 200px;
  overflow: hidden;
  position: relative;
 }
 .example1 h3 {
- font-size: 3vw;
+ font-size: 7vw;
  color: black;
  font-family: helvetica;
  position: absolute;
@@ -176,7 +175,6 @@
 		@media(max-width: 700px){
 			html {
 					background-color: blue;
-					background-image: url();
 				}
 				#mouth{
 					width:100%;
