@@ -307,14 +307,17 @@ margin-bottom: 0;
 }
 #keepswipingtext{
   color: white;
-    border: 2px solid white;
-    font-size: 5vw;
-    font-family: 'Work Sans', sans-serif;
-    margin-top: -26%;
-    text-align: -webkit-center;
-    text-decoration: none;
-    display: none;
-    z-index: 200;
+border: 2px solid white;
+font-size: 5vw;
+font-family: 'Work Sans', sans-serif;
+margin-top: -61%;
+text-align: -webkit-center;
+text-decoration: none;
+display: none;
+z-index: 200;
+position: relative;
+width: 44%;
+margin-left: 29%;
 
 }
 #keepswiping:hover{
@@ -325,7 +328,7 @@ margin-bottom: 0;
   #container{
     width:90%;
     height:110%;
-    margin-top: -5%;
+    margin-top: 18%;
   }
   #answer1text {
     width: 92%;
@@ -347,19 +350,19 @@ margin-bottom: 0;
 }
 @media screen and (max-width: 1000px){
   #container{
-    width: 90%;
-height: 36%;
+    width: 89%;
+    height: 73%;
   }
   #answer1text {
     width: 92%;
       height: 53%;
-      font-size: 5vw;
+      font-size: 4vw;
       padding: 3%;
   }
   #answer2text {
     width: 92%;
       height: 65%;
-      margin-top: -23%;
+      margin-top: -34%;
       font-size: 4vw;
   }
   #answer3text {
@@ -397,7 +400,17 @@ height: 36%;
   filter: blur(20px);
     }
 
-
+    #nomatch{
+      color: red;
+font-size: 18vw;
+font-family: 'Lobster', cursive;
+text-align: -webkit-center;
+margin-top: -88%;
+    }
+    #brokenheart{
+      width: 50%;
+      margin-left: 25%;
+    }
 </style>
 
 
@@ -432,12 +445,18 @@ I can code your website only if we get coffee sometime lol.
   ><div id="answer3text">Even if there wasn't gravity on earth, I'd still fall for you.</div> -->
 </div>
 <img src="images/itsamatch.gif" id="match" style="display: none;"/img>
-
-<img src="images/itsamatch.gif" id="match" style="display: none;"/img>
 <img src="images/heart-png-15.png" id="notification" style="display: none;"/img>
-<p id="keepswiping"
-><p id="keepswipingtext">Keep Swiping</p>
-</p>
+<h1 id="nomatch" style="display:none;">Wrong Answer</h1>
+<img src="images/tenor (1).gif" id="brokenheart" style="display: none;"/img>
+
+<p id="keepswipingtext">Keep Swiping</p>
+
+<div class="matches">
+
+</div>
+
+
+
 <body>
 
 <script type="text/javascript" src="pickup.js"></script>

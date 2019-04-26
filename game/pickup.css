@@ -18,20 +18,14 @@ ul {
   font-family: 'Work Sans', sans-serif;
   font-size: 15vw;
   width: 100%;
- -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
   text-align: -webkit-center;
-  margin-top: 10%;
+  margin-top: 62%;
 }
 
 #title101 {
   color: white;
   font-family: 'Work Sans', sans-serif;
   width: 100%;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
   text-align: -webkit-center;
   font-size: 20vw;
 }
@@ -92,14 +86,15 @@ ul {
   }
 
 #heartclick {
-  width: 10%;
-  float: right;
-  margin-top: 49%;
-  margin-left: 84%;
-  position: relative;
-  display: block;
-  margin: auto;
-  display: none;
+  width: 15%;
+    float: right;
+    margin-top: 32%;
+    /* margin-left: -81%; */
+    position: relative;
+    display: block;
+    /* margin: auto; */
+    display: none;
+    margin-right: 7%;
 }
 
 #start{
