@@ -194,7 +194,8 @@ margin-left: 3%;
   }
 
 #answers {
-
+  transform: translate(0vw, 5vh);
+  transition: transform 1s;
 }
 @media only screen and (min-width: 961px) {
   #answer1text {
@@ -264,12 +265,12 @@ margin-left: 3%;
       text-align: center;
       font-weight: normal;
       padding: 5px;
-      height: 35%;
+      height: 50%;
       font-family: helvetica;
       font-style: italic;
       margin-left: 0;
-      margin-top: -52%;
-      z-index: -100;
+      margin-top: -90%;
+
     -webkit-animation: grow 3s ease-in infinite;
 }
 
@@ -290,27 +291,31 @@ margin-bottom: 0;
   display: none;
 }
 #keepswiping{
-height: 7%;
-width: 56%;
-background-color: black;
-outline-style: solid;
-border: 2px solid white;
-position: relative;
-margin-top: 18%;
-margin-left: 20%;
-display: none;
-border-radius: 161px;
-vertical-align: baseline;
-box-sizing: border-box;
+  height: 7%;
+      width: 56%;
+      /* background-color: black; */
+      /* outline-style: solid; */
+      border: 2px solid white;
+      position: relative;
+      margin-top: -65%;
+      margin-left: 24%;
+      display: none;
+      border-radius: 161px;
+      vertical-align: baseline;
+      box-sizing: border-box;
+      blurfilter: none;
 }
 #keepswipingtext{
   color: white;
+    border: 2px solid white;
     font-size: 5vw;
     font-family: 'Work Sans', sans-serif;
-    margin-top: 5%;
+    margin-top: -26%;
     text-align: -webkit-center;
     text-decoration: none;
     display: none;
+    z-index: 200;
+
 }
 #keepswiping:hover{
   background-color: white;
@@ -342,25 +347,26 @@ box-sizing: border-box;
 }
 @media screen and (max-width: 1000px){
   #container{
-    width:90%;
-    height:70%;
+    width: 90%;
+height: 36%;
   }
   #answer1text {
     width: 92%;
-    height: 70%;
-    font-size: 3vw;
+      height: 53%;
+      font-size: 5vw;
+      padding: 3%;
   }
   #answer2text {
     width: 92%;
-    height: 50%;
-    margin-top: -10%;
-    font-size: 3vw;
+      height: 65%;
+      margin-top: -23%;
+      font-size: 4vw;
   }
   #answer3text {
     width: 92%;
     height: 30%;
-    font-size: 3vw;
-    margin-top: 6%;
+    font-size: 4vw;
+    margin-top: -3%;
   }
 }
 @media(max-width: 700px){
@@ -385,9 +391,11 @@ box-sizing: border-box;
     font-size: 4vw;
     margin-top: 3%;
   }
+
 }
-
-
+.blurfilter{
+  filter: blur(20px);
+    }
 
 
 </style>
@@ -427,10 +435,10 @@ I can code your website only if we get coffee sometime lol.
 
 <img src="images/itsamatch.gif" id="match" style="display: none;"/img>
 <img src="images/heart-png-15.png" id="notification" style="display: none;"/img>
-<div id="keepswiping"
-><div id="keepswipingtext">Keep Swiping</div>
-</div>
-
+<p id="keepswiping"
+><p id="keepswipingtext">Keep Swiping</p>
+</p>
+<body>
 
 <script type="text/javascript" src="pickup.js"></script>
   </body>

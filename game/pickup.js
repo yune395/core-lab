@@ -53,9 +53,7 @@ $('#dislikebutton').click(function(e){
 });*/
 
 
-$('#keepswiping').click(function(){
-   window.location.href='gamepage1practice.html';
-});
+
 
 // $('#answer2').click(function(){
 //    window.location.href='nomatch.html';
@@ -127,7 +125,7 @@ var bios = [
   "name":"Bobbie,",
   "age": 22,
   "bio": "Graphic Designer! I can code your website only if we get coffee sometime lol.",
-  "correctAnswer": 3,
+  "correctAnswer": "s",
   "answer2": 9,
   "answer3": 22,
 },
@@ -255,15 +253,15 @@ var bios = [
   "name":"Peyton,",
   "age": 21,
   "bio": "Filmmaker in NYC. Who’s your favorite director?",
-  "correctAnswer": 4,
-  "answer2": 2,
-  "answer3": 8,
+  "correctAnswer": "Are you THE MATRIX, 'cause I'M THE ONE.",
+  "answer2": "I'll be your farm boy if you'll be my princess bride ",
+  "answer3": "I hate to see you go, I love to watch you leave.",
 },
 {
   "name":"Graham,",
   "age": 28,
   "bio": "Fitness Maniac! If I’m not working, you can catch me at the gym. Let’s bulk.",
-  "correctAnswer": 7,
+  "correctAnswer": 8,
   "answer2": 5,
   "answer3": 4,
 },
@@ -271,7 +269,7 @@ var bios = [
   "name":"Jan,",
   "age": 24,
   "bio": "Illustrator. Message me and I’ll possibly draw a portrait of you!",
-  "correctAnswer": 3,
+  "correctAnswer": "",
   "answer2": 7,
   "answer3": 9,
 },
@@ -280,7 +278,7 @@ var bios = [
   "age": 25,
   "bio": "Interested in science and biology! currently studying at NYU Stern.",
   "correctAnswer": "Is it getting hot in here? Or is it just our bond forming?",
-  "answer2": 2,
+  "answer2": "",
   "answer3": 6,
 },
 {
@@ -312,7 +310,7 @@ var bios = [
   "age": 23,
   "bio": "Vegan. THE MEAT INDUSTRY KILLS.",
   "correctAnswer": 3,
-  "answer2": 4,
+  "answer2": "if",
   "answer3": 9,
 },
 {
@@ -348,10 +346,12 @@ $("#dislikebutton").click(function(){
 })
 
 $("#like").click(function(){
+
 var divAppend = ["<div class='answerclass' id='answer1'><div class='answertext' id='answer1text'></div></div>",
                   "<div class='answerclass' id='answer2'><div class='answertext' id='answer2text'></div></div>" ,
                   "<div class='answerclass' id='answer3'><div class='answertext' id='answer3text'></div></div>"];
 var divNum = Math.floor(Math.random() * divAppend.length);
+
 
 // append pick up lines (that correspond to a specific person)
 // get specific person
@@ -385,13 +385,42 @@ var answers = $("#answers").find(".answerclass"),
 
     }
   })
+
+  $(".answertext").click(function(){
+   $('#notification').fadeIn('slow');
+   $('#keepswiping').fadeIn('slow');
+    $('#keepswipingtext').fadeIn('slow');
+   });
+
+$('.answertext').on('click', function(){
+  $( ".keepswipingtext" ).removeClass();
+});
+
+
+$('.answertext').on('click', function(){
+$('#notification').removeClass('blurfilter');
+   $('div').addClass('blurfilter');
+    $('#like').addClass('blurfilter');
+    $('#dislikebutton').addClass('blurfilter');
+});
+$('#keepswiping').click(function(){
+   window.location.href='gamepage1practice.html';
+});
   // maybe add the on click functions here
 
   // $("#answer2text").text(bios[randomNumber]["answer2"])
   //$("#answer3text").text(bios[randomNumber]["answer3"])
   $("#answers").show();
+
 })
 
+$("#like").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#answers").offset().top},
+        'slow');
+});
+
+// $("#container").css({"transform": "translate(-30vw, -70vh)"})
 
 
 // $("#answer1text").click(function(){
