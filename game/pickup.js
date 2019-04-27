@@ -375,6 +375,7 @@ var answers = $("#answers").find(".answerclass"),
   // console.log(ourcorrectAnswer) // give us an index for the correct answer
 
   $(".answerclass").eq(ourcorrectAnswer).addClass("correctAnswer").find(".answertext").text(bios[randomNumber]["correctAnswer"])
+
   // $("#answer1text").text(bios[randomNumber]["correctAnswer"]);
 
   var firstanswer = Math.ceil(Math.random()*2) // choose the order of the other answers
@@ -385,41 +386,43 @@ var answers = $("#answers").find(".answerclass"),
       if(firstanswer == 1){
           $(this).find(".answertext").text(bios[randomNumber]["answer3"])
           firstanswer = 2;// update firstanswer so that second answer is assigned to the other answer
-      }else{
+      } else{
         $(this).find(".answertext").text(bios[randomNumber]["answer2"])
         firstanswer = 1;// update firstanswer so that second answer is assigned to the other answer
       }
-
+    } else{
+      $(this).removeClass("answerclass");
     }
   })
 
 //click the right answer, heart animation/text fades in
   $(".correctAnswer").click(function(){
+    $('#rose').fadeIn('slow');
+    $('.wrong').hide();
     correctGuesses++;
     console.log("correct:", correctGuesses);
    $('#notification').fadeIn('slow');
+   $('#match').fadeIn('slow');
    //$('#keepswiping').fadeIn('slow');
     $('#keepswipingtext').fadeIn('slow');
     $( ".keepswipingtext" ).removeClass();
     $('#notification').removeClass('blurfilter');
-  $('div').addClass('blurfilter');
+    $('div').addClass('blurfilter');
     $('#like').addClass('blurfilter');
     $('#dislikebutton').addClass('blurfilter');
       //Add that person to your match list
       $(".matches").html(bios[randomNumber]["name"])
    });
 
-$("#answertext").click(function(){
+//click the wrong answer, broken heart and text fades in
+$(".answerclass").click(function(){
+        $('.wrong').show();
+        $("div").css("opacity","0");
         $('#nomatch').fadeIn('slow');
         $('#brokenheart').fadeIn('slow');
-        $('div').addClass('blurfilter');
+        // $('div').addClass('blurfilter');
+        $('.wrong').css("opacity","1");
         });
-
-$("#answer3text").click(function(){
-            $('#nomatch').fadeIn('slow');
-            $('#brokenheart').fadeIn('slow');
-            $('div').addClass('blurfilter');
-            });
 
 //remove blur filter on heart animation and text
 
@@ -427,6 +430,8 @@ $("#answer3text").click(function(){
 
 $('#keepswipingtext').click(function(){
   // Instead of reload
+  $( "#match" ).hide();
+  $( "#rose" ).hide();
    $("#answers").hide();
    $("#answers").css("top","0vh");
    $("#like").css("opacity","1");
@@ -485,7 +490,12 @@ $("#like").click(function() {
   $( "#dislikebutton" ).hide();
 
 });
-// $("#container").css({"transform": "translate(-30vw, -70vh)"})
+
+$("#matchestitle").click(function(){
+  $("#containermatch").css({"transform": "translate(-30vw, -70vh)"})
+  $("#containermatch2").css("opacity","0");
+
+})
 
 
 // $("#answer1text").click(function(){

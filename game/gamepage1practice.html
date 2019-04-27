@@ -261,31 +261,31 @@ margin-left: 3%;
 }
 #notification {
   position: relative;
-      width: 102%;
-      text-align: center;
-      font-weight: normal;
-      padding: 5px;
-      height: 50%;
-      font-family: helvetica;
-      font-style: italic;
-      margin-left: 0;
-      margin-top: -90%;
-
+    width: 97%;
+    text-align: center;
+    font-weight: normal;
+    padding: 5px;
+    height: 31%;
+    height: 42%;
+    margin-left: 1%;
     -webkit-animation: grow 3s ease-in infinite;
+    margin-top: -135%;
 }
 
 #match{
-color: white;
-font-size: 18vw;
-font-family: 'Lobster', cursive;
-text-align: -webkit-center;
-margin-top: 45%;
-margin-left: -10%;
-display: none;
-position: relative;
-width: 120%;
-margin-bottom: 0;
+  font-size: 17vw;
+    font-family: 'Lobster', cursive;
+    text-align: -webkit-center;
+    margin-top: -117%;
+    margin-left: 8%;
+    color: white;
+    float: left;
+    z-index: 100;
+    position: relative;
+    text-align: -webkit-center;
 }
+
+
 #heart{
   width: 50%;
   display: none;
@@ -295,7 +295,7 @@ margin-bottom: 0;
       width: 56%;
       /* background-color: black; */
       /* outline-style: solid; */
-      border: 2px solid white;
+      border: 2px solid black;
       position: relative;
       margin-top: -65%;
       margin-left: 24%;
@@ -306,18 +306,18 @@ margin-bottom: 0;
       blurfilter: none;
 }
 #keepswipingtext{
-  color: white;
-border: 2px solid white;
-font-size: 5vw;
-font-family: 'Work Sans', sans-serif;
-margin-top: -61%;
-text-align: -webkit-center;
-text-decoration: none;
-display: none;
-z-index: 200;
-position: relative;
-width: 44%;
-margin-left: 29%;
+  color: black;
+    border: 2px solid black;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: -82%;
+    text-align: -webkit-center;
+    text-decoration: none;
+    display: none;
+    z-index: 200;
+    position: relative;
+    width: 44%;
+    margin-left: 29%;
 
 }
 #keepswiping:hover{
@@ -406,10 +406,31 @@ font-size: 18vw;
 font-family: 'Lobster', cursive;
 text-align: -webkit-center;
 margin-top: -88%;
+-webkit-animation: wronganswer 1s repeat;
     }
     #brokenheart{
-      width: 50%;
-      margin-left: 25%;
+      width: 85%;
+    margin-left: 7%;
+    position: relative;
+    margin-top: -126%;
+    position: relative;
+    }
+    @keyframes wronganswer {
+0%{
+  font-size: 3vw;
+}
+100%{
+  font-size: 18vw;
+}
+    }
+    #rose{
+      width: 109%;
+    position: absolute;
+    z-index: 100;
+    margin-top: -194%;
+    height: 85%;
+    margin-left: -111%;
+    overflow: hidden;
     }
 </style>
 
@@ -444,16 +465,19 @@ I can code your website only if we get coffee sometime lol.
   <div id="answer2text">All I want for Channukah is you.</div>
   ><div id="answer3text">Even if there wasn't gravity on earth, I'd still fall for you.</div> -->
 </div>
-<img src="images/itsamatch.gif" id="match" style="display: none;"/img>
+<img src="images/itsamatch.gif" id="matchgif" style="display: none;"/img>
+<h1 id="match" style="display: none;">It's a match!</h1>
 <img src="images/heart-png-15.png" id="notification" style="display: none;"/img>
-<h1 id="nomatch" style="display:none;">Wrong Answer</h1>
-<img src="images/tenor (1).gif" id="brokenheart" style="display: none;"/img>
+<img src="images/rose.gif" id="rose" style="display:none;"/img>
+<div class="wrong" style="display:none">
+  <h1 id="nomatch" style="display:none;">Error: It's not you. It's me.</h1>
+  <img src="images/tenor (1).gif" id="brokenheart" style="display: none;"/img>
+</div>
+
 
 <p id="keepswipingtext">Keep Swiping</p>
 
-<div class="matches">
-
-</div>
+<div class="matches"></div>
 
 
 
