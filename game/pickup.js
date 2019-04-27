@@ -417,11 +417,12 @@ var answers = $("#answers").find(".answerclass"),
 //click the wrong answer, broken heart and text fades in
 $(".answerclass").click(function(){
         $('.wrong').show();
-        $("div").css("opacity","0");
+        $('div').addClass('blurfilter');
         $('#nomatch').fadeIn('slow');
         $('#brokenheart').fadeIn('slow');
         // $('div').addClass('blurfilter');
-        $('.wrong').css("opacity","1");
+        $('.wrong').removeClass('blurfilter');
+
         });
 
 //remove blur filter on heart animation and text
