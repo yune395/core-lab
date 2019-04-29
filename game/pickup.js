@@ -154,40 +154,40 @@ var bios = [
   "name":"Daryl,",
   "age": 28,
   "bio": "#420friendly #blazeitdon’tpraiseit #snoopdog dude, lets smoke.",
-  "correctAnswer": 45,
-  "answer2": 34,
+  "correctAnswer": "I have a huge kush on you.",
+  "answer2": "Is it hot in here or is that just the Holy Spirit burning inside of you?",
   "answer3": 2,
 },
 {
   "name":"Harley,",
   "age": 28,
-  "bio": "Trying to find someone to come with me to a rave and be my EDM QUEEN.",
-  "correctAnswer": 78,
-  "answer2": 4,
-  "answer3": 7,
+  "bio": "I'm a mormon. Let's go on missions and spread the word.",
+  "correctAnswer": "Hey, are you the sword of Laban? Because you are exceedingly fine.",
+  "answer2": "Have I met you before? Maybe it was in a previous lifetime.",
+  "answer3": "Would you like to come over and meditate with me?",
 },
 {
   "name":"Ed,",
   "age": 22,
-  "bio": "English major and history minor!",
-  "correctAnswer": "I have ‘Great expectations’ for our future",
-  "answer2": 4,
-  "answer3": 7,
+  "bio": "English major. Trying to become the next big YA author.",
+  "correctAnswer": "I have ‘Great expectations’ for our future.",
+  "answer2": "You must be reading Fahrenheit 451, because you're smokin'!",
+  "answer3": "If you were President, you'd be Babe-raham Lincoln.",
 },
 {
   "name":"Jesse,",
   "age": 28,
   "bio": "i love jazz!",
   "correctAnswer": "You had me at cello",
-  "answer2": 5,
-  "answer3": 9,
+  "answer2": "I got my eyes on you, you're everything that I see...",
+  "answer3": "Call me AC/DC, because I'm gonna rock you all night long!",
 },
 {
   "name":"Kyle,",
   "age": 28,
   "bio": "I love Minecraft and gaming:)",
   "correctAnswer": "Are you a care package? Because you must've fallen from heaven.",
-  "answer2": 9,
+  "answer2": "",
   "answer3": 4,
 },
 {
@@ -203,7 +203,7 @@ var bios = [
   "age": 28,
   "bio": "I love being in nature. Let’s live in the forrest and save Mother Earth. ",
   "correctAnswer": "You're more precious than a recently-planted tree in a country with high levels of deforestation.",
-  "answer2": 45,
+  "answer2": "",
   "answer3": 3,
 },
 {
@@ -211,16 +211,16 @@ var bios = [
   "age": 28,
   "bio": "Aspiring doctor. NYU. I might be able to save your life one day;)",
   "correctAnswer": "My doctor says I'm lacking vitamin U.",
-  "answer2": 87,
+  "answer2": "Do you work at Little Caesars? Because you're Hot and I'm Ready",
   "answer3": 5,
 },
 {
   "name":"Val,",
   "age": 28,
-  "bio": "gainz all day. looking for my gym partner so we can stunt on everyone with our muscles.",
+  "bio": "gainz all day. No carbs diet. Looking for my gym partner so we can stunt on everyone with our muscles.",
   "correctAnswer": "kissing burns 6.4 calories a minute. Wanna workout? ",
   "answer2": "is your body from McDonald's? 'cause I'm lovin' it!",
-  "answer3": 6,
+  "answer3": "",
 },
 {
   "name":"Winter,",
@@ -243,14 +243,14 @@ var bios = [
   "age": 28,
   "bio": "Software engineer working for a design agency. Let me fix your computer lol.",
   "correctAnswer": "Hey, my name's Microsoft. Can I crash at your place tonight?",
-  "answer2": "",
-  "answer3": 2,
+  "answer2": "My love for you is like pi... never ending.",
+  "answer3": "My love for you is a monotonically increasing unbounded function",
 },
 {
   "name":"Sean,",
   "age": 21,
   "bio": "animal lover!! My dog, Jack, is my best friend 4life. If you have a furry friend, let’s hang!",
-  "correctAnswer": 5,
+  "correctAnswer": "",
   "answer2": 6,
   "answer3": 3,
 },
@@ -265,10 +265,10 @@ var bios = [
 {
   "name":"Graham,",
   "age": 28,
-  "bio": "Fitness Maniac! If I’m not working, you can catch me at the gym. Let’s bulk.",
-  "correctAnswer": 8,
-  "answer2": 5,
-  "answer3": 4,
+  "bio": "Visiting from France for short while! Trying to make new friends.",
+  "correctAnswer": "Are you sure you're not a tower? Because Eiffel for you.",
+  "answer2": "Are you from Tennessee? Because you're the only ten I See!",
+  "answer3": "You must be from Prague, because I can't help but Czech you out.",
 },
 {
   "name":"Jan,",
@@ -284,7 +284,7 @@ var bios = [
   "bio": "Interested in science and biology! currently studying at NYU Stern.",
   "correctAnswer": "Is it getting hot in here? Or is it just our bond forming?",
   "answer2": "Let's convert our potential energy to kinetic energys",
-  "answer3": "",
+  "answer3": "I hope interest rates are low, because I want to invest my time in you.",
 },
 {
   "name":"Ray,",
@@ -297,17 +297,17 @@ var bios = [
 {
   "name":"Max,",
   "age": 20,
-  "bio": "creating my own fashion line. only name brands or gtfo",
-  "correctAnswer": 7,
-  "answer2": 09,
-  "answer3": 34,
+  "bio": "signed to NY MODELS. I only wear name brands and Gucci slippers.",
+  "correctAnswer": "You know what would look great on you? Me.",
+  "answer2": "Were you born in a farm? You look a-maize-ing.",
+  "answer3": "",
 },
 {
   "name":"Monroe,",
   "age": 21,
   "bio": "i love Harry Potter. I’m definitely Griffindor, wbu? :)",
   "correctAnswer": "you can have the portkey to my heart.",
-  "answer2": 3,
+  "answer2": "",
   "answer3": 7,
 },
 {
@@ -322,7 +322,7 @@ var bios = [
   "name":"Louise,",
   "age": 21,
   "bio": "I’m a scorpio. I’m crazy and spontaneous.",
-  "correctAnswer": 2,
+  "correctAnswer": "",
   "answer2": 0,
   "answer3": 54,
 },
@@ -422,7 +422,8 @@ $(".answerclass").click(function(){
         $('#brokenheart').fadeIn('slow');
         // $('div').addClass('blurfilter');
         $('.wrong').removeClass('blurfilter');
-
+        $('#keepswipingtext').fadeIn('slow');
+        $( ".keepswipingtext" ).removeClass();
         });
 
 //remove blur filter on heart animation and text
@@ -493,9 +494,15 @@ $("#like").click(function() {
 });
 
 $("#matchestitle").click(function(){
-  $("#containermatch").css({"transform": "translate(-30vw, -70vh)"})
-  $("#containermatch2").css("opacity","0");
+  $("#containermatch").css({"transform": "translate(-90vw, 0vh)"})
+  $("#containermatch2").show();
+  $("#containermatch2").css({"transform": "translate(0vw, -50vh)"})
 
+})
+
+$("#keepswipingtext").click(function(){
+  $("#keepswipingtext").css({"transform": "translate(-30vw, -70vh)"})
+  $("#containermatch2").css("opacity","0");
 })
 
 

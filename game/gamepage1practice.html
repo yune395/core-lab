@@ -116,18 +116,17 @@ display: none;
     font-size: 5vw;
     display: none;
   /* margin: 0; */}
-  #answer1 {
+/*
+   #answer1 {
     height: 14%;
     width: 93%;
-    /* background-color: black;
-    outline-style: solid; */
     position: relative;
     margin-top: 10%;
     margin-left: 3%;
-  }
+  } */
 
   #answer1text {
-    height: 67%;
+    height: 30%;
     color: white;
     font-size: 5vw;
     font-family: 'Work Sans', sans-serif;
@@ -137,85 +136,88 @@ display: none;
     padding: 2%;
     border: 2px solid white;
     overflow: hidden;
-
   }
 
-#answer2 {
-height: 8%;
-width: 90%;
-background-color: black;
-outline-style: solid;
-  position: relative;
-margin-top: 4%;
-margin-left: 3%;
-}
+ /* #answer2 {
+   height: 11%;
+     width: 90%;
+     position: relative;
+     margin-top: 4%;
+     margin-left: 3%;
+} */
 
-  #answer2text {
-
-    height: 70%;;
+#answer2text {
+    height: 30%;;
     width: auto;
-      color: white;
-      font-size: 5vw;
-      font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
     margin-top: auto;
-      text-align: -webkit-center;
-      text-decoration: none;
-      border: 2px solid white;
-      padding: 3%;
+    text-align: -webkit-center;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 3%;
   }
-  #answer1text:hover,#answer2text:hover,#answer3text:hover{
+
+#answer1text:hover,#answer2text:hover,#answer3text:hover{
     background-color: white;
     color: black;
-  }
-  /* #answer3 {
+}
+
+   /* #answer3 {
     height: 11%;
       width: 93%;
-      background-color: black;
-      outline-style: solid;
       border: 2px solid white;
       position: relative;
       margin-top: 4%;
       margin-left: 3%;
-  } */
+  }  */
 
-  #answer3text {
-color: white;
-height: 54%;
-width: auto;
-font-size: 5vw;
-font-family: 'Work Sans', sans-serif;
-margin-top: -2%;
-text-align: -webkit-center;
-border: 2px solid white;
-padding: 3%;
-width: auto;
-margin-left: 3%;
-
-  }
+#answer3text {
+  color: white;
+  height: 54%;
+  width: auto;
+  font-size: 5vw;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: -2%;
+  text-align: -webkit-center;
+  border: 2px solid white;
+  padding: 3%;
+  width: auto;
+  margin-left: 3%;
+}
 
 #answers {
   transform: translate(0vw, 5vh);
   transition: transform 1s;
 }
-@media only screen and (min-width: 961px) {
+
+/* @media only screen and (min-width: 961px) {
   #answer1text {
-    width: 90%;
-    height: 173%;
+    width: 95%;
+    height: 19%;
+    margin-top: -20%;
+    font-size: 4vw;
   }
   #container{
     width: 90%;
     height: 56%;
+    position: relative;
   }
-  #answer2text {
-    width: 92%;
-    height: 100%;
-  }
-  #answer3 {
-    width: 92%;
-    height: 25%;
-  }
-
+  #answer2text{
+    width: 90%;
+    height: 14%;
+    font-size: 4vw;
+    margin-top: -88%;
 }
+  }
+  #answer3text {
+    width: 86%;
+height: 12%;
+margin-top: -1%;
+font-size: 4vw;
+  }
+} */
 
  @media only screen and (min-width: 320px) and (max-width: 961px) {
   #container{
@@ -227,13 +229,13 @@ margin-left: 3%;
     height: 30%;
     margin-top: -20%;
   }
-  #answer2 {
-    width: 92%;
-    height: 20%;
-    margin-top: auto;
+  #answer2text {
+    width: 90%;
+    height: 5%;
+    margin-top: -1%;
   }
-  #answer3 {
-    width: 92%;
+  #answer3text {
+    width: 90%;
     height: 25%;
     margin-top: auto;
   }
@@ -247,18 +249,51 @@ margin-left: 3%;
   #keepswipingtext{
     margin-top: -20%;
   }
-} */
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px) {
+  #container{
+    width:90%;
+    height:90%;
+  }
+  #answer1text {
+    width: 90%;
+    height: 30%;
+    margin-top: -20%;
+  }
+  #answer2text {
+    width: 92%;
+    height: 30%;
+    margin-top: auto;
+  }
+  #answer3text {
+    width: 92%;
+    height: 20%;
+    margin-top: -20%;
+  }
+  #match{
+    margin-top: 20%;
+  }
+  #notification{
+    margin-top: -20%;
+    position: relative;
+  }
+  #keepswipingtext{
+    margin-top: -20%;
+  }
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
   #answer1text {
     width: 92%;
-    height: 60%;
+    height: 10%;
   }
   #container{
     width: 90%;
     height:40%;
   }
-  #answer2 {
+  #answer2text {
     width: 90%;
     height: 10%;
   }
@@ -272,9 +307,18 @@ margin-left: 3%;
   }
 }
 
+@media only screen and (min-width: 1024px) {
+#notification{
+  margin-top: 100%;
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+}
 #answers{
   vertical-align: bottom;
 }
+
 #notification {
   position: relative;
     width: 97%;
@@ -306,6 +350,7 @@ margin-left: 3%;
   width: 50%;
   display: none;
 }
+
 #keepswiping{
   height: 7%;
       width: 56%;
@@ -334,6 +379,8 @@ margin-left: 3%;
     position: relative;
     width: 44%;
     margin-left: 29%;
+    transform: translate(0vw, 5vh);
+    transition: transform 1s;
 }
 #keepswiping:hover{
   background-color: white;
@@ -345,23 +392,27 @@ margin-left: 3%;
     height:110%;
     margin-top: 18%;
   }
-  #answer1text {
-    width: 92%;
-    height: 70%;
+   #answer1text {
+    width: 86%;
+    height: 15%;
     font-size: 3vw;
+    margin-left: 6%;
   }
   #answer2text {
-    width: 92%;
-    height: 50%;
+    width: 84%;
+    height: 15%;
     margin-top: 5%;
     font-size: 3vw;
+    margin-left: 6%;
   }
   #answer3text {
-    width: 92%;
-    height: 30%;
+    width: 84%;
+    height: 10%;
     font-size: 3vw;
-    margin-top: 4%;
-  }
+    margin-top: 5%;
+    margin-left: 6%;
+} */
+
   #keepswiping{
     margin-top: -20%;
   }
@@ -371,24 +422,29 @@ margin-left: 3%;
     width: 89%;
     height: 73%;
   }
+
   #answer1text {
-    width: 92%;
-      height: 53%;
-      font-size: 4vw;
-      padding: 3%;
+    width: 89%;
+    height: 9%;
+    font-size: 3vw;
+    margin-top: -14%;
+    margin-left: 3%;
   }
-  #answer2text {
-    width: 92%;
-      height: 65%;
-      margin-top: -34%;
-      font-size: 4vw;
+
+  #answer2text{
+    width: 87%;
+    height: 8%;
+    margin-top: 7%;
+    font-size: 3vw;
+    margin-left: 3%;
   }
   #answer3text {
-    width: 92%;
-    height: 30%;
-    font-size: 4vw;
-    margin-top: -3%;
-  }
+    width: 87%;
+  height: 8%;
+  font-size: 3vw;
+  margin-top: 7%;
+  margin-left: 3%;
+}
   #notification{
     margin-top: -130%;
     width: 95%;
@@ -417,23 +473,25 @@ margin-left: 3%;
     height:50%;
   }
   #answer1text {
-    width: 92%;
-    height: 60%;
+    width: 86%;
+    height: 10%;
     font-size: 4vw;
+    margin-left: 6%;
   }
   #answer2text {
-    width: 92%;
-    height: 40%;
-    margin-top: -15%;
+    width: 84%;
+    height: 10%;
+    margin-top: 5%;
     font-size: 4vw;
+    margin-left: 6%;
   }
   #answer3text {
-    width: 92%;
-    height: 30%;
+    width: 84%;
+    height: 10%;
     font-size: 4vw;
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-left: 6%;
   }
-
 }
 .blurfilter{
   filter: blur(20px);
