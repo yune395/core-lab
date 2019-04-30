@@ -187,24 +187,24 @@ var bios = [
   "age": 28,
   "bio": "I love Minecraft and gaming:)",
   "correctAnswer": "Are you a care package? Because you must've fallen from heaven.",
-  "answer2": "",
-  "answer3": 4,
+  "answer2": "you auto-complete me.",
+  "answer3": "I just want to get the Helvetica out of here and run away with you.",
 },
 {
   "name":"Lou,",
   "age": 28,
   "bio": "artsy! let’s spend our days together painting all day during sunset.",
   "correctAnswer":"you’re so fine you could make an impression on Monet.",
-  "answer2": 3,
-  "answer3": 6,
+  "answer2": "Are you from accounting? Because I was ac-counting on seeing you later.",
+  "answer3": "I love you like a marketer loves reporting.",
 },
 {
   "name":"Reed,",
   "age": 28,
   "bio": "I love being in nature. Let’s live in the forrest and save Mother Earth. ",
   "correctAnswer": "You're more precious than a recently-planted tree in a country with high levels of deforestation.",
-  "answer2": "",
-  "answer3": 3,
+  "answer2": "You fit right into my color palette",
+  "answer3": "Before you were mine, everything was grayscale, but now I see the world in CMYK.",
 },
 {
   "name":"Sam,",
@@ -212,15 +212,15 @@ var bios = [
   "bio": "Aspiring doctor. NYU. I might be able to save your life one day;)",
   "correctAnswer": "My doctor says I'm lacking vitamin U.",
   "answer2": "Do you work at Little Caesars? Because you're Hot and I'm Ready",
-  "answer3": 5,
+  "answer3": "",
 },
 {
   "name":"Val,",
   "age": 28,
   "bio": "gainz all day. No carbs diet. Looking for my gym partner so we can stunt on everyone with our muscles.",
-  "correctAnswer": "kissing burns 6.4 calories a minute. Wanna workout? ",
-  "answer2": "is your body from McDonald's? 'cause I'm lovin' it!",
-  "answer3": "",
+  "correctAnswer": "Kissing burns 6.4 calories a minute. Wanna workout? ",
+  "answer2": "Is your body from McDonald's? 'cause I'm lovin' it!",
+  "answer3": "Take me to Papa John's, because this is love at 425 degrees.",
 },
 {
   "name":"Winter,",
@@ -234,9 +234,9 @@ var bios = [
   "name":"Stevie,",
   "age": 28,
   "bio": "photo major. Looking for models and friends. let’s link and shoot!",
-  "correctAnswer": 9,
-  "answer2": 7,
-  "answer3": 3,
+  "correctAnswer": "Why don’t we go into a dark room and see what develops?",
+  "answer2": "Our love can cross the Univers.",
+  "answer3": "With you, I'd never stop().",
 },
 {
   "name":"Spencer,",
@@ -250,9 +250,9 @@ var bios = [
   "name":"Sean,",
   "age": 21,
   "bio": "animal lover!! My dog, Jack, is my best friend 4life. If you have a furry friend, let’s hang!",
-  "correctAnswer": "",
-  "answer2": 6,
-  "answer3": 3,
+  "correctAnswer": "A day with you is like an eternity of behind-the-ear scratches.",
+  "answer2": "if you were a chicken you'd be impeccable.",
+  "answer3": "Are you a 45 degree angle? Because you’re acute-y",
 },
 {
   "name":"Peyton,",
@@ -273,10 +273,10 @@ var bios = [
 {
   "name":"Jan,",
   "age": 24,
-  "bio": "Illustrator. Message me and I’ll possibly draw a portrait of you!",
-  "correctAnswer": "",
-  "answer2": 7,
-  "answer3": 9,
+  "bio": "Illustrator. Message me a cute pick up line and I’ll possibly draw a portrait of you!",
+  "correctAnswer": "You must be an artist, because I find myself drawn to you.",
+  "answer2": "Quit Stalin and give me your number",
+  "answer3": "baby did you fart, ‘cause you blow me away",
 },
 {
   "name":"Mitchell,",
@@ -300,31 +300,31 @@ var bios = [
   "bio": "signed to NY MODELS. I only wear name brands and Gucci slippers.",
   "correctAnswer": "You know what would look great on you? Me.",
   "answer2": "Were you born in a farm? You look a-maize-ing.",
-  "answer3": "",
+  "answer3": "ICU in my dreams…",
 },
 {
   "name":"Monroe,",
   "age": 21,
   "bio": "i love Harry Potter. I’m definitely Griffindor, wbu? :)",
   "correctAnswer": "you can have the portkey to my heart.",
-  "answer2": "",
-  "answer3": 7,
+  "answer2": "You look cold. Want to use me as a blanket?",
+  "answer3": "You look imprintable.",
 },
 {
   "name":"Ken,",
   "age": 23,
   "bio": "Vegan. THE MEAT INDUSTRY KILLS.",
-  "correctAnswer": 3,
-  "answer2": "if",
-  "answer3": 9,
+  "correctAnswer": "I’m willing to give up meat — but I’d never give up you.",
+  "answer2": "Baby, if you were a fruit you'd be a fineapple.",
+  "answer3": "Your name must be Coca Cola, because you're so-da-licious.",
 },
 {
   "name":"Louise,",
   "age": 21,
   "bio": "I’m a scorpio. I’m crazy and spontaneous.",
-  "correctAnswer": "",
-  "answer2": 0,
-  "answer3": 54,
+  "correctAnswer": "Wanna exchange CoStars?",
+  "answer2": "Do you live on Mars? ‘Cause you look out of this world.",
+  "answer3": "Hey girl, are you the sun? Because you’re the center of my universe.",
 },
 
 
@@ -365,9 +365,8 @@ var divNum = Math.floor(Math.random() * divAppend.length);
 $("#answers").append(divAppend[0]);
 $("#answers").append(divAppend[2]);
 $("#answers").append(divAppend[1]);
-});
 
-$("#like").click(function(){
+
 // one of those pick up lines needs a correct tag
 var answers = $("#answers").find(".answerclass"),
   amountOfAnswers = answers.length;
@@ -394,6 +393,7 @@ var answers = $("#answers").find(".answerclass"),
       $(this).removeClass("answerclass");
     }
   })
+
 
 //click the right answer, heart animation/text fades in
   $(".correctAnswer").click(function(){
@@ -428,8 +428,6 @@ $(".answerclass").click(function(){
 
 //remove blur filter on heart animation and text
 
-
-
 $('#keepswipingtext').click(function(){
   // Instead of reload
   $( "#match" ).hide();
@@ -443,7 +441,11 @@ $('#keepswipingtext').click(function(){
  $('#like').removeClass('blurfilter');
   $("#dislikebutton").show();
  $('#dislikebutton').removeClass('blurfilter');
+ $( "#nomatch" ).hide();
+ $( "#brokenheart" ).hide();
 
+
+ $("#like").click(function(){
  var randomNumber = Math.floor(Math.random() * bios.length);
  $(".user").text(bios[randomNumber]["name"])
  $(".userbio").text(bios[randomNumber]["bio"])
@@ -474,16 +476,16 @@ $('#keepswipingtext').click(function(){
   //   })
   // window.location.href='gamepage1practice.html';
 });
-
+})
 
   // maybe add the on click functions here
 
   // $("#answer2text").text(bios[randomNumber]["answer2"])
   //$("#answer3text").text(bios[randomNumber]["answer3"])
-  $("#answers").show();
-  $("#answers").css("top","-20vh");
-  $("#like").css("opacity","0");
-})
+  // $("#answers").show();
+  // $("#answers").css("top","-20vh");
+  // $("#like").css("opacity","0");
+// })
 
 $("#like").click(function() {
     $('html,body').animate({
@@ -497,7 +499,6 @@ $("#matchestitle").click(function(){
   $("#containermatch").css({"transform": "translate(-90vw, 0vh)"})
   $("#containermatch2").show();
   $("#containermatch2").css({"transform": "translate(0vw, -50vh)"})
-
 })
 
 $("#keepswipingtext").click(function(){

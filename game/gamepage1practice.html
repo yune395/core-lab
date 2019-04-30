@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" type="text/css" href="pickup.css">
 <link rel="stylesheet" type="text/css">
+
 <style>
 
 #body{
@@ -411,10 +412,22 @@ font-size: 4vw;
     font-size: 3vw;
     margin-top: 5%;
     margin-left: 6%;
-} */
-
+}
   #keepswiping{
     margin-top: -20%;
+  }
+  #rose{
+    width: 100%;
+    margin-top: -80%;
+  }
+  #notification{
+    margin-top: -80%;
+    width: 95%;
+    height: 75%;
+    position: relative;
+  }
+  #match{
+
   }
 }
 @media screen and (max-width: 1000px){
@@ -446,25 +459,34 @@ font-size: 4vw;
   margin-left: 3%;
 }
   #notification{
-    margin-top: -130%;
+    margin-top: -80%;
     width: 95%;
-    height: 60%;
+    height: 75%;
     position: relative;
   }
   #keepswipingtext{
-    margin-top: -20%;
+    margin-top: -15%;
   position: relative;
   width: 50%;
-  height: 6%;
+  height: 9%;
   margin-left: 25%;
   }
+  #keepswipingtext:hover{
+    background-color: white;
+    color: black;
+  }
   #match{
-    margin-top:-110%;
+    margin-top:-70%;
     position: relative;
   }
   #rose{
-    position: relative;
-    margin-top: -100%;
+      width: 115%;
+      position: absolute;
+      z-index: 100;
+      margin-top: -90%;
+      height: 100%;
+      margin-left: -111%;
+      overflow: hidden;
   }
 }
 @media(max-width: 700px){
@@ -491,6 +513,28 @@ font-size: 4vw;
     font-size: 4vw;
     margin-top: 5%;
     margin-left: 6%;
+  }
+  #keepswipingtext{
+    height: 6%;
+    margin-top: -20%;
+  }
+  #rose{
+      width: 100%;
+      position: relative;
+      z-index: 100;
+      margin-top: -140%;
+      height: 85%;
+      margin-left: 1%;
+      overflow: hidden;
+  }
+  #notification{
+    height: 60%;
+    width: 100%;
+    margin-top: -115%;
+  }
+  #match{
+    margin-top:-90%;
+    position: relative;
   }
 }
 .blurfilter{
@@ -534,7 +578,7 @@ font-size: 4vw;
   font-size: 18vw;
 }
     }
-    #rose{
+    /* #rose{
       width: 109%;
     position: absolute;
     z-index: 100;
@@ -542,7 +586,11 @@ font-size: 4vw;
     height: 85%;
     margin-left: -111%;
     overflow: hidden;
-    }
+    } */
+    /* #timesup{
+      font-size: 15
+      font-family: 'Work Sans', sans-serif;
+    } */
 </style>
 
 
@@ -579,12 +627,22 @@ I can code your website only if we get coffee sometime lol.
 <img src="images/itsamatch.gif" id="matchgif" style="display: none;"/img>
 <h1 id="match" style="display: none;">It's a match!</h1>
 <img src="images/heart-png-15.png" id="notification" style="display: none;"/img>
-<!-- <img src="images/rose.gif" id="rose" style="display:none;"/img> -->
+<img src="images/rose.gif" id="rose" style="display:none;"/img>
 <div class="wrong" style="display:none">
   <h1 id="nomatch" style="display:none;">Error: It's not you. It's me.</h1>
   <img src="images/hd-red-broken-heart-png-transparent-background-21.png" id="brokenheart" style="display: none;"/img>
 </div>
+<!-- <div id="overBox">Game Over
+</div>
 
+<div id="flex-container">
+  <button class="button" onclick="countdown()">Click Here to Start</button>
+  <div id="time">
+  </div>
+</div> -->
+<div id="gameOver">
+<div class="score"></div>
+</div>
 
 <p id="keepswipingtext">Keep Swiping</p>
 
@@ -595,5 +653,6 @@ I can code your website only if we get coffee sometime lol.
 <body>
 
 <script type="text/javascript" src="pickup.js"></script>
+<script type="text/javascript" src="json.js"></script>
   </body>
   </html>
