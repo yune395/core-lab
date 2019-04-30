@@ -450,30 +450,32 @@ $('#keepswipingtext').click(function(){
  $(".user").text(bios[randomNumber]["name"])
  $(".userbio").text(bios[randomNumber]["bio"])
  $(".age").text(bios[randomNumber]["age"])
-  // Repeat the answer process of randomizing and changing the text
-  // var answers = $("#answers").find(".answerclass"),
-  //   amountOfAnswers = answers.length;
-  //   var ourcorrectAnswer = Math.floor(Math.random() * answers.length);
-  //   // console.log(ourcorrectAnswer) // give us an index for the correct answer
-  //
-  //   $(".answerclass").eq(ourcorrectAnswer).addClass("correctAnswer").find(".answertext").text(bios[randomNumber]["correctAnswer"])
-  //   // $("#answer1text").text(bios[randomNumber]["correctAnswer"]);
-  //
-  //   var firstanswer = Math.ceil(Math.random()*2) // choose the order of the other answers
-  //
-  //   $(".answerclass").each(function(){
-  //     if(!$(this).hasClass("correctAnswer")){
-  //       // console.log(firstanswer)
-  //       if(firstanswer == 1){
-  //           $(this).find(".answertext").text(bios[randomNumber]["answer3"])
-  //           firstanswer = 2;// update firstanswer so that second answer is assigned to the other answer
-  //       }else{
-  //         $(this).find(".answertext").text(bios[randomNumber]["answer2"])
-  //         firstanswer = 1;// update firstanswer so that second answer is assigned to the other answer
-  //       }
-  //
-  //     }
-  //   })
+ var answers = $("#answers").find(".answerclass"),
+   amountOfAnswers = answers.length;
+   var ourcorrectAnswer = Math.floor(Math.random() * answers.length);
+   // console.log(ourcorrectAnswer) // give us an index for the correct answer
+
+   $(".answerclass").eq(ourcorrectAnswer).addClass("correctAnswer").find(".answertext").text(bios[randomNumber]["correctAnswer"])
+
+   // $("#answer1text").text(bios[randomNumber]["correctAnswer"]);
+
+   var firstanswer = Math.ceil(Math.random()*2) // choose the order of the other answers
+
+   $(".answerclass").each(function(){
+     if(!$(this).hasClass("correctAnswer")){
+       // console.log(firstanswer)
+       if(firstanswer == 1){
+           $(this).find(".answertext").text(bios[randomNumber]["answer3"])
+           firstanswer = 2;// update firstanswer so that second answer is assigned to the other answer
+       } else{
+         $(this).find(".answertext").text(bios[randomNumber]["answer2"])
+         firstanswer = 1;// update firstanswer so that second answer is assigned to the other answer
+       }
+     } else{
+       $(this).removeClass("answerclass");
+     }
+   })
+
   // window.location.href='gamepage1practice.html';
 });
 })
