@@ -1,11 +1,14 @@
 <html>
 	<head>
-		<title></title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SOULMATE101</title>
 </head>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="pickup.css">
+<script type="text/javascript" src="json.js"></script>
 <link rel="stylesheet" type="text/css">
 
 <style>
@@ -570,7 +573,7 @@ font-size: 4vw;
     position: relative;
   }
   .userbio{
-
+font-size: 6vw;
   }
 }
 .blurfilter{
@@ -660,10 +663,12 @@ font-size: 4vw;
   }
 }
 .score{
-  font-size: 20vw;
-  color: white;
-  text-align: -webkit-center;
-  font-family: 'Work Sans', sans-serif;
+    font-size: 20vw;
+    color: white;
+    text-align: -webkit-center;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: -42%;
+    line-height: 175%;
 }
 .game{
   transform: translate(0vw, 20vh);
@@ -675,6 +680,27 @@ font-size: 4vw;
     to {
       background-color: red;
     }
+}
+.tryagain{
+    color: white;
+    border: 2px solid white;
+    font-size: 5vw;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 9%;
+    text-align: -webkit-center;
+    text-decoration: none;
+    display: none;
+    z-index: 200;
+    position: relative;
+    width: 44%;
+    margin-left: 29%;
+}
+#endheart{
+  width: 59%;
+height: 28%;
+display: none;
+margin-left: 21%;
+margin-top: 8%;
 }
 </style>
 
@@ -734,13 +760,14 @@ I can code your website only if we get coffee sometime lol.
 
 
 <div id="matches">Time's Up!</div>
+<img src="images/heart-png-15.png" id="endheart" style="display: none;"/img>
 <div class="score"></div>
+<div class="tryagain">Try Again?</div>
 
 
 
 <body>
 
 <script type="text/javascript" src="pickup.js"></script>
-<script type="text/javascript" src="json.js"></script>
   </body>
   </html>
