@@ -1,4 +1,5 @@
 var correctGuesses = 0;
+$(this).css("background-color","green");
 
 $("#rectangle").click(function(){
   $("div").fadeOut();
@@ -121,6 +122,7 @@ var bios = [
 {
   "name":"Alex,",
   "age": 23,
+  "distance" : "3 miles away",
   "bio": "Live. Love. Jesus. Looking for someone with the same passion for JC as I do!",
   "correctAnswer": "Are you an angel because my world suddenly became brighter and lighter?",
   "answer2": "All I want for Channukah is you.",
@@ -129,6 +131,7 @@ var bios = [
 {
   "name":"Bobbie,",
   "age": 22,
+  "distance" : "1 mile away",
   "bio": "Graphic Designer! I can code your website only if we get coffee sometime lol.",
   "correctAnswer": "are you CSS? Cause you got class",
   "answer2": "You are like a semicolon, without you everything falls apart",
@@ -137,14 +140,16 @@ var bios = [
 {
   "name":"Ari,",
   "age": 24,
+  "distance" : "5 miles away",
   "bio": "If you’re not just as obsessed with Game of Thrones as I am, we can’t be friends..",
   "correctAnswer": "did you get sacrificed by the God of Fire ? Because you’re smoking!",
   "answer2": "I may not be the one who lived, but I can still be your chosen one.",
-  "answer3": "Are you a Snitch? Because you’re by far the greatest catch here.",
+  "answer3": "Are you a Snitch? Because you’re the finest catch here.",
 },
 {
   "name":"Charlie,",
   "age": 20,
+  "distance" : "5 miles away",
   "bio": "I LOVE cats. I’m okay with being 4ever alone with 50 cats, but maybe we can raise them 2gether?",
   "correctAnswer": "MEOW you doin?",
   "answer2": "Yeah, I like to chase my tail, but I’d much rather chase yours.",
@@ -153,14 +158,16 @@ var bios = [
 {
   "name":"Daryl,",
   "age": 28,
+  "distance" : "4 miles away",
   "bio": "#420friendly #blazeitdon’tpraiseit #snoopdog dude, lets smoke.",
   "correctAnswer": "I have a huge kush on you.",
   "answer2": "Is it hot in here or is that just the Holy Spirit burning inside of you?",
-  "answer3": 2,
+  "answer3": "Are you a cigarette because you've got a hot butt.",
 },
 {
   "name":"Harley,",
   "age": 28,
+  "distance" : "5 miles away",
   "bio": "I'm a mormon. Let's go on missions and spread the word.",
   "correctAnswer": "Hey, are you the sword of Laban? Because you are exceedingly fine.",
   "answer2": "Have I met you before? Maybe it was in a previous lifetime.",
@@ -169,6 +176,7 @@ var bios = [
 {
   "name":"Ed,",
   "age": 22,
+  "distance" : "1.1 miles away",
   "bio": "English major. Trying to become the next big YA author.",
   "correctAnswer": "I have ‘Great expectations’ for our future.",
   "answer2": "You must be reading Fahrenheit 451, because you're smokin'!",
@@ -177,54 +185,61 @@ var bios = [
 {
   "name":"Jesse,",
   "age": 28,
+  "distance" : "1.5 miles away",
   "bio": "i love jazz!",
-  "correctAnswer": "You had me at cello",
+  "correctAnswer": "You had me at cello!",
   "answer2": "I got my eyes on you, you're everything that I see...",
-  "answer3": "Call me AC/DC, because I'm gonna rock you all night long!",
+  "answer3": "Call me AC/DC, because I'm gonna rock your world!",
 },
 {
   "name":"Kyle,",
   "age": 28,
-  "bio": "I love Minecraft and gaming:)",
-  "correctAnswer": "Are you a care package? Because you must've fallen from heaven.",
-  "answer2": "you auto-complete me.",
-  "answer3": "I just want to get the Helvetica out of here and run away with you.",
+  "distance" : "2 miles away",
+  "bio": "I love gaming:) especially Super Mario Bros.",
+  "correctAnswer": "I don't need a mushroom for my love for you to grow.",
+  "answer2": "Our love is like dividing by zero... you cannot define it.",
+  "answer3": "Baby is your name pac-man ? Cause every time I see you I want to chase you.",
 },
 {
   "name":"Lou,",
   "age": 28,
-  "bio": "artsy! let’s spend our days together painting all day during sunset.",
-  "correctAnswer":"you’re so fine you could make an impression on Monet.",
-  "answer2": "Are you from accounting? Because I was ac-counting on seeing you later.",
-  "answer3": "I love you like a marketer loves reporting.",
+  "distance" : "3 miles away",
+  "bio": "Let’s spend our days together painting all day during sunset.",
+  "correctAnswer": "You’re so fine you could make an impression on Monet.",
+  "answer2": "",
+  "answer3": 6,
 },
 {
   "name":"Reed,",
   "age": 28,
+  "distance" : "3 miles away",
   "bio": "I love being in nature. Let’s live in the forrest and save Mother Earth. ",
   "correctAnswer": "You're more precious than a recently-planted tree in a country with high levels of deforestation.",
-  "answer2": "You fit right into my color palette",
-  "answer3": "Before you were mine, everything was grayscale, but now I see the world in CMYK.",
+  "answer2": "",
+  "answer3": 3,
 },
 {
   "name":"Sam,",
   "age": 28,
+  "distance" : "4.5 miles away",
   "bio": "Aspiring doctor. NYU. I might be able to save your life one day;)",
   "correctAnswer": "My doctor says I'm lacking vitamin U.",
   "answer2": "Do you work at Little Caesars? Because you're Hot and I'm Ready",
-  "answer3": "",
+  "answer3": 5,
 },
 {
   "name":"Val,",
   "age": 28,
+  "distance" : "1 mile away",
   "bio": "gainz all day. No carbs diet. Looking for my gym partner so we can stunt on everyone with our muscles.",
-  "correctAnswer": "Kissing burns 6.4 calories a minute. Wanna workout? ",
-  "answer2": "Is your body from McDonald's? 'cause I'm lovin' it!",
-  "answer3": "Take me to Papa John's, because this is love at 425 degrees.",
+  "correctAnswer": "kissing burns 6.4 calories a minute. Wanna workout? ",
+  "answer2": "is your body from McDonald's? 'cause I'm lovin' it!",
+  "answer3": "",
 },
 {
   "name":"Winter,",
   "age": 28,
+  "distance" : "1 mile away",
   "bio": "dancing is my life. ",
   "correctAnswer": "I'll rondversé with you any day.",
   "answer2": "You must be a choir director, because you make my heart sing!",
@@ -233,31 +248,35 @@ var bios = [
 {
   "name":"Stevie,",
   "age": 28,
+  "distance" : "1 mile away",
   "bio": "photo major. Looking for models and friends. let’s link and shoot!",
-  "correctAnswer": "Why don’t we go into a dark room and see what develops?",
-  "answer2": "Our love can cross the Univers.",
+  "correctAnswer": "We can take it slow, and see how things develop.",
+  "answer2": "Before you came along, I was just Lipsum. With you, I’d be real content.",
   "answer3": "With you, I'd never stop().",
 },
 {
   "name":"Spencer,",
   "age": 28,
+  "distance" : "1 mile away",
   "bio": "Software engineer working for a design agency. Let me fix your computer lol.",
   "correctAnswer": "Hey, my name's Microsoft. Can I crash at your place tonight?",
   "answer2": "My love for you is like pi... never ending.",
-  "answer3": "My love for you is a monotonically increasing unbounded function",
+  "answer3": "Our love can cross the Univers.",
 },
 {
   "name":"Sean,",
   "age": 21,
-  "bio": "animal lover!! My dog, Jack, is my best friend 4life. If you have a furry friend, let’s hang!",
-  "correctAnswer": "A day with you is like an eternity of behind-the-ear scratches.",
-  "answer2": "if you were a chicken you'd be impeccable.",
-  "answer3": "Are you a 45 degree angle? Because you’re acute-y",
+  "distance" : "2 miles away",
+  "bio": "Always at Tompkins Square Park with my dog, Jack. He's my best friend 4life. If you're a dog lover too, We def will get along.",
+  "correctAnswer": "A day with you would be like an eternity of behind-the-ear scratches.",
+  "answer2": "My love for you is like a hairball - I can't hold it in.",
+  "answer3": 3,
 },
 {
   "name":"Peyton,",
   "age": 21,
-  "bio": "Filmmaker in NYC. Who’s your favorite director?",
+  "distance" : "2 miles away",
+  "bio": "Film fanatic! I love staying home and watching comedy movies.",
   "correctAnswer": "Are you THE MATRIX, 'cause I'M THE ONE.",
   "answer2": "I'll be your farm boy if you'll be my princess bride ",
   "answer3": "I hate to see you go, I love to watch you leave.",
@@ -265,6 +284,7 @@ var bios = [
 {
   "name":"Graham,",
   "age": 28,
+  "distance" : "2 miles away",
   "bio": "Visiting from France for short while! Trying to make new friends.",
   "correctAnswer": "Are you sure you're not a tower? Because Eiffel for you.",
   "answer2": "Are you from Tennessee? Because you're the only ten I See!",
@@ -273,14 +293,16 @@ var bios = [
 {
   "name":"Jan,",
   "age": 24,
-  "bio": "Illustrator. Message me a cute pick up line and I’ll possibly draw a portrait of you!",
-  "correctAnswer": "You must be an artist, because I find myself drawn to you.",
-  "answer2": "Quit Stalin and give me your number",
-  "answer3": "baby did you fart, ‘cause you blow me away",
+  "distance" : "3 miles away",
+  "bio": "Illustrator. Message me and I’ll possibly draw a portrait of you!",
+  "correctAnswer": "",
+  "answer2": 7,
+  "answer3": 9,
 },
 {
   "name":"Mitchell,",
   "age": 25,
+  "distance" : "3.5 miles away",
   "bio": "Interested in science and biology! currently studying at NYU Stern.",
   "correctAnswer": "Is it getting hot in here? Or is it just our bond forming?",
   "answer2": "Let's convert our potential energy to kinetic energys",
@@ -289,6 +311,7 @@ var bios = [
 {
   "name":"Ray,",
   "age": 23,
+  "distance" : "2 miles away",
   "bio": "Hopeless romantic. Looking for a serious relationship and humble person.",
   "correctAnswer": "Do you believe in love at first sight or should I walk past again?",
   "answer2": "well, HERE I AM. What are your other two wishes?",
@@ -297,34 +320,38 @@ var bios = [
 {
   "name":"Max,",
   "age": 20,
+  "distance" : "2 miles away",
   "bio": "signed to NY MODELS. I only wear name brands and Gucci slippers.",
   "correctAnswer": "You know what would look great on you? Me.",
   "answer2": "Were you born in a farm? You look a-maize-ing.",
-  "answer3": "ICU in my dreams…",
+  "answer3": "",
 },
 {
   "name":"Monroe,",
   "age": 21,
+  "distance" : "2 miles away",
   "bio": "i love Harry Potter. I’m definitely Griffindor, wbu? :)",
-  "correctAnswer": "you can have the portkey to my heart.",
-  "answer2": "You look cold. Want to use me as a blanket?",
-  "answer3": "You look imprintable.",
+  "correctAnswer": "You can have the portkey to my heart.",
+  "answer2": "Hi. The voices in my head just told me to come talk to you.",
+  "answer3": "Am I dead? Because I think I just met an angel.",
 },
 {
   "name":"Ken,",
   "age": 23,
+  "distance" : "2 miles away",
   "bio": "Vegan. THE MEAT INDUSTRY KILLS.",
   "correctAnswer": "I’m willing to give up meat — but I’d never give up you.",
-  "answer2": "Baby, if you were a fruit you'd be a fineapple.",
-  "answer3": "Your name must be Coca Cola, because you're so-da-licious.",
+  "answer2": "Your name must be Coca Cola, because you're so-da-licious.",
+  "answer3": "if you were a fruit you'd be a fineapple.",
 },
 {
   "name":"Louise,",
   "age": 21,
+  "distance" : "7 miles away",
   "bio": "I’m a scorpio. I’m crazy and spontaneous.",
-  "correctAnswer": "Wanna exchange CoStars?",
-  "answer2": "Do you live on Mars? ‘Cause you look out of this world.",
-  "answer3": "Hey girl, are you the sun? Because you’re the center of my universe.",
+  "correctAnswer": "",
+  "answer2": "",
+  "answer3": 54,
 },
 
 
@@ -365,8 +392,9 @@ var divNum = Math.floor(Math.random() * divAppend.length);
 $("#answers").append(divAppend[0]);
 $("#answers").append(divAppend[2]);
 $("#answers").append(divAppend[1]);
+});
 
-
+$("#like").click(function(){
 // one of those pick up lines needs a correct tag
 var answers = $("#answers").find(".answerclass"),
   amountOfAnswers = answers.length;
@@ -393,7 +421,6 @@ var answers = $("#answers").find(".answerclass"),
       $(this).removeClass("answerclass");
     }
   })
-
 
 //click the right answer, heart animation/text fades in
   $(".correctAnswer").click(function(){
@@ -428,9 +455,13 @@ $(".answerclass").click(function(){
 
 //remove blur filter on heart animation and text
 
+
+
 $('#keepswipingtext').click(function(){
   // Instead of reload
-  $( "#match" ).hide();
+  $("#match" ).hide();
+  $("#nomatch" ).hide();
+  $("#brokenheart").hide();
   $( "#rose" ).hide();
    $("#answers").hide();
    $("#answers").css("top","0vh");
@@ -441,53 +472,47 @@ $('#keepswipingtext').click(function(){
  $('#like').removeClass('blurfilter');
   $("#dislikebutton").show();
  $('#dislikebutton').removeClass('blurfilter');
- $( "#nomatch" ).hide();
- $( "#brokenheart" ).hide();
 
-
- $("#like").click(function(){
  var randomNumber = Math.floor(Math.random() * bios.length);
  $(".user").text(bios[randomNumber]["name"])
  $(".userbio").text(bios[randomNumber]["bio"])
  $(".age").text(bios[randomNumber]["age"])
- var answers = $("#answers").find(".answerclass"),
-   amountOfAnswers = answers.length;
-   var ourcorrectAnswer = Math.floor(Math.random() * answers.length);
-   // console.log(ourcorrectAnswer) // give us an index for the correct answer
-
-   $(".answerclass").eq(ourcorrectAnswer).addClass("correctAnswer").find(".answertext").text(bios[randomNumber]["correctAnswer"])
-
-   // $("#answer1text").text(bios[randomNumber]["correctAnswer"]);
-
-   var firstanswer = Math.ceil(Math.random()*2) // choose the order of the other answers
-
-   $(".answerclass").each(function(){
-     if(!$(this).hasClass("correctAnswer")){
-       // console.log(firstanswer)
-       if(firstanswer == 1){
-           $(this).find(".answertext").text(bios[randomNumber]["answer3"])
-           firstanswer = 2;// update firstanswer so that second answer is assigned to the other answer
-       } else{
-         $(this).find(".answertext").text(bios[randomNumber]["answer2"])
-         firstanswer = 1;// update firstanswer so that second answer is assigned to the other answer
-       }
-     } else{
-       $(this).removeClass("answerclass");
-     }
-   })
-
+  // Repeat the answer process of randomizing and changing the text
+  // var answers = $("#answers").find(".answerclass"),
+  //   amountOfAnswers = answers.length;
+  //   var ourcorrectAnswer = Math.floor(Math.random() * answers.length);
+  //   // console.log(ourcorrectAnswer) // give us an index for the correct answer
+  //
+  //   $(".answerclass").eq(ourcorrectAnswer).addClass("correctAnswer").find(".answertext").text(bios[randomNumber]["correctAnswer"])
+  //   // $("#answer1text").text(bios[randomNumber]["correctAnswer"]);
+  //
+  //   var firstanswer = Math.ceil(Math.random()*2) // choose the order of the other answers
+  //
+  //   $(".answerclass").each(function(){
+  //     if(!$(this).hasClass("correctAnswer")){
+  //       // console.log(firstanswer)
+  //       if(firstanswer == 1){
+  //           $(this).find(".answertext").text(bios[randomNumber]["answer3"])
+  //           firstanswer = 2;// update firstanswer so that second answer is assigned to the other answer
+  //       }else{
+  //         $(this).find(".answertext").text(bios[randomNumber]["answer2"])
+  //         firstanswer = 1;// update firstanswer so that second answer is assigned to the other answer
+  //       }
+  //
+  //     }
+  //   })
   // window.location.href='gamepage1practice.html';
 });
-})
+
 
   // maybe add the on click functions here
 
   // $("#answer2text").text(bios[randomNumber]["answer2"])
   //$("#answer3text").text(bios[randomNumber]["answer3"])
-  // $("#answers").show();
-  // $("#answers").css("top","-20vh");
-  // $("#like").css("opacity","0");
-// })
+  $("#answers").show();
+  $("#answers").css("top","-20vh");
+  $("#like").css("opacity","0");
+})
 
 $("#like").click(function() {
     $('html,body').animate({
@@ -501,6 +526,7 @@ $("#matchestitle").click(function(){
   $("#containermatch").css({"transform": "translate(-90vw, 0vh)"})
   $("#containermatch2").show();
   $("#containermatch2").css({"transform": "translate(0vw, -50vh)"})
+
 })
 
 $("#keepswipingtext").click(function(){
@@ -522,3 +548,31 @@ $("#answer2text").click(function(){
 $("#answer3text").click(function(){
   // BROKEN HEART ANIMATION = INCORRECT
 })
+
+//Countdown do these things when time runs out:
+// setTimeout(function(){
+//   $("div").hide();
+//   $("#like").hide();
+//   $("#notification").show();
+//   $("div").removeClass('blurfilter');
+//   $("#keepswipingtext").hide();
+//   $("#dislikebutton").hide();
+//   $(".score").show();
+//   $("#matches").show();
+//   $(".score").text(correctGuesses + " matches");
+//   $('html,body').animate({
+//       scrollTop: $("html").offset().top},
+//       'slow');
+//   $('body').animate({"background-color" : "red"});
+// }, 60000);
+
+// $('#notification').animate({
+//     width:'100%',
+//     height:'100%',
+//     top:'0',
+//     left:'0',
+//     'font-size':'50px',
+//     'line-height':'300px'
+// }, 1000);
+
+//

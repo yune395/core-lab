@@ -15,6 +15,7 @@
       position: relative;
       width: 100%;
     place-items: center;
+    animation-name: colorTransition;
 }
 #like{
   width: 18%;
@@ -40,6 +41,7 @@ margin-left: 6%;
 margin-top: 20%;
 }
 
+
 .user,.age{
   color: black;
     font-family: 'Work Sans', sans-serif;
@@ -47,6 +49,15 @@ margin-top: 20%;
     padding: 4%;
     font-size: 9vw;
     margin: 0;
+    display: inline-block;
+}
+.distance{
+  color: #9E9E9E;
+    font-family: 'Work Sans', sans-serif;
+    /* z-index: 100; */
+    padding: 4%;
+    font-size: 4vw;
+    margin-top:-40%;
     display: inline-block;
 }
 .userbio{
@@ -306,6 +317,9 @@ font-size: 4vw;
   #notification{
     margin-top: -20%;
   }
+  h1 #nomatch{
+    font-size: 20vw;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -439,7 +453,7 @@ font-size: 4vw;
   #answer1text {
     width: 89%;
     height: 9%;
-    font-size: 3vw;
+    font-size: 5vw;
     margin-top: -14%;
     margin-left: 3%;
   }
@@ -448,13 +462,13 @@ font-size: 4vw;
     width: 87%;
     height: 8%;
     margin-top: 7%;
-    font-size: 3vw;
+    font-size: 5vw;
     margin-left: 3%;
   }
   #answer3text {
     width: 87%;
   height: 8%;
-  font-size: 3vw;
+  font-size: 5vw;
   margin-top: 7%;
   margin-left: 3%;
 }
@@ -465,11 +479,11 @@ font-size: 4vw;
     position: relative;
   }
   #keepswipingtext{
-    margin-top: -15%;
-  position: relative;
-  width: 50%;
-  height: 9%;
-  margin-left: 25%;
+    margin-top: -3%;
+    position: relative;
+    width: 48%;
+    height: 5%;
+    margin-left: 24%;
   }
   #keepswipingtext:hover{
     background-color: white;
@@ -516,7 +530,7 @@ font-size: 4vw;
   }
   #keepswipingtext{
     height: 6%;
-    margin-top: -20%;
+    margin-top: -10%;
   }
   #rose{
       width: 100%;
@@ -534,6 +548,13 @@ font-size: 4vw;
   }
   #match{
     margin-top:-90%;
+    position: relative;
+  }
+  #brokenheart{
+    width: 85%;
+    margin-left: 7%;
+    position: relative;
+    margin-top: -70%;
     position: relative;
   }
 }
@@ -567,7 +588,7 @@ font-size: 4vw;
       width: 85%;
       margin-left: 7%;
       position: relative;
-      margin-top: -125%;
+      margin-top: -150%;
       position: relative;
     }
     @keyframes wronganswer {
@@ -591,6 +612,55 @@ font-size: 4vw;
       font-size: 15
       font-family: 'Work Sans', sans-serif;
     } */
+
+#matches{
+    font-size: 15vw;
+    color: red;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 30%;
+    display: none;
+    text-align: -webkit-center;
+    animation: jump 6.5s ease repeat;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  3% {
+    transform: translateY(-30px);
+  }
+  6% {
+    transform: translateY(0);
+  }
+  9% {
+    transform: translateY(-15px);
+  }
+  12% {
+    transform: translateY(0);
+  }
+  12%,
+  100% {
+    transform: translateY(0);
+  }
+}
+.score{
+  font-size: 20vw;
+  color: white;
+  text-align: -webkit-center;
+  font-family: 'Work Sans', sans-serif;
+}
+.game{
+  transform: translate(0vw, 20vh);
+}
+@keyframes colorTransition {
+    from {
+      background-color: black;
+    }
+    to {
+      background-color: red;
+    }
+}
 </style>
 
 
@@ -602,6 +672,7 @@ font-size: 4vw;
 ><h1 class="user">Alex
 </h1><p class="age">23</p><p class="userbio">Live. Love. Jesus.
 Looking for someone with the same passion for JC as I do!</p>
+
 </div>
 
 <div id="container2">
@@ -641,12 +712,14 @@ I can code your website only if we get coffee sometime lol.
   </div>
 </div> -->
 <div id="gameOver">
-<div class="score"></div>
 </div>
 
 <p id="keepswipingtext">Keep Swiping</p>
 
-<div class="matches"></div>
+
+
+<div id="matches">Time's Up!</div>
+<div class="score"></div>
 
 
 
