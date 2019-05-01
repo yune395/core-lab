@@ -305,7 +305,7 @@ var bios = [
   "distance" : "3.5 miles away",
   "bio": "Interested in science and biology! currently studying at NYU Stern.",
   "correctAnswer": "Is it getting hot in here? Or is it just our bond forming?",
-  "answer2": "Let's convert our potential energy to kinetic energys",
+  "answer2": 1,
   "answer3": "I hope interest rates are low, because I want to invest my time in you.",
 },
 {
@@ -348,9 +348,9 @@ var bios = [
   "name":"Louise,",
   "age": 21,
   "distance" : "7 miles away",
-  "bio": "I’m a scorpio. I’m crazy and spontaneous.",
-  "correctAnswer": "",
-  "answer2": "",
+  "bio": "I love horoscopes! I'm an Aries and Cancer rising, hbu.",
+  "correctAnswer": "What's your Co-star?",
+  "answer2": 3,
   "answer3": 54,
 },
 
