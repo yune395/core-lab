@@ -81,7 +81,6 @@ console.log("round 2: ", $("#answers").html())
 
 $(".answerclass").each(function(){
     if(!$(this).hasClass("correctAnswer")){
-        $(this).find(".answertext")
       // console.log(firstanswer)
       // already has content
     if(firstanswer == 1){
@@ -98,13 +97,13 @@ $(".answerclass").each(function(){
 
 //////////CORRECT ANSWER CLICK FUNCTION///////////
 
-$(".correctAnswer").click(function(){
+$("#answer1").click(function(){
           setTimeout(function() {
             $('#container').addClass('blurfilter');
             $('#answers').addClass('blurfilter');
         }, 900);
-        $(".correctAnswer").css({"color" : "#4be295"});
-        $(".correctAnswer").css({"border" : "2px solid #4be295"});
+        $("#answer1").css({"color" : "#4be295"});
+        $("#answer1").css({"border" : "2px solid #4be295"});
         $('#rose').delay(900).fadeIn('slow');
         $('.wrong').fadeOut();
         correctGuesses++;
