@@ -158,7 +158,7 @@ var bios = [
   "distance" : "2 miles away",
   "bio": "Love acting. My dream is to be on Broadway!",
   "correctAnswer": "Are you that line I screwed up? Because I can’t stop thinking about you.",
-  "answer2": "I'll be your farm boy if you'll be my princess bride ",
+  "answer2": "You're like my favorite font, I never get tired of seeing you.",
   "answer3": "If I could rearrange the alphabet, I would put U and I next to each other",
 },
 {
@@ -176,7 +176,7 @@ var bios = [
   "distance" : "3 miles away",
   "bio": "Studying criminal justice!",
   "correctAnswer": "If loving you is a crime, then I'm looking at a life sentence.",
-  "answer2": "Did it hurt when you fell from heaven?",
+  "answer2": "my Haus is your Haus.",
   "answer3": "Do you believe in love at first sight, or should I walk by again?",
 },
 {
@@ -203,7 +203,7 @@ var bios = [
   "distance" : "2 miles away",
   "bio": "signed to NY MODELS. Parsons Fashion Major.",
   "correctAnswer": "Do you know what this shirt is made of? Boyfriend material.",
-  "answer2": "If you were a chicken, you'd be impeccable.",
+  "answer2": "I just want to get the Helvetica out of here and run away with you.",
   "answer3": "Are you a 90 degree angle? Cause you are looking right!",
 },
 {
@@ -228,7 +228,7 @@ var bios = [
   "name":"Louise,",
   "age": 21,
   "bio": "I’m a scorpio. I’m crazy and spontaneous.",
-  "correctAnswer": "What's your CoStar.",
+  "correctAnswer": "Wanna exchange CoStars?",
   "answer2": "Do you live on Mars? ‘Cause you look out of this world.",
   "answer3": "Are you the sun? Because you’re the center of my universe.",
 },
