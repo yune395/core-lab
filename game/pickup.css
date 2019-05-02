@@ -2,6 +2,9 @@
   -webkit-font-smoothing: antialiased;
 }
 
+#heartintro{
+  width:20%;
+}
 @font-face {
   font-family: FoundersGrotesk;
   src: url(fonts/foundersgrotesktexttest-bold.otf);
@@ -50,6 +53,7 @@ ul {
   font-family: FoundersGrotesk;
   width: 100%;
   text-align: -webkit-center;
+  letter-spacing: 20px;
   font-size: 30vw;
 }
 
