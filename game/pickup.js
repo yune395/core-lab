@@ -81,6 +81,7 @@ console.log("round 2: ", $("#answers").html())
 
 $(".answerclass").each(function(){
     if(!$(this).hasClass("correctAnswer")){
+        $(this).find(".answertext")
       // console.log(firstanswer)
       // already has content
     if(firstanswer == 1){
@@ -98,20 +99,20 @@ $(".answerclass").each(function(){
 //////////CORRECT ANSWER CLICK FUNCTION///////////
 
 $(".correctAnswer").click(function(){
+          setTimeout(function() {
+            $('#container').addClass('blurfilter');
+            $('#answers').addClass('blurfilter');
+        }, 900);
         $(".correctAnswer").css({"color" : "#4be295"});
         $(".correctAnswer").css({"border" : "2px solid #4be295"});
-        $('#rose').fadeIn('slow');
+        $('#rose').delay(900).fadeIn('slow');
         $('.wrong').fadeOut();
         correctGuesses++;
         console.log("correct:", correctGuesses);
-        $('#notification').fadeIn('slow');
-        $('#match').fadeIn('slow');
+        $('#notification').delay(900).fadeIn('slow');
+        $('#match').delay(900).fadeIn('slow');
        //$('#keepswiping').fadeIn('slow');
-     //    setTimeout(function() {
-     //      $('div').addClass('blurfilter');
-     // }, 3000);
-      $('div').addClass('blurfilter');
-        $('#keepswipingtext').fadeIn('slow');
+        $('#keepswipingtext').delay(900).fadeIn('slow');
         $(".keepswipingtext" ).removeClass();
         $('#notification').removeClass('blurfilter');
         $('#like').addClass('blurfilter');
@@ -119,7 +120,6 @@ $(".correctAnswer").click(function(){
           ///Adding that person to your match list
         $(".matches").html(bios[randomNumber]["name"])
         // here we might want to get rid of our answers to we can reload them nextime
-        $("#answers").html("")
 
 });
 
