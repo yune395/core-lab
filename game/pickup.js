@@ -97,13 +97,13 @@ $(".answerclass").each(function(){
 
 //////////CORRECT ANSWER CLICK FUNCTION///////////
 
-$("#answer1").click(function(){
+$(".correctAnswer").click(function(){
           setTimeout(function() {
             $('#container').addClass('blurfilter');
             $('#answers').addClass('blurfilter');
         }, 900);
-        $("#answer1").css({"color" : "#4be295"});
-        $("#answer1").css({"border" : "2px solid #4be295"});
+        $(".answertext").css({"color" : "#4be295"});
+        $(".answertext").css({"border" : "2px solid #4be295"});
         $('#rose').delay(900).fadeIn('slow');
         $('.wrong').fadeOut();
         correctGuesses++;
