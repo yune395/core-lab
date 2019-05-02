@@ -107,9 +107,10 @@ $(".correctAnswer").click(function(){
         $('#notification').fadeIn('slow');
         $('#match').fadeIn('slow');
        //$('#keepswiping').fadeIn('slow');
-        setTimeout(function() {
-          $('div').addClass('blurfilter');
-     }, 3000);
+     //    setTimeout(function() {
+     //      $('div').addClass('blurfilter');
+     // }, 3000);
+      $('div').addClass('blurfilter');
         $('#keepswipingtext').fadeIn('slow');
         $(".keepswipingtext" ).removeClass();
         $('#notification').removeClass('blurfilter');
@@ -118,7 +119,8 @@ $(".correctAnswer").click(function(){
           ///Adding that person to your match list
         $(".matches").html(bios[randomNumber]["name"])
         // here we might want to get rid of our answers to we can reload them nextime
-        $("#answers").html("").show();
+        $("#answers").html("")
+
 });
 
 //////////WRONG ANSWER CLICK FUNCTION///////////
@@ -151,14 +153,14 @@ $('#keepswipingtext').click(function(){
         $("#answers").hide();
         $("#answers").css("top","0vh");
         $("#like").css("opacity","1");
-        $('#notification').css({"transform": "translate(-100vw, 0vh)"})
-        $('#keepswipingtext').css({"transform": "translate(-90vw, 0vh)"})
+        $('#notification').hide();
+        $('#keepswipingtext').hide();
         $('div').removeClass('blurfilter');
         $('#like').removeClass('blurfilter');
         $("#dislikebutton").show();
         $('#dislikebutton').removeClass('blurfilter');
 
-//RANDOMIZE BIOS AFTER KEEP SWIPING TEXT IS CLICKED
+///RANDOMIZE BIOS AFTER KEEP SWIPING TEXT IS CLICKED
 
  randomNumber = Math.floor(Math.random() * bios.length);
         $(".user").text(bios[randomNumber]["name"])
@@ -202,13 +204,6 @@ $("#like").click(function() {
         'slow');
         $( "#dislikebutton" ).hide();
 });
-
-// TOTAL MATCHES PROTOTYPE
-// $("#matchestitle").click(function(){
-//   $("#containermatch").css({"transform": "translate(-90vw, 0vh)"})
-//   $("#containermatch2").show();
-//   $("#containermatch2").css({"transform": "translate(0vw, -50vh)"})
-// })
 
 //////// 60s COUNTDOWN TIMER FOR END GAME /////////
 // var myTimer = function(){

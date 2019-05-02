@@ -15,7 +15,8 @@ $('#heartclick').click(function(e){
 });
 
 $("#begin").click(function(){
-        $("div").fadeOut();
+        $("#description").css("animation-play-state", "running");
+        $("#title101").css("animation-play-state", "running");
         $('#description').fadeIn('slow');
         $('#heartclick').fadeIn('slow');
 });
@@ -118,6 +119,7 @@ $(".correctAnswer").click(function(){
         $(".matches").html(bios[randomNumber]["name"])
         // here we might want to get rid of our answers to we can reload them nextime
         $("#answers").html("")
+
 });
 
 //////////WRONG ANSWER CLICK FUNCTION///////////
