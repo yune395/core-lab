@@ -66,7 +66,7 @@ var bios = [
   "name":"Jesse,",
   "age": 28,
   "distance" : "1.5 miles away",
-  "bio": "I love jazz. Trying to find someone to come with me to a jazz bar.",
+  "bio": "I love classical music. Trying to find someone to come with me to a jazz bar.",
   "correctAnswer": "You had me at cello!",
   "answer2": "I got my eyes on you, you're everything that I see..",
   "answer3": "Call me AC/DC, because I'm gonna rock your world!",
