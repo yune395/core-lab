@@ -107,31 +107,37 @@ $(".correctAnswer").click(function(){
         $('#notification').fadeIn('slow');
         $('#match').fadeIn('slow');
        //$('#keepswiping').fadeIn('slow');
+        setTimeout(function() {
+          $('div').addClass('blurfilter');
+     }, 3000);
         $('#keepswipingtext').fadeIn('slow');
         $(".keepswipingtext" ).removeClass();
         $('#notification').removeClass('blurfilter');
-        $('div').addClass('blurfilter').delay(1000);
         $('#like').addClass('blurfilter');
         $('#dislikebutton').addClass('blurfilter');
           ///Adding that person to your match list
         $(".matches").html(bios[randomNumber]["name"])
         // here we might want to get rid of our answers to we can reload them nextime
-        $("#answers").html("")
-        myTimer()
-
+        $("#answers").html("").show();
 });
 
 //////////WRONG ANSWER CLICK FUNCTION///////////
 
 $(".answerclass").click(function(){
-        $('.wrong').show();
-        $('div').addClass('blurfilter');
-        $('#nomatch').fadeIn('slow');
-        $('#brokenheart').fadeIn('slow');
-        // $('div').addClass('blurfilter');
+        $(".answertext").css({"color" : "red"});
+        $(".answertext").css({"border" : "2px solid red"});
         $('.wrong').removeClass('blurfilter');
-        $('#keepswipingtext').fadeIn('slow');
+        $('.wrong').delay(1000).fadeIn('slow');
+        $('#nomatch').removeClass('blurfilter').show(0);
+        $('#brokenheart').delay(1000).fadeIn('slow');
+        $('#brokenheart').removeClass();
+        // $('div').addClass('blurfilter');
+        $('#keepswipingtext').delay(1000).fadeIn('slow');
         $( ".keepswipingtext" ).removeClass();
+        setTimeout(function() {
+          $('#container').addClass('blurfilter');
+          $('#answers').addClass('blurfilter');
+     }, 1000);
 });
 
 //////////KEEP SWIPING CLICK FUNCTION///////////
@@ -145,8 +151,8 @@ $('#keepswipingtext').click(function(){
         $("#answers").hide();
         $("#answers").css("top","0vh");
         $("#like").css("opacity","1");
-        $('#notification').hide();
-        $('#keepswipingtext').hide();
+        $('#notification').css({"transform": "translate(-100vw, 0vh)"})
+        $('#keepswipingtext').css({"transform": "translate(-90vw, 0vh)"})
         $('div').removeClass('blurfilter');
         $('#like').removeClass('blurfilter');
         $("#dislikebutton").show();
@@ -222,7 +228,7 @@ $("#like").click(function() {
               scrollTop: $("html").offset().top},
               'slow');
           $('body').animate({"background-color" : "red"});
-  }, 10000);
+  }, 60000);
 //}
 
 
@@ -231,14 +237,14 @@ $("#like").click(function() {
 $(".tryagain").click(function() {
         $(".tryagain").css({"color" : "#4be295"});
         $(".tryagain").css({"border" : "2px solid #4be295"});
-        $( "#matches").delay(3000).hide(0);
-        $( ".score").delay(3000).fadeOut(0);
-        $( ".tryagain").delay(3000).fadeOut(0);
-        $( "#endheart").delay(3000).fadeOut(0);
+        $( "#matches").delay(2000).fadeOut(0);
+        $( ".score").delay(2000).fadeOut(0);
+        $( ".tryagain").delay(2000).fadeOut();
+        $( "#endheart").delay(2000).fadeOut();
         $("#answers").show();
-        $("#container").delay(000).fadeIn();
-        $("#like").delay(6000).fadeIn(0);
-        $("#dislikebutton").delay(6000).fadeIn();
+        $("#container").delay(4000).fadeIn();
+        $("#like").delay(3000).fadeIn(0);
+        $("#dislikebutton").delay(3000).fadeIn();
 
         randomNumber = Math.floor(Math.random() * bios.length);
                $(".user").text(bios[randomNumber]["name"])
@@ -246,7 +252,9 @@ $(".tryagain").click(function() {
                $(".age").text(bios[randomNumber]["age"])
        //below are still part of the LIKE click function
        //myTimer()
-       window.location.replace("gamepage1practice.html").delay(9000);
+       setTimeout(function() {
+       window.location.replace("gamepage1practice.html").fadeIn('slow');
+     }, 1000);
 });
 
 
