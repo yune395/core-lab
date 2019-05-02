@@ -110,15 +110,14 @@ $(".correctAnswer").click(function(){
         $('#keepswipingtext').fadeIn('slow');
         $(".keepswipingtext" ).removeClass();
         $('#notification').removeClass('blurfilter');
-        $('div').addClass('blurfilter').delay(1000);
+        // setInterval
+        $('div').delay(3000).addClass('blurfilter');
         $('#like').addClass('blurfilter');
         $('#dislikebutton').addClass('blurfilter');
           ///Adding that person to your match list
         $(".matches").html(bios[randomNumber]["name"])
         // here we might want to get rid of our answers to we can reload them nextime
         $("#answers").html("")
-        myTimer()
-
 });
 
 //////////WRONG ANSWER CLICK FUNCTION///////////
@@ -205,53 +204,25 @@ $("#like").click(function() {
 // })
 
 //////// 60s COUNTDOWN TIMER FOR END GAME /////////
-// var myTimer = function(){
-
-  setTimeout(function(){
-          $("div").hide();
-          $("#like").hide();
-          $(".tryagain").show();
-          $("#endheart").show();
-          $("div").removeClass('blurfilter');
-          $("#keepswipingtext").hide();
-          $("#dislikebutton").hide();
-          $(".score").show();
-          $("#matches").show();
-          $(".score").text(correctGuesses + " matches");
-          $('html,body').animate({
-              scrollTop: $("html").offset().top},
-              'slow');
-          $('body').animate({"background-color" : "red"});
-  }, 10000);
-//}
-
-
-///on click try again button change to green and RANDOMIZE BIOS AGAIN///
 
 $(".tryagain").click(function() {
         $(".tryagain").css({"color" : "#4be295"});
         $(".tryagain").css({"border" : "2px solid #4be295"});
-        $( "#matches").delay(3000).hide(0);
-        $( ".score").delay(3000).fadeOut(0);
-        $( ".tryagain").delay(3000).fadeOut(0);
-        $( "#endheart").delay(3000).fadeOut(0);
+        $( "#matches").fadeOut(0);
+        $( ".score").fadeOut(0);
+        $( ".tryagain").fadeOut(0);
+        $( "#endheart").fadeOut(0);
         $("#answers").show();
-        $("#container").delay(000).fadeIn();
-        $("#like").delay(6000).fadeIn(0);
-        $("#dislikebutton").delay(6000).fadeIn();
+        $("#container").fadeIn();
+        $("#like").fadeIn(0);
+        $("#dislikebutton").fadeIn();
 
         randomNumber = Math.floor(Math.random() * bios.length);
                $(".user").text(bios[randomNumber]["name"])
                $(".userbio").text(bios[randomNumber]["bio"])
                $(".age").text(bios[randomNumber]["age"])
        //below are still part of the LIKE click function
-       //myTimer()
-       window.location.replace("gamepage1practice.html").delay(9000);
+       //window.location.replace("gamepage1practice.html");
 });
-
-
-
-
-
 
 });
