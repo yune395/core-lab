@@ -16,7 +16,7 @@ $('#heartclick').click(function(e){
 
 $("#begin").click(function(){
         $("#description").css("animation-play-state", "running");
-        $("#title101").css("animation-play-state", "running");
+        $("div").fadeOut();
         $('#description').fadeIn('slow');
         $('#heartclick').fadeIn('slow');
 });

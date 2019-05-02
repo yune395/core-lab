@@ -126,20 +126,22 @@ $(".correctAnswer").click(function(){
 //////////WRONG ANSWER CLICK FUNCTION///////////
 
 $(".answerclass").click(function(){
+          setTimeout(function() {
+            $('#container').addClass('blurfilter');
+            $('#answers').addClass('blurfilter');
+        }, 900);
         $(".answertext").css({"color" : "red"});
+        $(".answertext").css({"background-color" : "black"});
         $(".answertext").css({"border" : "2px solid red"});
         $('.wrong').removeClass('blurfilter');
-        $('.wrong').delay(1000).fadeIn('slow');
-        $('#nomatch').removeClass('blurfilter').show(0);
-        $('#brokenheart').delay(1000).fadeIn('slow');
+        $('.wrong').delay(900).fadeIn('slow');
+        $('#nomatch').delay(900).fadeIn('slow').removeClass('blurfilter');
+        $('#brokenheart').delay(900).fadeIn('slow');
         $('#brokenheart').removeClass();
         // $('div').addClass('blurfilter');
-        $('#keepswipingtext').delay(1000).fadeIn('slow');
+        $('#keepswipingtext').delay(900).fadeIn('slow');
         $( ".keepswipingtext" ).removeClass();
-        setTimeout(function() {
-          $('#container').addClass('blurfilter');
-          $('#answers').addClass('blurfilter');
-     }, 1000);
+
 });
 
 //////////KEEP SWIPING CLICK FUNCTION///////////

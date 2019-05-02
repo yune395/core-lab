@@ -43,9 +43,6 @@ ul {
   width: 100%;
   text-align: -webkit-center;
   margin-top: 62%;
-  animation-name: slideleft;
- animation-duration: 3s;
- animation-fill-mode: forwards;
 }
 
 #title101 {
@@ -424,8 +421,9 @@ display: none;
 
 }
 #begin:hover{
-  background-color: white;
-  color: black;
+  background-color: red;
+  border: 2px solid red;
+  color: white;
 }
 .animation-link{
   margin: 0;
