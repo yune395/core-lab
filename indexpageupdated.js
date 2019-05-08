@@ -1,16 +1,68 @@
-//document.addEventListener("click", function (event){
-  //const x = event.pageX
-  //const y = event.pageY
+$("#right").click(function(){
 
-  //const midX = x - window.innerWidth / 2
-  //const midY = y - window.innerHeight / 2
+// to make a button going the other way:
+// swap out next for prev
+// swap out animated css values for their opposite (either "right" or 50% instead of -50)
 
-  //const box= document.querySelector("section")
+	$(".box").each(function(){
+  	if($(this).hasClass("current")){
 
-  //box.style.left = x + "px"
-  //box.style.top = y + "px"
 
-  //box.style.transform = "rotateX(" + midY + "deg) rotateY(" + midX + "deg)"
-//})
+      var thisBox = $(this)
+      var thisNextBox = $(this).next()
 
-//var book = document.getElementById("#append")
+    	 $(this).animate({
+            left: '-50%'
+        }, 500, function() {
+            $(this).css('left', '150%');
+            $(this).appendTo('#container');
+						thisBox.removeClass("current")
+        });
+
+        $(this).next().animate({
+            left: '50%'
+        }, 500, function(){
+					thisNextBox.addClass("current")
+        });
+    }
+  })
+
+})
+
+$("#left").click(function(){
+
+// to make a button going the other way:
+// swap out next for prev
+// swap out animated css values for their opposite (either "right" or 50% instead of -50)
+
+	$(".box").each(function(){
+  	if($(this).hasClass("current")){
+
+
+      var thisBox = $(this)
+      var thisLastBox = $(".box").last()
+      console.log(thisBox.index(), thisLastBox)
+
+      // add last element to beginning
+      thisLastBox.prependTo("#container").css('left', "-50%")
+      // then animate our element out of the way
+    	 thisBox.animate({
+            left: '120%'
+        }, 500, function() {
+            $(this).css('left', '150%');
+            // $(this).prependTo('#container');
+						thisBox.removeClass("current")
+        });
+
+
+
+        thisLastBox.animate({
+            left: '50%'
+        }, 500, function(){
+					thisLastBox.addClass("current")
+          console.log(thisLastBox)
+        });
+    }
+  })
+
+})

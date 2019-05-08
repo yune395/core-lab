@@ -1,31 +1,140 @@
 body{
   perspective: 1500px;
   height: 100vh;
+  background-color: yellow;
 }
-section{
+
+#section {
 position: absolute;
 top: 50%;
 left: 50%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
-}
-section:hover{
-  -webkit-animation: spincube 12s infinite; /* Safari 4.0 - 8.0 */
-   animation: spincube 12s infinite;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+
 }
 
-section2{
+#section2 {
 position: absolute;
-top: 50%;
-left: 50%;
+top: 50%;;
+left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
 }
 
-section2:hover{
-  -webkit-animation: spincube 12s infinite; /* Safari 4.0 - 8.0 */
-   animation: spincube 12s infinite;
+#section3 {
+position: absolute;
+top: 50%;
+left: 143%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
 }
+
+
+#section4 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
+
+#section5 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+
+}
+#section6 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
+
+#section7 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
+
+#section8 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 30s infinite;
+ animation: spincube 30s infinite;
+ cursor: pointer;
+}
+
+
+#section9 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 20s infinite;
+ animation: spincube 20s infinite;
+ cursor: pointer;
+}
+
+
+#section10 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
+
+
+#section11 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
+
+
+
+
+
+
 
 @-webkit-keyframes spincube {
   from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
@@ -95,6 +204,7 @@ top: 0;
 left: 0;
 background-size: cover;
 }
+
 div.face-cover{
 width: 400px;
 height: 320px;
@@ -138,51 +248,502 @@ transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
 }
 
 
-div.face2{
+div.blue{
 position: absolute;
 top: 0;
 left: 0;
 background-size: cover;
 }
 
-div.face2 face2-cover{
-width: 400px;
-height: 320px;
-background-image: url(bluebook-cover.svg);
+div.blue-cover2{
+  height: 320px;
+  width: 400px;
+top: -80%;
+background-image: url(blue-frontcover.jpg);
 transform: translateX(-50%) translateY(-50%) translateZ(20px);
 }
-div.face2 face2-side{
+div.blue-side2{
 height: 320px;
 width: 40px;
-background-image: url(book-side.jpg);
+background-image: url(bluespine.jpg);
 transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
 left: 170px;
 }
-div.face2 face2-spine{
+
+div.blue-spine2{
 height: 320px;
 width: 40px;
-background-image:url(book-spine.jpg);
+background-image:url(bluespine.jpg);
 transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
 left: -70px;
 }
-div.face2 face2-top{
+div.blue-top2{
 height: 40px;
 width: 400px;
-background-image: url(book-top.jpg);
+background-image: url(blue-bottomtop.jpg);
 transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
 top: 40px;
 }
-div.face2 face2-bottom{
+div.blue-bottom2{
 height: 40px;
 width: 400px;
-background-image: url(book-bottom.jpg);
+background-image: url(blue-bottomtop.jpg);
 transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
     top: -40px;
 }
-div.face2 face2-back{
+div.blue-back2{
 height: 320px;
 width: 400px;
-background-image: url(book-back.jpg);
+background-image: url(blue-frontcover.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+
+
+div.tracy{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.tracy-cover2{
+  height: 320px;
+  width: 400px;
+top: -80%;
+background-image: url(tracymacover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.tracy-side2{
+height: 320px;
+width: 40px;
+background-image: url(tracy-spine2.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+left: 170px;
+}
+
+div.tracy-spine2{
+height: 320px;
+width: 40px;
+background-image:url(tracyspine.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+left: -70px;
+}
+div.tracy-top2{
+height: 40px;
+width: 400px;
+background-image: url(tracy-top.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+top: 40px;
+}
+div.tracy-bottom2{
+height: 40px;
+width: 400px;
+background-image: url(blue-bottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -40px;
+}
+div.tracy-back2{
+height: 320px;
+width: 400px;
+background-image: url(tracymacover.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+div.position{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.position-cover{
+  height: 280px;
+  width: 600px;
+top: -80%;
+background-image: url(position-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.position-side{
+height: 278px;
+width: 40px;
+background-image: url(position-side.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+left: 270px;
+}
+
+div.position-spine{
+  height: 278px;
+      width: 40px;
+      background-image: url(position-spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+left: -170px;
+}
+div.position-top{
+      width: 601px;
+      background-image: url(position-bottom.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 61px;
+      height: 40px;
+}
+div.position-bottom{
+width: 601px;
+height: 40px;
+background-image: url(position-bottom.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+  top: -61px;
+}
+div.position-back{
+  height: 280px;
+  width: 600px;
+background-image: url(position-back.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+
+div.bluets{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.bluets-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(bluets-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.bluets-side{
+  height: 300px;
+      width: 40px;
+      background-image: url(bluetsside.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 269px;
+}
+
+div.bluets-spine{
+  height: 300px;
+      width: 40px;
+      background-image: url(bluetsspine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.bluets-top{
+  height: 40px;
+      width: 599px;
+      background-image: url(bluetsbottom.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 54px;
+}
+div.bluets-bottom{
+  height: 40px;
+      width: 599px;
+background-image: url(bluetsbottom.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -54px;
+}
+div.bluets-back{
+  height: 300px;
+width: 600px;
+background-image: url(bluets-cover.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+div.animation{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.animation-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(animation-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.animation-side{
+  height: 300px;
+      width: 40px;
+      background-image: url(animationspine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 269px;
+}
+
+div.animation-spine{
+  height: 300px;
+      width: 40px;
+      background-image: url(animationspine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.animation-top{
+  height: 40px;
+      width: 599px;
+      background-image: url(animationbottomtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 54px;
+}
+div.animation-bottom{
+  height: 40px;
+      width: 599px;
+background-image: url(animationbottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -54px;
+}
+div.animation-back{
+  height: 300px;
+width: 600px;
+background-image: url(animationback.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+
+div.weaving{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.weaving-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(weaving-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.weaving-side{
+  height: 300px;
+      width: 40px;
+      background-image: url(weavingside.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 269px;
+}
+
+div.weaving-spine{
+  height: 300px;
+      width: 40px;
+      background-image: url(weavingspine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.weaving-top{
+  height: 40px;
+      width: 599px;
+      background-image: url(weavingtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 54px;
+}
+div.weaving-bottom{
+  height: 40px;
+      width: 599px;
+background-image: url(weavingbottom.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -54px;
+}
+div.weaving-back{
+  height: 300px;
+width: 600px;
+background-image: url(weaving-back.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+div.java2{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.java2-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(java2-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.java2-side{
+  height: 300px;
+      width: 40px;
+      background-image: url(java2side.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 269px;
+}
+
+div.java2-spine{
+  height: 300px;
+      width: 40px;
+      background-image: url(java2spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.java2-top{
+  height: 40px;
+      width: 599px;
+      background-image: url(java2bottomtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 54px;
+}
+div.java2-bottom{
+  height: 40px;
+      width: 599px;
+background-image: url(java2bottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -54px;
+}
+div.java2-back{
+  height: 300px;
+width: 600px;
+background-image: url(java2back.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+
+
+div.jquery{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.jquery-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(jquery-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.jquery-side{
+  height: 300px;
+      width: 41px;
+      background-image: url(jqueryspine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 270px;
+}
+
+div.jquery-spine{
+  height: 300px;
+      width: 41px;
+      background-image: url(jqueryspine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.jquery-top{
+  height: 41px;
+    width: 600px;
+      background-image: url(jquerybottomtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 50px;
+}
+div.jquery-bottom{
+  height: 41px;
+      width: 600px;
+background-image: url(jquerybottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -50px;
+}
+div.jquery-back{
+  height: 300px;
+width: 600px;
+background-image: url(jqueryback.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+div.jquery2{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.jquery2-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(jquery2-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.jquery2-side{
+  height: 300px;
+      width: 41px;
+      background-image: url(jquery2spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 270px;
+}
+
+div.jquery2-spine{
+  height: 300px;
+      width: 41px;
+      background-image: url(jquery2spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.jquery2-top{
+  height: 41px;
+    width: 600px;
+      background-image: url(jquery2bottomtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 50px;
+}
+div.jquery2-bottom{
+  height: 41px;
+      width: 600px;
+background-image: url(jquery2bottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -50px;
+}
+div.jquery2-back{
+  height: 300px;
+width: 600px;
+background-image: url(jquery2back.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+div.dialogue2{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.dialogue2-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(dialogue2-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.dialogue2-side{
+  height: 300px;
+      width: 41px;
+      background-image: url(dialogue2spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 270px;
+}
+
+div.dialogue2-spine{
+  height: 300px;
+      width: 41px;
+      background-image: url(dialogue2spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.dialogue2-top{
+  height: 41px;
+    width: 600px;
+      background-image: url(dialogue2bottomtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 50px;
+}
+div.dialogue2-bottom{
+  height: 41px;
+      width: 600px;
+background-image: url(dialogue2bottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -50px;
+}
+div.dialogue2-back{
+  height: 300px;
+width: 600px;
+background-image: url(dialogue2back.jpg);
 transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
 }
 
@@ -195,4 +756,33 @@ width: 18%;
   z-index: -100;
   top: 60%;
   left: 2%;
+}
+
+#right {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+   width: 15%;
+   height: 15%;
+   cursor: pointer;
+
+}
+
+#left {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+   width: 15%;
+   height: 15%;
+  cursor: pointer;
+
+}
+
+#container {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
