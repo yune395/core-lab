@@ -59,11 +59,27 @@ opacity: 0;
   cursor: pointer;
 }
 
-#section:hover .mediaquery{
+
+#section2:hover {
+opacity: 0;
+-webkit-animation: 0;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+  cursor: pointer;
+}
+
+#section2:hover + #section2Name{
   display: block;
   position: absolute;
   cursor: pointer;
 }
+
+/* #section:hover .mediaquery{
+  display: block;
+  position: absolute;
+  cursor: pointer;
+} */
 
 #section2 {
 position: absolute;
@@ -293,6 +309,21 @@ backface-visibility: hidden;
 }
 
 #sectionName{
+  opacity: 1;
+    color: white;
+    font-size: 5vw;
+    display: none;
+    position: absolute;
+    -webkit-animation: 0;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+    font-family: helvetica, sans-serif;
+    top: 41%;
+    left: 36%;
+}
+
+#section2Name{
   opacity: 1;
     color: white;
     font-size: 5vw;
