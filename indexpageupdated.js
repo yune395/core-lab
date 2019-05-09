@@ -29,8 +29,8 @@ $("#right").click(function(){
 
 })
 
-$("#left").click(function(){
 
+$("#left").click(function(){
 // to make a button going the other way:
 // swap out next for prev
 // swap out animated css values for their opposite (either "right" or 50% instead of -50)
@@ -66,3 +66,15 @@ $("#left").click(function(){
   })
 
 })
+
+//click function for each link
+
+// $('#section').click(function(e){
+//   window.location.replace("media-queries.html");
+// });
+
+$("#button").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section11").offset().top
+                }, 2000);
+            });

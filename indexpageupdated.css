@@ -1,7 +1,36 @@
 body{
   perspective: 1500px;
   height: 100vh;
-  background-color: yellow;
+  background-color: black;
+}
+
+#right {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+   width: 15%;
+   height: 15%;
+   cursor: pointer;
+
+}
+
+#left {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+   width: 15%;
+   height: 15%;
+  cursor: pointer;
+
+}
+
+#container {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #section {
@@ -13,7 +42,27 @@ backface-visibility: hidden;
 -webkit-animation: spincube 12s infinite;
  animation: spincube 12s infinite;
  cursor: pointer;
+}
 
+#section:hover {
+opacity: 0;
+-webkit-animation: 0;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+  cursor: pointer;
+}
+
+#section:hover + #sectionName{
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+#section:hover .mediaquery{
+  display: block;
+  position: absolute;
+  cursor: pointer;
 }
 
 #section2 {
@@ -30,7 +79,7 @@ backface-visibility: hidden;
 #section3 {
 position: absolute;
 top: 50%;
-left: 143%;
+left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
 -webkit-animation: spincube 12s infinite;
@@ -89,8 +138,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 30s infinite;
- animation: spincube 30s infinite;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
  cursor: pointer;
 }
 
@@ -101,8 +150,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 20s infinite;
- animation: spincube 20s infinite;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
  cursor: pointer;
 }
 
@@ -118,6 +167,22 @@ backface-visibility: hidden;
  cursor: pointer;
 }
 
+#sectionstudio {
+position: absolute;
+top: 50%;
+left: 150%;
+cursor: pointer;
+}
+
+
+#sectionlab {
+  position: fixed;
+  top: 14%;
+  left: 40%;
+  z-index: -100;
+  cursor: pointer;
+}
+
 
 #section11 {
 position: absolute;
@@ -130,9 +195,38 @@ backface-visibility: hidden;
  cursor: pointer;
 }
 
+#section12 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
 
+#section13 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
 
-
+#section14 {
+position: absolute;
+top: 50%;
+left: 150%;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-animation: spincube 12s infinite;
+ animation: spincube 12s infinite;
+ cursor: pointer;
+}
 
 
 
@@ -197,6 +291,22 @@ backface-visibility: hidden;
   -ms-transform-origin: 60px 60px 0;
   transform-origin: 60px 60px 0;
 }
+
+#sectionName{
+  opacity: 1;
+    color: white;
+    font-size: 5vw;
+    display: none;
+    position: absolute;
+    -webkit-animation: 0;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+    font-family: helvetica, sans-serif;
+    top: 41%;
+    left: 36%;
+}
+
 
 div.face{
 position: absolute;
@@ -656,6 +766,52 @@ left: 0;
 background-size: cover;
 }
 
+
+div.studio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+div.studio-cover{
+  font-size: 15vw;
+  color: white;
+  font-family: helvetica, sans-serif;
+left: -260px;
+top: -50px;
+}
+
+
+div.lab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+div.lab-cover{
+  font-size: 10vw;
+  font-family: helvetica, sans-serif;
+  font-weight: bolder;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  left: -484px;
+  top: -138px;
+}
+
+div.lab-back{
+  font-size: 10vw;
+font-family: helvetica, sans-serif;
+font-weight: bolder;
+position: absolute;
+color: white;
+left: -470px;
+top: -26px;
+}
+
+
 div.jquery2-cover{
   height: 300px;
   width: 600px;
@@ -695,6 +851,55 @@ div.jquery2-back{
   height: 300px;
 width: 600px;
 background-image: url(jquery2back.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
+}
+
+div.dialogue{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.dialogue-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(dialogue-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.dialogue-side{
+  height: 300px;
+      width: 41px;
+      background-image: url(dialoguespine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 270px;
+}
+
+div.dialogue-spine{
+  height: 300px;
+      width: 41px;
+      background-image: url(dialoguespine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.dialogue-top{
+  height: 41px;
+    width: 600px;
+      background-image: url(dialoguebottomtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 50px;
+}
+div.dialogue-bottom{
+  height: 41px;
+      width: 600px;
+background-image: url(dialoguebottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -50px;
+}
+div.dialogue-back{
+  height: 300px;
+width: 600px;
+background-image: url(dialogueback.jpg);
 transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
 }
 
@@ -747,42 +952,104 @@ background-image: url(dialogue2back.jpg);
 transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
 }
 
-.text{
-width: 18%;
-  /* display: block; */
-  /* bottom: 45%; */
-  position: relative;
-  /* margin-top: 1%; */
-  z-index: -100;
-  top: 60%;
-  left: 2%;
+
+
+
+div.collections{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
 }
 
-#right {
-  position: fixed;
-  top: 50%;
-  right: 10px;
-   width: 15%;
-   height: 15%;
-   cursor: pointer;
-
+div.collections-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(collections-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.collections-side{
+  height: 300px;
+      width: 41px;
+      background-image: url(collections-spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 270px;
 }
 
-#left {
-  position: fixed;
-  top: 50%;
-  left: 10px;
-   width: 15%;
-   height: 15%;
-  cursor: pointer;
-
+div.collections-spine{
+  height: 300px;
+      width: 41px;
+      background-image: url(collections-spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.collections-top{
+  height: 41px;
+    width: 600px;
+      background-image: url(collections-bottomtop.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 50px;
+}
+div.collections-bottom{
+  height: 41px;
+      width: 600px;
+background-image: url(collections-bottomtop.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -50px;
+}
+div.collections-back{
+  height: 300px;
+width: 600px;
+background-image: url(collections-back.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
 }
 
-#container {
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+div.game{
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+div.game-cover{
+  height: 300px;
+  width: 600px;
+background-image: url(game-cover.jpg);
+transform: translateX(-50%) translateY(-50%) translateZ(20px);
+}
+div.game-side{
+  height: 300px;
+      width: 41px;
+      background-image: url(game-side.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(30px);
+      left: 270px;
+}
+
+div.game-spine{
+  height: 300px;
+      width: 41px;
+      background-image: url(game-spine.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+      left: -170px;
+}
+div.game-top{
+  height: 41px;
+    width: 600px;
+      background-image: url(game-top.jpg);
+      transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+      top: 50px;
+}
+div.game-bottom{
+  height: 41px;
+      width: 600px;
+background-image: url(game-bottom.jpg);
+transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+    top: -50px;
+}
+div.game-back{
+  height: 300px;
+width: 600px;
+background-image: url(game-back.jpg);
+transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px);
 }
