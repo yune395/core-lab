@@ -39,8 +39,8 @@ top: 50%;
 left: 50%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -51,8 +51,8 @@ top: 50%;;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -62,8 +62,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -74,8 +74,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -85,8 +85,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 
 }
@@ -96,8 +96,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -107,8 +107,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -118,8 +118,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -130,8 +130,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -142,8 +142,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -169,8 +169,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -180,8 +180,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -191,8 +191,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -202,8 +202,8 @@ top: 50%;
 left: 150%;
 transform-style: preserve-3d;
 backface-visibility: hidden;
--webkit-animation: spincube 12s infinite;
- animation: spincube 12s infinite;
+-webkit-animation: spincube 15s infinite;
+ animation: spincube 15s infinite;
  cursor: pointer;
 }
 
@@ -253,12 +253,12 @@ backface-visibility: hidden;
   -webkit-animation-name: spincube;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 12s;
+  -webkit-animation-duration: 15s;
 
   animation-name: spincube;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 12s;
+  animation-duration: 15s;
 
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
