@@ -4,6 +4,7 @@ body{
   background-color: black;
 }
 
+
 #right {
   position: fixed;
   top: 50%;
@@ -153,13 +154,12 @@ left: 150%;
 cursor: pointer;
 }
 
-
 #sectionlab {
   position: fixed;
-  top: 14%;
-  left: 40%;
-  z-index: -100;
-  cursor: pointer;
+      top: 48%;
+      left: 59%;
+      z-index: -100;
+      cursor: pointer;
 }
 
 
@@ -269,36 +269,6 @@ backface-visibility: hidden;
   -moz-transform-origin: 60px 60px 0;
   -ms-transform-origin: 60px 60px 0;
   transform-origin: 60px 60px 0;
-}
-
-#sectionName{
-  opacity: 1;
-    color: white;
-    font-size: 5vw;
-    display: none;
-    position: absolute;
-    -webkit-animation: 0;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
-    font-family: helvetica, sans-serif;
-    top: 41%;
-    left: 36%;
-}
-
-#section2Name{
-  opacity: 1;
-    color: white;
-    font-size: 5vw;
-    display: none;
-    position: absolute;
-    -webkit-animation: 0;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
-    font-family: helvetica, sans-serif;
-    top: 41%;
-    left: 36%;
 }
 
 

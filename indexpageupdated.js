@@ -66,15 +66,3 @@ $("#left").click(function(){
   })
 
 })
-
-//click function for each link
-
-// $('#section').click(function(e){
-//   window.location.replace("media-queries.html");
-// });
-
-$("#button").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#section11").offset().top
-                }, 2000);
-            });
