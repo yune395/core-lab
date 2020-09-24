@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Display group of images</title>
+<meta name="description" content="Display group of images, mini-gallery, with categories, http://coursesweb.net/javascript/" />
+</head>
+<body>
+<div style="position:relative; margin:5px 18%; text-align:center;">
+ <div id="gimenu" style="float:right;width:180px;text-align:left;"></div>
+ <div id="gimgs" style="margin:2px 200px 2px 2px">
+  <img src="gimgs/autumn_life1.jpg" onclick="window.open(this.src)" width="500" height="500">
+  <img src="gimgs/autumn_life2.jpg" onclick="window.open(this.src)" width="100" height="100">
+ </div>
+ <br style="clear:both;"/>
+</div>
+
+<script type="text/javascript"><!--
+// Display group of images with categories - http://coursesweb.net/javascript/
+
+// HERE add the groups of images -  "category_name": ['img_address1', 'img_address2']
+var gimgs = {
+  "Autumn Life": ['gimgs/autumn_life1.jpg', 'gimgs/autumn_life2.jpg'],
+  "Nature": ['gimgs/dolphin.jpg', 'gimgs/foto_bird.jpg', 'gimgs/waterfall.jpg', 'gimgs/pass.jpg'],
+  "Spring Dream": ['gimgs/spring_dream1.jpg', 'gimgs/spring_dream2.jpg', 'gimgs/spring_dream3.jpg']
+};
+
+// Object for the group of images
+var setImgs = new Object();
+ // create and return the menu with image categories
+ setImgs.getMenu = function(){
+   // traverse "gimgs" object, gets and create UL menu with category lists
+   var re = '<ul>';
+   for(var gictg in gimgs) {
+     re += '<li style="cursor:pointer;text-decoration:underline;" onclick="setImgs.getImgs(\''+ gictg+ '\')">'+ gictg+ '</li>';
+   }
+
+   return re+ '</ul>';
+ }
+
+ // traverse the category from "gimgs" object, indicated in gictg parameter, and display the images in #setimgs
+ setImgs.getImgs = function(gictg) {
+   var nrim = gimgs[gictg].length;
+   var re = '';
+   for(var i=0; i<nrim; i++) {
+     re += ' <img src="'+ gimgs[gictg][i]+ '" onclick="window.open(this.src)" height="100" />';
+   }
+   document.getElementById('gimgs').innerHTML = re;
+ }
+
+// adds in #gimenu the menu returned by getMenu() method
+document.getElementById('gimenu').innerHTML = setImgs.getMenu();
+--></script>
+</body>
+</html>
